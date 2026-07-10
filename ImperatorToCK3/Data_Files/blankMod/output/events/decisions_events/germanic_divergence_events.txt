@@ -901,9 +901,11 @@ proto_germanic_divergence_events.8 = {
 				 	current_date > 530.1.1
 				}
 				set_name_list = name_list_late_irminonic
+				set_culture_pillar = language_high_german
 			}
 			else = {
 				set_name_list = name_list_irminonic
+				set_culture_pillar = language_high_german
 			}
 		}
 		every_culture_global = {
@@ -920,9 +922,11 @@ proto_germanic_divergence_events.8 = {
 				 	current_date > 530.1.1
 				}
 				set_name_list = name_list_late_ingaevonic
+				set_culture_pillar = language_anglic
 			}
 			else = {
 				set_name_list = name_list_ingaevonic
+				set_culture_pillar = language_anglic
 			}
 		}
 		every_culture_global = {
@@ -939,9 +943,11 @@ proto_germanic_divergence_events.8 = {
 				 	current_date > 530.1.1
 				}
 				set_name_list = name_list_frankish
+				set_culture_pillar = language_frankish
 			}
 			else = {
 				set_name_list = name_list_istaevonic
+				set_culture_pillar = language_frankish
 			}
 		}
 		every_culture_global = {
@@ -958,9 +964,11 @@ proto_germanic_divergence_events.8 = {
 				 	current_date > 550.1.1
 				}
 				set_name_list = name_list_later_vendel
+				set_culture_pillar = language_norse
 			}
 			else = {
 				set_name_list = name_list_proto_norse
+				set_culture_pillar = language_norse
 			}
 		}
 		every_culture_global = {
@@ -973,6 +981,19 @@ proto_germanic_divergence_events.8 = {
 				}
 			}
 			set_name_list = name_list_gothic
+			set_culture_pillar = language_gothic
+		}
+		every_culture_global = {
+			limit = {
+				AND = {
+					has_name_list = name_list_proto_germanic
+					any_parent_culture_or_above = {
+					 	this = culture:vandal
+					}
+				}
+			}
+			set_name_list = name_list_vandalic
+			set_culture_pillar = language_vandalic
 		}
 		every_culture_global = {
 			limit = {
