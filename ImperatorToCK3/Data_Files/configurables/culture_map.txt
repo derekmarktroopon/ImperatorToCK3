@@ -495,7 +495,7 @@ link = { ck3 = german @ir_all_germanic_cultures }
 link = { ck3 = greek @ir_greek_cultures @roman_tags } # Modified cultures so base game greek represents the Romanized-Greeks
 link = { ck3 = greek ir = romano_hellenic ir = helleno_roman } # From "Terra Europea - Terra Indomita Sub-Mod". Both represent a sort of Roman-Hellenic hybridized culture, which, as of now, best matches the base game greek culture, so will map to that for now until a better mapping is determined.
 
-link = { ck3 = enetoian ir = ink = { ck3 = enetoian }
+link = { ck3 = enetoian ir = enetoian }
 
 # TFE
 link = { ck3 = pontic ir = greco_pontic }
