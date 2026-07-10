@@ -264,6 +264,66 @@ heritage_tyrrhenian = {
 	audio_parameter = european
 }
 
+heritage_old_ligurian = {
+	MOD_DEPENDENT = {
+		IF roa = {
+			parameters = {
+				heritage_group_latin = yes
+				heritage_family_european = yes
+			}
+		} ELSE_IF tfe = {
+			parameters = {
+				heritage_group_latin = yes
+				heritage_family_mediterranean = yes
+			}
+		} ELSE_IF wtwsms = {
+			parameters = {
+				heritage_group_romance = yes
+				heritage_family_european = yes
+			}
+		}
+	}
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_old_ligurian
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_raetic = {
+    REPLACED_BY = {
+		tfe = { heritage_tyrrhenian }
+		vanilla_ck3 = { heritage_tyrrhenian }
+	}
+	MOD_DEPENDENT = {
+		IF roa = {
+			parameters = {
+				heritage_group_latin = yes
+				heritage_family_european = yes
+			}
+		} ELSE_IF tfe = {
+			parameters = {
+				heritage_group_latin = yes
+				heritage_family_mediterranean = yes
+			}
+		} ELSE_IF wtwsms = {
+			parameters = {
+				heritage_group_romance = yes
+				heritage_family_european = yes
+			}
+		}
+	}
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_raetic
+		}
+	}
+	audio_parameter = european
+}
+
 heritage_tai = {
     REPLACED_BY = {
 		tfe = { heritage_tai }
@@ -373,6 +433,32 @@ heritage_italic = {
 	audio_parameter = european
 }
 
+heritage_pie = {
+	REPLACED_BY = {
+		tfe = { heritage_pie }
+		wtwsms = { heritage_pie }
+		vanilla_ck3 = { heritage_pie }
+	}
+	MOD_DEPENDENT = {
+		IF roa = {
+			parameters = {
+				heritage_family_european = yes
+			}
+		} ELSE_IF tfe = {
+			parameters = {
+				heritage_family_northern = yes
+			}
+		}
+	}
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pie
+		}
+	}
+	audio_parameter = european
+}
+
 heritage_frankish = { # To replace assigned Latin heritage group/family in TFE/RoA
     REPLACED_BY = {
 		wtwsms = { heritage_frankish }
@@ -398,6 +484,33 @@ heritage_frankish = { # To replace assigned Latin heritage group/family in TFE/R
 		}
 	}
 	audio_parameter = european
+}
+
+heritage_indo_germanic = {
+    REPLACED_BY = {
+		wtwsms = { heritage_indo_germanic }
+		vanilla_ck3 = { heritage_indo_germanic }
+	}
+	MOD_DEPENDENT = {
+		IF tfe = {
+			parameters = {
+				heritage_group_germanic = yes
+				heritage_family_south_asian = yes
+			}
+		} ELSE_IF roa = {
+			parameters = {
+				heritage_group_germanic = yes
+				heritage_family_south_asian = yes
+			}
+		}
+	}
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_indo_germanic
+		}
+	}
+	audio_parameter = indian
 }
 
 heritage_venetic = {

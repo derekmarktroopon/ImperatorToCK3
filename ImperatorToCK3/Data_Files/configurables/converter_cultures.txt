@@ -1994,11 +1994,7 @@ gothic = { # https://en.wikipedia.org/wiki/Goths
 	color = irtock3_gothic
 	ethos = ethos_bellicose
 	heritage = heritage_gothic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_gothic
-	}
+	language = language_proto_germanic
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	traditions = {
@@ -2012,11 +2008,7 @@ gothic = { # https://en.wikipedia.org/wiki/Goths
 		requires_dlc_flag = hybridize_culture
 	}
 	
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE = {
-		name_list = name_list_gothic
-	}
+	name_list = name_list_proto_germanic
 	
 	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
@@ -2153,17 +2145,14 @@ vandal = { # https://en.wikipedia.org/wiki/Vandals
 		vanilla_ck3 = { vandal }
 	}
 
+	color = { 89 64 29 }
 	parents = { proto_germanic }
 	created = 150.1.1
 	
 	ethos = ethos_bellicose
 	heritage = heritage_gothic
 	language = language_proto_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_vandalic
-	}
+	language = language_proto_germanic
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	traditions = {
@@ -2177,11 +2166,7 @@ vandal = { # https://en.wikipedia.org/wiki/Vandals
 		requires_dlc_flag = hybridize_culture
 	}
 	
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE = {
-		name_list = name_list_vandalic
-	}
+	name_list = name_list_proto_germanic
 	
 	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
@@ -4881,11 +4866,7 @@ indo_germanic = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_indo_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_indo_germanic
-	}
+	language = language_proto_germanic
 
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
@@ -4896,13 +4877,7 @@ indo_germanic = {
 		tradition_khadga_puja	
 	}
 
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE_IF (date_gte<500.1.1) = {
-		name_list = name_list_indo_germanic
-	} ELSE = {
-		name_list = name_list_late_indo_germanic
-	}
+	name_list = name_list_proto_germanic
 
 	coa_gfx = { indo_aryan_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -4923,11 +4898,7 @@ deccano_germanic = {
 	
 	ethos = ethos_stoic
 	heritage = heritage_indo_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_indo_germanic
-	}
+	language = language_proto_germanic
 
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
@@ -4938,13 +4909,7 @@ deccano_germanic = {
 		tradition_garuda_warriors	
 	}
 
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE_IF (date_gte<500.1.1) = {
-		name_list = name_list_tamilo_germanic
-	} ELSE = {
-		name_list = name_list_late_tamilo_germanic
-	}
+	name_list = name_list_proto_germanic
 
 	coa_gfx = { dravidian_group_coa_gfx }
 	building_gfx = { indian_building_gfx }
@@ -5086,11 +5051,6 @@ frankish = {
 	ethos = ethos_bellicose
 	heritage = heritage_frankish
 	language = language_proto_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_frankish
-	}
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	traditions = {
@@ -5099,13 +5059,7 @@ frankish = {
 		tradition_stand_and_fight
 	}
 	
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE_IF (date_gte<450.1.1) = {
-		name_list = name_list_istaevonic
-	} ELSE (date_gte<450.1.1) = {
-		name_list = name_list_frankish
-	}
+	name_list = name_list_proto_germanic
 	
 	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
 	building_gfx = { western_building_gfx }
@@ -5130,25 +5084,13 @@ irminonic = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_central_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_high_german
-	}
+	language = language_proto_germanic
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	traditions = {
 		tradition_warrior_culture
 		tradition_mountain_homes
 		tradition_stand_and_fight
-	}
-	
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE_IF (date_gte<450.1.1) = {
-		name_list = name_list_irminonic
-	} ELSE (date_gte<450.1.1) = {
-		name_list = name_list_late_irminonic
 	}
 	
 	name_list = name_list_proto_germanic
@@ -5211,19 +5153,9 @@ proto_norse = {
 	parents = { proto_germanic }
 	created = 200.1.1
 
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE_IF (date_gte<450.1.1) = {
-		name_list = name_list_proto_norse
-	} ELSE (date_gte<=550.1.1) = {
-		name_list = name_list_later_vendel
-	}
+	name_list = name_list_proto_germanic
 	heritage = heritage_north_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_norse
-	}
+	language = language_proto_germanic
 
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
@@ -5569,11 +5501,7 @@ ingaevonic = {
 	
 	ethos = ethos_bellicose
 	heritage = heritage_west_germanic
-	IF (date_gte<=200.1.1) = {
-		language = language_proto_germanic
-	} ELSE = {
-		language = language_anglic
-	}
+	language = language_proto_germanic
 
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
@@ -5598,13 +5526,7 @@ ingaevonic = {
 		requires_dlc_flag = hybridize_culture
 	}
 	
-	IF (date_gte<=200.1.1) = {
-		name_list = name_list_proto_germanic
-	} ELSE_IF (date_gte<450.1.1) = {
-		name_list = name_list_ingaevonic
-	} ELSE (date_gte<450.1.1) = {
-		name_list = name_list_late_ingaevonic
-	}
+	name_list = name_list_proto_germanic
 
 	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
 	building_gfx = { western_building_gfx } 

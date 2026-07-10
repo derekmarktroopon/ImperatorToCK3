@@ -468,12 +468,14 @@ link = { ck3 = german @ir_all_germanic_cultures }
 
 ## Hellenic
 @ir_cretan_cultures = "ir=cretan ir=eteocretan" # eteocretan comes from the Antiquitas mod
-@ir_antiquitas_greek_cultures="ir=doric ir=north_western_doric ir=attican ir=western_ionic ir=eastern_ionic ir=elean ir=kerkyran" # # Antiquitas (https://steamcommunity.com/sharedfiles/filedetails/?id=2992438857)
-@ir_greek_cultures = "ir=greek ir=athenian ir=peloponnesian ir=massalian ir=cyrenaican ir=bosporan ir=thessalian ir=cypriot ir=bithynian ir=ionian ir=troan ir=aeolian ir=greco_pontic ir=aegean ir=aetolian ir=euboean ir=boeotian ir=epirote ir=arcadian ir=argolian ir=parthinian ir=achaean ir=enetoian ir=pamphylian ir=ciliciote @ir_antiquitas_greek_cultures"
+@ir_antiquitas_greek_cultures = "ir=doric ir=north_western_doric ir=attican ir=western_ionic ir=eastern_ionic ir=elean ir=kerkyran" # # Antiquitas (https://steamcommunity.com/sharedfiles/filedetails/?id=2992438857)
+@ir_greek_cultures = "ir=greek ir=athenian ir=peloponnesian ir=massalian ir=cyrenaican ir=bosporan ir=thessalian ir=cypriot ir=bithynian ir=ionian ir=troan ir=aeolian ir=greco_pontic ir=aegean ir=aetolian ir=euboean ir=boeotian ir=epirote ir=arcadian ir=argolian ir=parthinian ir=achaean ir=pamphylian ir=ciliciote @ir_antiquitas_greek_cultures"
 
 # The Glory of Rome
 link = { ck3 = greek @ir_greek_cultures @roman_tags } # Modified cultures so base game greek represents the Romanized-Greeks
 link = { ck3 = greek ir = romano_hellenic ir = helleno_roman } # From "Terra Europea - Terra Indomita Sub-Mod". Both represent a sort of Roman-Hellenic hybridized culture, which, as of now, best matches the base game greek culture, so will map to that for now until a better mapping is determined.
+
+link = { ck3 = enetoian ir = ink = { ck3 = enetoian }
 
 # TFE
 link = { ck3 = pontic ir = greco_pontic }

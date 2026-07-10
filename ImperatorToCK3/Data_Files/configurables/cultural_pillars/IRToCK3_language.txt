@@ -5,6 +5,44 @@
 
 # Nice chart I found that could help with setting up some families/branches/etc. ~tanner918: https://upload.wikimedia.org/wikipedia/commons/4/4f/IndoEuropeanTree.svg
 
+language_pie = {
+
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pie
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pie }
+			multiply = 10
+		}
+	}
+
+	color = { 1 33 66 }
+}
+
+language_proto_germanic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_proto_germanic
+		}
+	}
+
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_proto_germanic }
+			multiply = 10
+		}
+	}
+	
+	color = { 23 64 82 }	
+}
+
 language_gothic = { # https://en.wikipedia.org/wiki/East_Germanic_languages
     REPLACED_BY = {
 		tfe = { language_gothic }
@@ -28,6 +66,45 @@ language_gothic = { # https://en.wikipedia.org/wiki/East_Germanic_languages
 	}
 
 	color = irtock3_gothic
+}
+
+
+language_vandalic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_vandalic
+		}
+	}
+
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_vandalic }
+			multiply = 10
+		}
+	}
+	
+	color = { 89 64 29 }	
+}
+
+language_indo_germanic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_indo_germanic
+		}
+	}
+
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_indo_germanic }
+			multiply = 10
+		}
+	}
+	
+	color = { 105 51 55 }	
 }
 
 language_nuragic = {
@@ -598,6 +675,102 @@ language_gaulish = {
 	color = hsv { 0.3 0.7 0.4 }
 }
 
+language_celtiberian = {
+    REPLACED_BY = {
+		tfe = { language_celtiberian }
+		wtwsms = { language_celtiberian }
+		vanilla_ck3 = { language_celtiberian }
+	}
+
+	MOD_DEPENDENT = {
+		IF tfe = {
+			parameters = {
+				language_group_celtic = yes
+				language_family_indo_european = yes
+			}
+		} ELSE_IF roa = {
+			parameters = {
+				language_group_continental_celtic = yes
+				language_branch_celtic = yes
+				language_family_indo_european = yes
+			}
+		}
+	}
+
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_celtiberian
+		}
+	}
+
+	color = rgb{ 128 153 30 }
+}
+
+language_lusitanian = {
+    REPLACED_BY = {
+		tfe = { language_lusitanian }
+		wtwsms = { language_lusitanian }
+		vanilla_ck3 = { language_lusitanian }
+	}
+
+	MOD_DEPENDENT = {
+		IF tfe = {
+			parameters = {
+				language_group_celtic = yes
+				language_family_indo_european = yes
+			}
+		} ELSE_IF roa = {
+			parameters = {
+				language_group_continental_celtic = yes
+				language_branch_celtic = yes
+				language_family_indo_european = yes
+			}
+		}
+	}
+
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_lusitanian
+		}
+	}
+
+	color = rgb{ 94 89 17 }
+}
+
+language_lepontic = {
+    REPLACED_BY = {
+		tfe = { language_lepontic }
+		wtwsms = { language_lepontic }
+		vanilla_ck3 = { language_lepontic }
+	}
+
+	MOD_DEPENDENT = {
+		IF tfe = {
+			parameters = {
+				language_group_celtic = yes
+				language_family_indo_european = yes
+			}
+		} ELSE_IF roa = {
+			parameters = {
+				language_group_continental_celtic = yes
+				language_branch_celtic = yes
+				language_family_indo_european = yes
+			}
+		}
+	}
+
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_lepontic
+		}
+	}
+
+	color = rgb{ 85 212 161 }
+}
+
 # language_hebrew = { # Replaced by language_israelite in cultures
 #     REPLACED_BY = {
 # 		tfe = { language_hebrew }
@@ -785,7 +958,7 @@ language_samnite = {
 	color = { 117 131 150 }
 }
 
-language_ligustic = {
+language_old_ligurian = {
     REPLACED_BY = {
 		tfe = { language_ligustic }
 		vanilla_ck3 = { language_ligustic }
@@ -809,7 +982,7 @@ language_ligustic = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_ligustic
+			LANGUAGE = language_old_ligurian
 		}
 	}
 
@@ -818,7 +991,7 @@ language_ligustic = {
 			ai_will_do = {
 				value = 10
 				if = {
-					limit = { has_cultural_pillar = language_ligustic }
+					limit = { has_cultural_pillar = language_old_ligurian }
 					multiply = same_language_choice_factor
 				}
 				else_if = {
@@ -835,7 +1008,7 @@ language_ligustic = {
 			ai_will_do = {
 				value = 10
 				if = {
-					limit = { has_cultural_pillar = language_ligustic }
+					limit = { has_cultural_pillar = language_old_ligurian }
 					multiply = 10
 				}
 				else_if = {
@@ -852,14 +1025,14 @@ language_ligustic = {
 			ai_will_do = {
         		value = 10
 				if = {
-					limit = { has_cultural_pillar = language_ligustic }
+					limit = { has_cultural_pillar = language_old_ligurian }
 					multiply = 10
 				}
         	}
 		}
 	}
 
-	color = { 211 208 124 }
+	color = { 237 176 133 }
 }
 
 language_messapic = {
@@ -1601,6 +1774,114 @@ language_etruscan = {
 	}
 
 	color = { 48 30 180 }
+}
+
+language_raetic = {
+    REPLACED_BY = {
+		tfe = { language_raetic }
+		vanilla_ck3 = { language_raetic }
+	}
+
+	MOD_DEPENDENT = {
+		IF @[roa|wtwsms] = {
+			parameters = {
+				language_branch_etruscan = yes
+				language_family_tyrsenian = yes
+			}
+		}
+	}
+
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_raetic
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF @[roa|wtwsms] = {
+			ai_will_do = {
+				value = 10
+				if = {
+					limit = { has_cultural_pillar = language_raetic }
+					multiply = same_language_choice_factor
+				}
+				else_if = {
+					limit = { has_cultural_parameter = language_branch_etruscan }
+					multiply = same_language_branch_choice_factor
+				}
+				else_if = {
+					limit = { has_cultural_parameter = language_family_tyrsenian }
+					multiply = same_language_family_choice_factor
+				}
+			}
+		}
+		ELSE = {
+			ai_will_do = {
+				value = 10
+				if = {
+					limit = { has_cultural_pillar = language_raetic }
+					multiply = 10
+				}
+			}
+		}
+	}
+
+	color = { 243 252 154 }
+}
+
+language_camunic = {
+    REPLACED_BY = {
+		tfe = { language_camunic }
+		vanilla_ck3 = { language_camunic }
+	}
+
+	MOD_DEPENDENT = {
+		IF @[roa|wtwsms] = {
+			parameters = {
+				language_branch_etruscan = yes
+				language_family_tyrsenian = yes
+			}
+		}
+	}
+
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_raetic
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF @[roa|wtwsms] = {
+			ai_will_do = {
+				value = 10
+				if = {
+					limit = { has_cultural_pillar = language_camunic }
+					multiply = same_language_choice_factor
+				}
+				else_if = {
+					limit = { has_cultural_parameter = language_branch_etruscan }
+					multiply = same_language_branch_choice_factor
+				}
+				else_if = {
+					limit = { has_cultural_parameter = language_family_tyrsenian }
+					multiply = same_language_family_choice_factor
+				}
+			}
+		}
+		ELSE = {
+			ai_will_do = {
+				value = 10
+				if = {
+					limit = { has_cultural_pillar = language_camunic }
+					multiply = 10
+				}
+			}
+		}
+	}
+
+	color = { 51 255 153 }
 }
 
 language_elamite = {
@@ -2518,7 +2799,7 @@ language_hatti = { # Pre-Hittite language of central Anatolia
 	color = rgb { 200 200 200 }
 }
 
-language_venetic = {
+language_venetic_culture = {
     REPLACED_BY = {
 		tfe = { language_venetic }
 		vanilla_ck3 = { language_venetic }
@@ -2527,7 +2808,7 @@ language_venetic = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_venetic
+			LANGUAGE = language_venetic_culture
 		}
 	}
 
@@ -2550,7 +2831,7 @@ language_venetic = {
 			ai_will_do = {
 				value = 10
 				if = {
-					limit = { has_cultural_pillar = language_venetic }
+					limit = { has_cultural_pillar = language_venetic_culture }
 					multiply = same_language_choice_factor
 				}
 				else_if = {
@@ -2566,7 +2847,7 @@ language_venetic = {
 			ai_will_do = {
 				value = 10
 				if = {
-					limit = { has_cultural_pillar = language_venetic }
+					limit = { has_cultural_pillar = language_venetic_culture }
 					multiply = 10
 				}
 				else_if = {
@@ -2583,14 +2864,14 @@ language_venetic = {
 			ai_will_do = {
 				value = 10
 				if = {
-					limit = { has_cultural_pillar = language_venetic }
+					limit = { has_cultural_pillar = language_venetic_culture }
 					multiply = 10
 				}
 			}
 		}
 	}
 
-	color = venetic_culture
+	color = { 161 111 80 }
 }
 
 language_anatolian = {
