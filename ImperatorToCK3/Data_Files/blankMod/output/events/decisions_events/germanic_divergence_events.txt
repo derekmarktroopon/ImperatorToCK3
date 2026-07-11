@@ -891,8 +891,11 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:irminonic
+					OR = {
+						this = culture:irminonic
+						any_parent_culture_or_above = {
+							this = culture:irminonic
+						}
 					}
 				}
 			}
@@ -912,8 +915,11 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:ingaevonic
+					OR = {
+						this = culture:ingaevonic
+						any_parent_culture_or_above = {
+							this = culture:ingaevonic
+						}
 					}
 				}
 			}
@@ -933,8 +939,11 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:frankish
+					OR = {
+						this = culture:frankish
+						any_parent_culture_or_above = {
+							this = culture:frankish
+						}
 					}
 				}
 			}
@@ -954,8 +963,11 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:proto_norse
+					OR = {
+						this = culture:proto_norse
+						any_parent_culture_or_above = {
+							this = culture:proto_norse
+						}
 					}
 				}
 			}
@@ -975,8 +987,15 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:gothic
+					OR = {
+						this = culture:gothic
+						any_parent_culture_or_above = {
+							this = culture:gothic
+						}
+						this = culture:gepid
+						any_parent_culture_or_above = {
+							this = culture:gepid
+						}
 					}
 				}
 			}
@@ -987,8 +1006,15 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:vandal
+					OR = {
+						this = culture:vandal
+						any_parent_culture_or_above = {
+							this = culture:vandal
+						}
+						this = culture:vandilian
+						any_parent_culture_or_above = {
+							this = culture:vandilian
+						}
 					}
 				}
 			}
@@ -999,8 +1025,11 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:indo_germanic
+					OR = {
+						this = culture:indo_germanic
+						any_parent_culture_or_above = {
+							this = culture:indo_germanic
+						}
 					}
 				}
 			}
@@ -1010,8 +1039,11 @@ proto_germanic_divergence_events.8 = {
 			limit = {
 				AND = {
 					has_name_list = name_list_proto_germanic
-					any_parent_culture_or_above = {
-					 	this = culture:deccano_germanic
+					OR = {
+						this = culture:deccano_germanic
+						any_parent_culture_or_above = {
+							this = culture:deccano_germanic
+						}
 					}
 				}
 			}
