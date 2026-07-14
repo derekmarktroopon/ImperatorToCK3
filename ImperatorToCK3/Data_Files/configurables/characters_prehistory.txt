@@ -108,7 +108,7 @@ ruler = { name = "Nebra" birth_date = -2070.1.1 death_date = -1994.1.1
 ruler = { name = "kmt_Nynetjer" birth_date = -1958.1.1 death_date = -1868.1.1
 	throne_date = -1994.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "Wadjenes" birth_date = -1978.1.1 death_date = -1951.1.1
-	throne_date = -1868.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
+	throne_date = -1968.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Senedj" birth_date = -1971.1.1 death_date = -1944.1.1
 	throne_date = -1951.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Sekhemib_Perenmaat" birth_date = -1964.1.1 death_date = -1937.1.1
@@ -214,11 +214,11 @@ ruler = { name = "kmt_Khety" birth_date = -1406.1.1 death_date = -1381.1.1
 ruler = { name = "kmt_Setut" birth_date = -1401.1.1 death_date = -1376.1.1
 	throne_date = -1381.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Neferkare" birth_date = -1396.1.1 death_date = -1356.6.1
-	throne_date = n/a religion = egyptian_pantheon culture = egyptian country = EGY }
+	throne_date = -1376.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Wahkare_Khety" birth_date = -1376.1.1 death_date = -1326.1.1
-	throne_date = n/a religion = egyptian_pantheon culture = egyptian country = EGY }
+	throne_date = -1356.6.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Merikare" birth_date = -1346.1.1 death_date = -1286.1.1
-	throne_date = n/a religion = egyptian_pantheon culture = egyptian country = EGY }
+	throne_date = -1326.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Mentuhotep" birth_date = -1400.1.1 death_date = -1368.1.1
 	throne_date = -1380.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Intef" birth_date = -1388.1.1 death_date = -1364.1.1
@@ -354,7 +354,7 @@ ruler = { name = "kmt_Thutmose" birth_date = -749.1.1 death_date = -725.1.1
 ruler = { name = "kmt_Hatshepsut" birth_date = -745.1.1 death_date = -704.1.1
 	throne_date = -725.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Thutmose" birth_date = -744.1.1 death_date = -671.1.1
-	throne_date = n/a religion = egyptian_pantheon culture = egyptian country = EGY }
+	throne_date = -704.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Amenhotep" birth_date = -713.1.1 death_date = -643.1.1
 	throne_date = -704.1.1 religion = egyptian_pantheon culture = egyptian country = EGY }
 ruler = { name = "kmt_Thutmose" birth_date = -663.1.1 death_date = -634.1.1
@@ -469,7 +469,7 @@ ruler = { name = "kmt_Psamtik" birth_date = 208.1.1 death_date = 229.1.1
 	throne_date = 229.1.1 religion = egyptian_pantheon culture = ancient_egyptian country = EGY }
  
 ruler = { name = "kmt_Amenirdisu" birth_date = 330.1.1 death_date = 355.10.1
-	throne_date = 396.1.1 religion = egyptian_pantheon culture = ancient_egyptian country = EGY }
+	throne_date = 350.1.1 religion = egyptian_pantheon culture = ancient_egyptian country = EGY }
 ruler = { name = "kmt_Nefaarud" birth_date = 335.1.1 death_date = 361.1.1
 	throne_date = 355.1.1 religion = egyptian_pantheon culture = ancient_egyptian country = EGY }
 ruler = { name = "kmt_Psammuthes" birth_date = 335.1.1 death_date = 361.3.1
