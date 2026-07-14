@@ -34,10 +34,12 @@ joakim_male = {
 marcus_male = {
 	Marcus MA_rk Marcas March Marchell Marco Marek Margh Margos Mark Marko Markos Markose Marku Markus Morcar Marchet # vanilla
 	Marce Marc Marcu gls_Mac # converter
+	cpt_Markos
 }
 ptolemy_male = {
 	Ptolemy Ptolemee PtolE_mE_e # vanilla
 	Ptolemaios # converter
+	dmt_Ptolemaios cpt_Ptolemaios
 }
 sigmund_male = {
 	Sigmund Siegmund Sigismond Sigismund Zikmund Zsigmond Zygmunt # vanilla
@@ -46,6 +48,7 @@ sigmund_male = {
 tiberius_male = {
 	Tiberius Tiberios # vanilla
 	Thefri # converter
+	cpt_Tiberios
 }
 vishtasb_male = {
 	Vishtasb VI_S_tap # vanilla
@@ -130,4 +133,4 @@ hildegarde_female = {
 	Hiltekart
 	Hildigardu Hildigarda
 }
-elisabeth_female = { Isabetta Aaleyaamma AlZ_bEE_ta Beileag Bet EisabE_u Elesbed ElisabE_ta Elisabet ElI_sabet Elisabeta Elisabeth Elisabetta Elisaued Elisaveta Elizabeta Elizabeth E_lizabeth Elspeth ElZ_bieta ErzsE_bet Ilizabith Isabeau Isabel Isabela IsabE_la Isabella Isabelle IsabE_u Isobel Lillias Lise Lisebet Lys Sabela Uusbail Yelizaveta Ysabel Ysbail Zabel gls_Ilizabath Elisapeth }
+elisabeth_female = { Isabetta Aaleyaamma AlZ_bEE_ta Beileag Bet EisabE_u Elesbed ElisabE_ta Elisabet ElI_sabet Elisabeta Elisabeth Elisabetta Elisaued Elisaveta Elizabeta Elizabeth E_lizabeth Elspeth ElZ_bieta ErzsE_bet Ilizabith Isabeau Isabel Isabela IsabE_la Isabella Isabelle IsabE_u Isobel Lillias Lise Lisebet Lys Sabela Uusbail Yelizaveta Ysabel Ysbail Zabel gls_Ilizabath Elisapeth cpt_Ilisabek }

@@ -1,36 +1,952 @@
-k_venice = {
-	name_list_venetic = cn_k_venice_venetic
+k_egypt = {
+	name_list_predynastic_egyptian = cn_k_egypt_kemetic
+	name_list_kemetic = cn_k_egypt_kemetic
+	name_list_demotic = cn_k_egypt_kemetic
+	name_list_coptic = cn_k_egypt_coptic
 }
-d_venice = {
-	name_list_venetic = cn_d_venice_venetic
+b_barqa-al-marj = {
+	name_list_predynastic_egyptian = cn_b_barqa-al-marj_kemetic
+	name_list_demotic = cn_b_barqa-al-marj_kemetic
+	name_list_kemetic = cn_b_barqa-al-marj_kemetic
+	name_list_coptic = cn_b_barqa-al-marj_coptic
 }
-c_venice = {
-	name_list_venetic = cn_c_venice_venetic
+d_alexandria = {
+	name_list_predynastic_egyptian = cn_d_alexandria_kemetic
+	name_list_demotic = cn_d_alexandria_kemetic
+	name_list_kemetic = cn_d_alexandria_kemetic
+	name_list_coptic = cn_d_alexandria_coptic
+}
+c_alexandria = {
+	name_list_predynastic_egyptian = cn_c_alexandria_kemetic
+	name_list_demotic = cn_c_alexandria_kemetic
+	name_list_kemetic = cn_c_alexandria_kemetic
+	name_list_coptic = cn_c_alexandria_coptic
+}
+b_alexandria = {
+	name_list_predynastic_egyptian = cn_b_alexandria_kemetic
+	name_list_demotic = cn_b_alexandria_kemetic
+	name_list_kemetic = cn_b_alexandria_kemetic
+	name_list_coptic = cn_b_alexandria_coptic
+}
+b_al-hamam = {
+	name_list_predynastic_egyptian = cn_b_al-hamam_kemetic
+	name_list_demotic = cn_b_al-hamam_kemetic
+	name_list_kemetic = cn_b_al-hamam_kemetic
+	name_list_coptic = cn_b_al-hamam_coptic
+}
+b_wadi_natrun = {
+	name_list_predynastic_egyptian = cn_b_wadi_natrun_kemetic
+	name_list_demotic = cn_b_wadi_natrun_kemetic
+	name_list_kemetic = cn_b_wadi_natrun_kemetic
+	name_list_coptic = cn_b_wadi_natrun_coptic
+}
+b_kanais_al-hadid = {
+	name_list_predynastic_egyptian = cn_b_kanais_al-hadid_kemetic
+	name_list_demotic = cn_b_kanais_al-hadid_kemetic
+	name_list_kemetic = cn_b_kanais_al-hadid_kemetic
+	name_list_coptic = cn_b_kanais_al-hadid_coptic
+}
+c_siwa = {
+	name_list_predynastic_egyptian = cn_c_siwa_kemetic
+	name_list_demotic = cn_c_siwa_kemetic
+	name_list_kemetic = cn_c_siwa_kemetic
+	name_list_coptic = cn_c_siwa_coptic
+}
+b_siwa = {
+	name_list_predynastic_egyptian = cn_b_siwa_kemetic
+	name_list_demotic = cn_b_siwa_kemetic
+	name_list_kemetic = cn_b_siwa_kemetic
+	name_list_coptic = cn_b_siwa_coptic
+}
+b_ain_al-gharbi = {
+	name_list_predynastic_egyptian = cn_b_ain_al-gharbi_kemetic
+	name_list_demotic = cn_b_ain_al-gharbi_kemetic
+	name_list_kemetic = cn_b_ain_al-gharbi_kemetic
+	name_list_coptic = cn_b_ain_al-gharbi_coptic
+}
+b_qara = {
+	name_list_predynastic_egyptian = cn_b_qara_kemetic
+	name_list_demotic = cn_b_qara_kemetic
+	name_list_kemetic = cn_b_qara_kemetic
+	name_list_coptic = cn_b_qara_coptic
+}
+d_delta = {
+	name_list_predynastic_egyptian = cn_d_delta_kemetic
+	name_list_demotic = cn_d_delta_kemetic
+	name_list_kemetic = cn_d_delta_kemetic
+	name_list_coptic = cn_d_delta_coptic
+}
+c_damietta = {
+	name_list_predynastic_egyptian = cn_c_damietta_kemetic
+	name_list_demotic = cn_c_damietta_kemetic
+	name_list_kemetic = cn_c_damietta_kemetic
+	name_list_coptic = cn_c_damietta_coptic
+}
+b_dumiyat = {
+	name_list_predynastic_egyptian = cn_b_dumiyat_kemetic
+	name_list_demotic = cn_b_dumiyat_kemetic
+	name_list_kemetic = cn_b_dumiyat_kemetic
+	name_list_coptic = cn_b_dumiyat_coptic
+}
+b_daqahla = {
+	name_list_predynastic_egyptian = cn_b_daqahla_kemetic
+	name_list_demotic = cn_b_daqahla_kemetic
+	name_list_kemetic = cn_b_daqahla_kemetic
+	name_list_coptic = cn_b_daqahla_coptic
+}
+b_tinnis = {
+	name_list_predynastic_egyptian = cn_b_tinnis_kemetic
+	name_list_demotic = cn_b_tinnis_kemetic
+	name_list_kemetic = cn_b_tinnis_kemetic
+	name_list_coptic = cn_b_tinnis_coptic
+}
+c_al-buhaira = {
+	name_list_predynastic_egyptian = cn_c_al-buhaira_kemetic
+	name_list_demotic = cn_c_al-buhaira_kemetic
+	name_list_kemetic = cn_c_al-buhaira_kemetic
+	name_list_coptic = cn_c_al-buhaira_coptic
+}
+b_rashid = {
+	name_list_predynastic_egyptian = cn_b_rashid_kemetic
+	name_list_demotic = cn_b_rashid_kemetic
+	name_list_kemetic = cn_b_rashid_kemetic
+	name_list_coptic = cn_b_rashid_coptic
+}
+b_damanhur = {
+	name_list_predynastic_egyptian = cn_b_damanhur_kemetic
+	name_list_demotic = cn_b_damanhur_kemetic
+	name_list_kemetic = cn_b_damanhur_kemetic
+	name_list_coptic = cn_b_damanhur_coptic
+}
+b_ramsis = {
+	name_list_predynastic_egyptian = cn_b_ramsis_kemetic
+	name_list_demotic = cn_b_ramsis_kemetic
+	name_list_kemetic = cn_b_ramsis_kemetic
+	name_list_coptic = cn_b_ramsis_coptic
+}
+c_al-gharbiya = {
+	name_list_predynastic_egyptian = cn_c_al-gharbiya_kemetic
+	name_list_demotic = cn_c_al-gharbiya_kemetic
+	name_list_kemetic = cn_c_al-gharbiya_kemetic
+	name_list_coptic = cn_c_al-gharbiya_coptic
+}
+b_minuf = {
+	name_list_predynastic_egyptian = cn_b_minuf_kemetic
+	name_list_demotic = cn_b_minuf_kemetic
+	name_list_kemetic = cn_b_minuf_kemetic
+	name_list_coptic = cn_b_minuf_coptic
+}
+b_samannud = {
+	name_list_predynastic_egyptian = cn_b_samannud_kemetic
+	name_list_demotic = cn_b_samannud_kemetic
+	name_list_kemetic = cn_b_samannud_kemetic
+	name_list_coptic = cn_b_samannud_coptic
+}
+b_burullus = {
+	name_list_predynastic_egyptian = cn_b_burullus_kemetic
+	name_list_demotic = cn_b_burullus_kemetic
+	name_list_kemetic = cn_b_burullus_kemetic
+	name_list_coptic = cn_b_burullus_coptic
+}
+b_nastarawa = {
+	name_list_predynastic_egyptian = cn_b_nastarawa_kemetic
+	name_list_demotic = cn_b_nastarawa_kemetic
+	name_list_kemetic = cn_b_nastarawa_kemetic
+	name_list_coptic = cn_b_nastarawa_coptic
+}
+b_ibyar = {
+	name_list_predynastic_egyptian = cn_b_ibyar_kemetic
+	name_list_demotic = cn_b_ibyar_kemetic
+	name_list_kemetic = cn_b_ibyar_kemetic
+	name_list_coptic = cn_b_ibyar_coptic
+}
+c_sharkiya = {
+	name_list_predynastic_egyptian = cn_c_sharkiya_kemetic
+	name_list_demotic = cn_c_sharkiya_kemetic
+	name_list_kemetic = cn_c_sharkiya_kemetic
+	name_list_coptic = cn_c_sharkiya_coptic
+}
+b_bilbays = {
+	name_list_predynastic_egyptian = cn_b_bilbays_kemetic
+	name_list_demotic = cn_b_bilbays_kemetic
+	name_list_kemetic = cn_b_bilbays_kemetic
+	name_list_coptic = cn_b_bilbays_coptic
+}
+b_qalyub = {
+	name_list_predynastic_egyptian = cn_b_qalyub_kemetic
+	name_list_demotic = cn_b_qalyub_kemetic
+	name_list_kemetic = cn_b_qalyub_kemetic
+	name_list_coptic = cn_b_qalyub_coptic
+}
+b_faqus = {
+	name_list_predynastic_egyptian = cn_b_faqus_kemetic
+	name_list_demotic = cn_b_faqus_kemetic
+	name_list_kemetic = cn_b_faqus_kemetic
+	name_list_coptic = cn_b_faqus_coptic
+}
+d_cairo = {
+	name_list_predynastic_egyptian = cn_d_cairo_kemetic
+	name_list_demotic = cn_d_cairo_kemetic
+	name_list_kemetic = cn_d_cairo_kemetic
+	name_list_coptic = cn_d_cairo_coptic
+}
+c_cairo = {
+	name_list_predynastic_egyptian = cn_c_cairo_kemetic
+	name_list_demotic = cn_c_cairo_kemetic
+	name_list_kemetic = cn_c_cairo_kemetic
+	name_list_coptic = cn_c_cairo_coptic
+}
+b_cairo = {
+	name_list_predynastic_egyptian = cn_b_cairo_kemetic
+	name_list_demotic = cn_b_cairo_kemetic
+	name_list_kemetic = cn_b_cairo_kemetic
+	name_list_coptic = cn_b_cairo_coptic
+}
+b_quzlum = {
+	name_list_predynastic_egyptian = cn_b_quzlum_kemetic
+	name_list_demotic = cn_b_quzlum_kemetic
+	name_list_kemetic = cn_b_quzlum_kemetic
+	name_list_coptic = cn_b_quzlum_coptic
+}
+b_atfih = {
+	name_list_predynastic_egyptian = cn_b_atfih_kemetic
+	name_list_demotic = cn_b_atfih_kemetic
+	name_list_kemetic = cn_b_atfih_kemetic
+	name_list_coptic = cn_b_atfih_coptic
+}
+b_hulwan-cairo = {
+	name_list_predynastic_egyptian = cn_b_hulwan-cairo_kemetic
+	name_list_demotic = cn_b_hulwan-cairo_kemetic
+	name_list_kemetic = cn_b_hulwan-cairo_kemetic
+	name_list_coptic = cn_b_hulwan-cairo_coptic
+}
+c_giza = {
+	name_list_predynastic_egyptian = cn_c_giza_kemetic
+	name_list_demotic = cn_c_giza_kemetic
+	name_list_kemetic = cn_c_giza_kemetic
+	name_list_coptic = cn_c_giza_coptic
+}
+b_gizeh = {
+	name_list_predynastic_egyptian = cn_b_gizeh_kemetic
+	name_list_demotic = cn_b_gizeh_kemetic
+	name_list_kemetic = cn_b_gizeh_kemetic
+	name_list_coptic = cn_b_gizeh_coptic
+}
+b_abu_ghalib = {
+	name_list_predynastic_egyptian = cn_b_abu_ghalib_kemetic
+	name_list_demotic = cn_b_abu_ghalib_kemetic
+	name_list_kemetic = cn_b_abu_ghalib_kemetic
+	name_list_coptic = cn_b_abu_ghalib_coptic
+}
+b_busir = {
+	name_list_predynastic_egyptian = cn_b_busir_kemetic
+	name_list_demotic = cn_b_busir_kemetic
+	name_list_kemetic = cn_b_busir_kemetic
+	name_list_coptic = cn_b_busir_coptic
+}
+c_fayyum = {
+	name_list_predynastic_egyptian = cn_c_fayyum_kemetic
+	name_list_demotic = cn_c_fayyum_kemetic
+	name_list_kemetic = cn_c_fayyum_kemetic
+	name_list_coptic = cn_c_fayyum_coptic
+}
+b_al-fayyum = {
+	name_list_predynastic_egyptian = cn_b_al-fayyum_kemetic
+	name_list_demotic = cn_b_al-fayyum_kemetic
+	name_list_kemetic = cn_b_al-fayyum_kemetic
+	name_list_coptic = cn_b_al-fayyum_coptic
+}
+b_tirsa = {
+	name_list_predynastic_egyptian = cn_b_tirsa_kemetic
+	name_list_demotic = cn_b_tirsa_kemetic
+	name_list_kemetic = cn_b_tirsa_kemetic
+	name_list_coptic = cn_b_tirsa_coptic
+}
+b_iqna = {
+	name_list_predynastic_egyptian = cn_b_iqna_kemetic
+	name_list_demotic = cn_b_iqna_kemetic
+	name_list_kemetic = cn_b_iqna_kemetic
+	name_list_coptic = cn_b_iqna_coptic
+}
+d_al-wahat = {
+	name_list_predynastic_egyptian = cn_d_al-wahat_kemetic
+	name_list_demotic = cn_d_al-wahat_kemetic
+	name_list_kemetic = cn_d_al-wahat_kemetic
+	name_list_coptic = cn_d_al-wahat_kemetic
+}
+c_bahriya = {
+	name_list_predynastic_egyptian = cn_c_bahriya_kemetic
+	name_list_demotic = cn_c_bahriya_kemetic
+	name_list_kemetic = cn_c_bahriya_kemetic
+	name_list_coptic = cn_c_bahriya_coptic
+}
+b_al-bahriya = {
+	name_list_predynastic_egyptian = cn_b_al-bahriya_kemetic
+	name_list_demotic = cn_b_al-bahriya_kemetic
+	name_list_kemetic = cn_b_al-bahriya_kemetic
+	name_list_coptic = cn_b_al-bahriya_coptic
+}
+b_bawiti = {
+	name_list_predynastic_egyptian = cn_b_bawiti_kemetic
+	name_list_demotic = cn_b_bawiti_kemetic
+	name_list_kemetic = cn_b_bawiti_kemetic
+	name_list_coptic = cn_b_bawiti_coptic
+}
+b_al-harra = {
+	name_list_predynastic_egyptian = cn_b_al-harra_kemetic
+	name_list_demotic = cn_b_al-harra_kemetic
+	name_list_kemetic = cn_b_al-harra_kemetic
+	name_list_coptic = cn_b_al-harra_coptic
+}
+c_farafra = {
+	name_list_predynastic_egyptian = cn_c_farafra_kemetic
+	name_list_demotic = cn_c_farafra_kemetic
+	name_list_kemetic = cn_c_farafra_kemetic
+	name_list_coptic = cn_c_farafra_coptic
+}
+b_al-farafra = {
+	name_list_predynastic_egyptian = cn_b_al-farafra_kemetic
+	name_list_demotic = cn_b_al-farafra_kemetic
+	name_list_kemetic = cn_b_al-farafra_kemetic
+	name_list_coptic = cn_b_al-farafra_coptic
+}
+c_dakhla = {
+	name_list_predynastic_egyptian = cn_c_dakhla_kemetic
+	name_list_demotic = cn_c_dakhla_kemetic
+	name_list_kemetic = cn_c_dakhla_kemetic
+	name_list_coptic = cn_c_dakhla_coptic
+}
+b_mut = {
+	name_list_predynastic_egyptian = cn_b_mut_kemetic
+	name_list_demotic = cn_b_mut_kemetic
+	name_list_kemetic = cn_b_mut_kemetic
+	name_list_coptic = cn_b_mut_coptic
+}
+b_tunayda = {
+	name_list_predynastic_egyptian = cn_b_tunayda_kemetic
+	name_list_demotic = cn_b_tunayda_kemetic
+	name_list_kemetic = cn_b_tunayda_kemetic
+	name_list_coptic = cn_b_tunayda_coptic
+}
+b_al-qasr-dakhla = {
+	name_list_predynastic_egyptian = cn_b_al-qasr-dakhla_kemetic
+	name_list_demotic = cn_b_al-qasr-dakhla_kemetic
+	name_list_kemetic = cn_b_al-qasr-dakhla_kemetic
+	name_list_coptic = cn_b_al-qasr-dakhla_coptic
+}
+c_kharga = {
+	name_list_predynastic_egyptian = cn_c_kharga_kemetic
+	name_list_demotic = cn_c_kharga_kemetic
+	name_list_kemetic = cn_c_kharga_kemetic
+	name_list_coptic = cn_c_kharga_coptic
+}
+b_kharga = {
+	name_list_predynastic_egyptian = cn_b_kharga_kemetic
+	name_list_demotic = cn_b_kharga_kemetic
+	name_list_kemetic = cn_b_kharga_kemetic
+	name_list_coptic = cn_b_kharga_coptic
+}
+b_baris = {
+	name_list_predynastic_egyptian = cn_b_baris_kemetic
+	name_list_demotic = cn_b_baris_kemetic
+	name_list_kemetic = cn_b_baris_kemetic
+	name_list_coptic = cn_b_baris_coptic
+}
+d_al-said = {
+	name_list_predynastic_egyptian = cn_d_al-said_kemetic
+	name_list_demotic = cn_d_al-said_kemetic
+	name_list_kemetic = cn_d_al-said_kemetic
+	name_list_coptic = cn_d_al-said_coptic
+}
+c_qus = {
+	name_list_predynastic_egyptian = cn_c_qus_kemetic
+	name_list_demotic = cn_c_qus_kemetic
+	name_list_kemetic = cn_c_qus_kemetic
+	name_list_coptic = cn_c_qus_coptic
+}
+b_qus = {
+	name_list_predynastic_egyptian = cn_b_qus_kemetic
+	name_list_demotic = cn_b_qus_kemetic
+	name_list_kemetic = cn_b_qus_kemetic
+	name_list_coptic = cn_b_qus_coptic
+}
+b_huw = {
+	name_list_predynastic_egyptian = cn_b_huw_kemetic
+	name_list_demotic = cn_b_huw_kemetic
+	name_list_kemetic = cn_b_huw_kemetic
+	name_list_coptic = cn_b_huw_coptic
+}
+b_qina = {
+	name_list_predynastic_egyptian = cn_b_qina_kemetic
+	name_list_demotic = cn_b_qina_kemetic
+	name_list_kemetic = cn_b_qina_kemetic
+	name_list_coptic = cn_b_qina_coptic
+}
+b_armant = {
+	name_list_predynastic_egyptian = cn_b_armant_kemetic
+	name_list_demotic = cn_b_armant_kemetic
+	name_list_kemetic = cn_b_armant_kemetic
+	name_list_coptic = cn_b_armant_coptic
+}
+c_bahnasa = {
+	name_list_predynastic_egyptian = cn_c_bahnasa_kemetic
+	name_list_demotic = cn_c_bahnasa_kemetic
+	name_list_kemetic = cn_c_bahnasa_kemetic
+	name_list_coptic = cn_c_bahnasa_coptic
+}
+b_al-bahnasa = {
+	name_list_predynastic_egyptian = cn_c_bahnasa_kemetic
+	name_list_demotic = cn_b_al-bahnasa_kemetic
+	name_list_kemetic = cn_b_al-bahnasa_kemetic
+	name_list_coptic = cn_b_al-bahnasa_coptic
+}
+b_ahnas = {
+	name_list_predynastic_egyptian = cn_b_ahnas_kemetic
+	name_list_demotic = cn_b_ahnas_kemetic
+	name_list_kemetic = cn_b_ahnas_kemetic
+	name_list_coptic = cn_b_ahnas_coptic
+}
+c_ushmun = {
+	name_list_predynastic_egyptian = cn_c_ushmun_kemetic
+	name_list_demotic = cn_c_ushmun_kemetic
+	name_list_kemetic = cn_c_ushmun_kemetic
+	name_list_coptic = cn_c_ushmun_coptic
+}
+b_al-ushmunain = {
+	name_list_predynastic_egyptian = cn_b_al-ushmunain_kemetic
+	name_list_demotic = cn_b_al-ushmunain_kemetic
+	name_list_kemetic = cn_b_al-ushmunain_kemetic
+	name_list_coptic = cn_b_al-ushmunain_coptic
+}
+b_ansina = {
+	name_list_predynastic_egyptian = cn_b_ansina_kemetic
+	name_list_demotic = cn_b_ansina_kemetic
+	name_list_kemetic = cn_b_ansina_kemetic
+	name_list_coptic = cn_b_ansina_coptic
+}
+b_manfalut = {
+	name_list_predynastic_egyptian = cn_b_manfalut_kemetic
+	name_list_demotic = cn_b_manfalut_kemetic
+	name_list_kemetic = cn_b_manfalut_kemetic
+	name_list_coptic = cn_b_manfalut_coptic
+}
+c_asyut = {
+	name_list_predynastic_egyptian = cn_c_asyut_kemetic
+	name_list_demotic = cn_c_asyut_kemetic
+	name_list_kemetic = cn_c_asyut_kemetic
+	name_list_coptic = cn_c_asyut_coptic
+}
+b_asyut = {
+	name_list_predynastic_egyptian = cn_b_asyut_kemetic
+	name_list_demotic = cn_b_asyut_kemetic
+	name_list_kemetic = cn_b_asyut_kemetic
+	name_list_coptic = cn_b_asyut_coptic
+}
+b_bawit = {
+	name_list_predynastic_egyptian = cn_b_bawit_kemetic
+	name_list_demotic = cn_b_bawit_kemetic
+	name_list_kemetic = cn_b_bawit_kemetic
+	name_list_coptic = cn_b_bawit_coptic
+}
+b_ikhmin = {
+	name_list_predynastic_egyptian = cn_b_ikhmin_kemetic
+	name_list_demotic = cn_b_ikhmin_kemetic
+	name_list_kemetic = cn_b_ikhmin_kemetic
+	name_list_coptic = cn_b_ikhmin_coptic
+}
+b_ibshaya = {
+	name_list_predynastic_egyptian = cn_b_ibshaya_kemetic
+	name_list_demotic = cn_b_ibshaya_kemetic
+	name_list_kemetic = cn_b_ibshaya_kemetic
+	name_list_coptic = cn_b_ibshaya_coptic
+}
+c_aswan = {
+	name_list_predynastic_egyptian = cn_c_aswan_kemetic
+	name_list_demotic = cn_c_aswan_kemetic
+	name_list_kemetic = cn_c_aswan_kemetic
+	name_list_coptic = cn_c_aswan_coptic
+}
+b_aswan = {
+	name_list_predynastic_egyptian = cn_b_aswan_kemetic
+	name_list_demotic = cn_b_aswan_kemetic
+	name_list_kemetic = cn_b_aswan_kemetic
+	name_list_coptic = cn_b_aswan_coptic
+}
+b_udfu = {
+	name_list_predynastic_egyptian = cn_b_udfu_kemetic
+	name_list_demotic = cn_b_udfu_kemetic
+	name_list_kemetic = cn_b_udfu_kemetic
+	name_list_coptic = cn_b_udfu_coptic
+}
+b_zarnikh = {
+	name_list_predynastic_egyptian = cn_b_zarnikh_kemetic
+	name_list_demotic = cn_b_zarnikh_kemetic
+	name_list_kemetic = cn_b_zarnikh_kemetic
+	name_list_coptic = cn_b_zarnikh_coptic
+}
+b_aswan-west = {
+	name_list_predynastic_egyptian = cn_b_aswan-west_kemetic
+	name_list_demotic = cn_b_aswan-west_kemetic
+	name_list_kemetic = cn_b_aswan-west_kemetic
+	name_list_coptic = cn_b_aswan-west_coptic
+}
+d_eastern_desert = {
+	name_list_predynastic_egyptian = cn_d_eastern_desert_kemetic
+	name_list_demotic = cn_d_eastern_desert_kemetic
+	name_list_kemetic = cn_d_eastern_desert_kemetic
+}
+c_qusayr = {
+	name_list_predynastic_egyptian = cn_c_qusayr_kemetic
+	name_list_demotic = cn_c_qusayr_kemetic
+	name_list_kemetic = cn_c_qusayr_kemetic
+	name_list_coptic = cn_c_qusayr_coptic
+}
+b_qusayr = {
+	name_list_predynastic_egyptian = cn_b_qusayr_kemetic
+	name_list_demotic = cn_b_qusayr_kemetic
+	name_list_kemetic = cn_b_qusayr_kemetic
+	name_list_coptic = cn_b_qusayr_coptic
+}
+b_safaga = {
+	name_list_predynastic_egyptian = cn_b_safaga_kemetic
+	name_list_demotic = cn_b_safaga_kemetic
+	name_list_kemetic = cn_b_safaga_kemetic
+	name_list_coptic = cn_b_safaga_coptic
+}
+c_jabal_quzlum = {
+	name_list_predynastic_egyptian = cn_c_jabal_quzlum_kemetic
+	name_list_demotic = cn_c_jabal_quzlum_kemetic
+	name_list_kemetic = cn_c_jabal_quzlum_kemetic
+}
+b_north_jbl_quzlum = {
+	name_list_predynastic_egyptian = cn_b_north_jbl_quzlum_kemetic
+	name_list_demotic = cn_b_north_jbl_quzlum_kemetic
+	name_list_kemetic = cn_b_north_jbl_quzlum_kemetic
+}
+b_um_shashoba = {
+	name_list_predynastic_egyptian = cn_b_um_shashoba_kemetic
+	name_list_demotic = cn_b_um_shashoba_kemetic
+	name_list_kemetic = cn_b_um_shashoba_kemetic
+}
+d_sinai = {
+	name_list_predynastic_egyptian = cn_d_sinai_kemetic
+	name_list_demotic = cn_d_sinai_kemetic
+	name_list_kemetic = cn_d_sinai_kemetic
+	name_list_coptic = cn_d_sinai_coptic
+}
+c_farama = {
+	name_list_predynastic_egyptian = cn_c_farama_kemetic
+	name_list_demotic = cn_c_farama_kemetic
+	name_list_kemetic = cn_c_farama_kemetic
+	name_list_coptic = cn_c_farama_coptic
+}
+b_farama = {
+	name_list_predynastic_egyptian = cn_b_farama_kemetic
+	name_list_demotic = cn_b_farama_kemetic
+	name_list_kemetic = cn_b_farama_kemetic
+	name_list_coptic = cn_b_farama_coptic
+}
+b_warrada = {
+	name_list_predynastic_egyptian = cn_b_warrada_kemetic
+	name_list_demotic = cn_b_warrada_kemetic
+	name_list_kemetic = cn_b_warrada_kemetic
+	name_list_coptic = cn_b_warrada_coptic
+}
+b_al-arish = {
+	name_list_predynastic_egyptian = cn_b_al-arish_kemetic
+	name_list_demotic = cn_b_al-arish_kemetic
+	name_list_kemetic = cn_b_al-arish_kemetic
+	name_list_coptic = cn_b_al-arish_coptic
+}
+c_sinai = {
+	name_list_predynastic_egyptian = cn_c_sinai_kemetic
+	name_list_demotic = cn_c_sinai_kemetic
+	name_list_kemetic = cn_c_sinai_kemetic
+	name_list_coptic = cn_c_sinai_coptic
+}
+b_at-tur = {
+	name_list_predynastic_egyptian = cn_b_at-tur_kemetic
+	name_list_demotic = cn_b_at-tur_kemetic
+	name_list_kemetic = cn_b_at-tur_kemetic
+	name_list_coptic = cn_b_at-tur_coptic
+}
+b_stcatherine = {
+	name_list_predynastic_egyptian = cn_b_stcatherine_kemetic
+	name_list_demotic = cn_b_stcatherine_kemetic
+	name_list_kemetic = cn_b_stcatherine_kemetic
+	name_list_coptic = cn_b_stcatherine_coptic
+}
+b_faran = {
+	name_list_predynastic_egyptian = cn_b_faran_kemetic
+	name_list_demotic = cn_b_faran_kemetic
+	name_list_kemetic = cn_b_faran_kemetic
+	name_list_coptic = cn_b_faran_coptic
+}
+b_qalat_jundi = {
+	name_list_predynastic_egyptian = cn_b_qalat_jundi_kemetic
+	name_list_demotic = cn_b_qalat_jundi_kemetic
+	name_list_kemetic = cn_b_qalat_jundi_kemetic
+	name_list_coptic = cn_b_qalat_jundi_coptic
+}
+b_tih = {
+	name_list_predynastic_egyptian = cn_b_tih_kemetic
+	name_list_demotic = cn_b_tih_kemetic
+	name_list_kemetic = cn_b_tih_kemetic
+	name_list_coptic = cn_b_tih_coptic
+}
+c_firaun = {
+	name_list_predynastic_egyptian = cn_c_firaun_kemetic
+	name_list_demotic = cn_c_firaun_kemetic
+	name_list_kemetic = cn_c_firaun_kemetic
+	name_list_coptic = cn_c_firaun_coptic
+}
+b_firaun = {
+	name_list_predynastic_egyptian = cn_b_tih_kemetic
+	name_list_demotic = cn_b_tih_kemetic
+	name_list_kemetic = cn_b_firaun_kemetic
+	name_list_coptic = cn_b_firaun_coptic
+}
+b_dahab = {
+	name_list_predynastic_egyptian = cn_b_dahab_kemetic
+	name_list_demotic = cn_b_dahab_kemetic
+	name_list_kemetic = cn_b_dahab_kemetic
+	name_list_coptic = cn_b_dahab_coptic
+}
+d_palestine = {
+	name_list_predynastic_egyptian = cn_d_palestine_kemetic
+	name_list_demotic = cn_d_palestine_kemetic
+	name_list_kemetic = cn_d_palestine_kemetic
+}
+c_jerusalem = {
+	name_list_predynastic_egyptian = cn_c_jerusalem_kemetic
+	name_list_demotic = cn_c_jerusalem_kemetic
+	name_list_kemetic = cn_c_jerusalem_kemetic
+}
+b_jerusalem = {
+	name_list_predynastic_egyptian = cn_b_jerusalem_kemetic
+	name_list_demotic = cn_b_jerusalem_kemetic
+	name_list_kemetic = cn_b_jerusalem_kemetic
+}
+c_ghazza = {
+	name_list_predynastic_egyptian = cn_c_ghazza_kemetic
+	name_list_demotic = cn_c_ghazza_kemetic
+	name_list_kemetic = cn_c_ghazza_kemetic
+}
+c_jaffa = {
+	name_list_predynastic_egyptian = cn_c_jaffa_kemetic
+	name_list_demotic = cn_c_jaffa_kemetic
+	name_list_kemetic = cn_c_jaffa_kemetic
+}
+k_nubia = {
+	name_list_predynastic_egyptian = cn_k_nubia_kemetic
+	name_list_demotic = cn_k_nubia_kemetic
+	name_list_kemetic = cn_k_nubia_kemetic
+}
+d_nobatia = {
+	name_list_predynastic_egyptian = cn_d_nobatia_kemetic
+	name_list_demotic = cn_d_nobatia_kemetic
+	name_list_kemetic = cn_d_nobatia_kemetic
+}
+c_qasr_ibrim = {
+	name_list_predynastic_egyptian = cn_c_qasr_ibrim_kemetic
+	name_list_demotic = cn_c_qasr_ibrim_kemetic
+	name_list_kemetic = cn_c_qasr_ibrim_kemetic
+}
+c_faras = {
+	name_list_predynastic_egyptian = cn_c_faras_kemetic
+	name_list_demotic = cn_c_faras_kemetic
+	name_list_kemetic = cn_c_faras_kemetic
+}
+c_batn_al-hajar = {
+	name_list_predynastic_egyptian = cn_c_batn_al-hajar_kemetic
+	name_list_demotic = cn_c_batn_al-hajar_kemetic
+	name_list_kemetic = cn_c_batn_al-hajar_kemetic
+}
+c_qurta = {
+	name_list_predynastic_egyptian = cn_c_qurta_kemetic
+	name_list_demotic = cn_c_qurta_kemetic
+	name_list_kemetic = cn_c_qurta_kemetic
+}
+d_makuria = {
+	name_list_predynastic_egyptian = cn_d_makuria_kemetic
+	name_list_demotic = cn_d_makuria_kemetic
+	name_list_kemetic = cn_d_makuria_kemetic
+}
+c_dongola = {
+	name_list_predynastic_egyptian = cn_c_dongola_kemetic
+	name_list_demotic = cn_c_dongola_kemetic
+	name_list_kemetic = cn_c_dongola_kemetic
+}
+c_sai = {
+	name_list_predynastic_egyptian = cn_c_sai_kemetic
+	name_list_demotic = cn_c_sai_kemetic
+	name_list_kemetic = cn_c_sai_kemetic
+}
+d_shamir = {
+	name_list_predynastic_egyptian = cn_d_shamir_kemetic
+	name_list_demotic = cn_d_shamir_kemetic
+	name_list_kemetic = cn_d_shamir_kemetic
+}
+c_shamir = {
+	name_list_predynastic_egyptian = cn_c_shamir_kemetic
+	name_list_demotic = cn_c_shamir_kemetic
+	name_list_kemetic = cn_c_shamir_kemetic
+}
+c_abu_hammad = {
+	name_list_predynastic_egyptian = cn_c_abu_hammad_kemetic
+	name_list_demotic = cn_c_abu_hammad_kemetic
+	name_list_kemetic = cn_c_abu_hammad_kemetic
+}
+d_friuli = {
+	name_list_wintcin = cn_d_friuli_wyntish
+	name_list_wintissh = cn_d_friuli_wyntish
+	name_list_wyntish = cn_d_friuli_wyntish
+	name_list_wyntish_venetians = cn_d_friuli_wyntish
+	name_list_venetic_culture = cn_d_friuli_venetic
+}
+c_aquileia = {
+	name_list_wintcin = cn_c_aquileia_wyntish
+	name_list_wintissh = cn_c_aquileia_wyntish
+	name_list_wyntish = cn_c_aquileia_wyntish
+	name_list_wyntish_venetians = cn_c_aquileia_wyntish
+	name_list_venetian = cn_c_aquileia_venetian
+	name_list_venetic_venetian = cn_c_aquileia_venetian
+	name_list_venetic_culture = cn_c_aquileia_venetic
+}
+b_aquileia = {
+	name_list_wintcin = cn_b_aquileia_wyntish
+	name_list_wintissh = cn_b_aquileia_wyntish
+	name_list_wyntish = cn_b_aquileia_wyntish
+	name_list_wyntish_venetians = cn_b_aquileia_wyntish
+	name_list_venetian = cn_b_aquileia_venetian
+	name_list_venetic_venetian = cn_b_aquileia_venetian
+	name_list_venetic_culture = cn_b_aquileia_venetic
+}
+b_trieste = {
+	name_list_wintcin = cn_b_trieste_wyntish
+	name_list_wintissh = cn_b_trieste_wyntish
+	name_list_wyntish = cn_b_trieste_wyntish
+	name_list_wyntish_venetians = cn_b_trieste_wyntish
+	name_list_venetian = cn_b_trieste_venetian
+	name_list_venetic_venetian = cn_b_trieste_venetian
+}
+b_udine = {
+	name_list_wintcin = cn_b_udine_wyntish
+	name_list_wintissh = cn_b_udine_wyntish
+	name_list_wyntish = cn_b_udine_wyntish
+	name_list_wyntish_venetians = cn_b_udine_wyntish
+	name_list_venetian = cn_b_udine_venetian
+	name_list_venetic_venetian = cn_b_udine_venetian
+}
+b_grado = {
+	name_list_wintcin = cn_b_grado_wyntish
+	name_list_wintissh = cn_b_grado_wyntish
+	name_list_wyntish = cn_b_grado_wyntish
+	name_list_wyntish_venetians = cn_b_grado_wyntish
+}
+c_friuli = {
+	name_list_wintcin = cn_c_friuli_wyntish
+	name_list_wintissh = cn_c_friuli_wyntish
+	name_list_wyntish = cn_c_friuli_wyntish
+	name_list_wyntish_venetians = cn_c_friuli_wyntish
+	name_list_venetic_culture = cn_c_friuli_venetic
+	name_list_venetic_venetian = cn_c_friuli_venetic
+}
+b_caorle = {
+	name_list_venetic_culture = cn_b_caorle_venetic
+	name_list_wintcin = cn_b_caorle_wyntish
+	name_list_wintissh = cn_b_caorle_wyntish
+	name_list_wyntish = cn_b_caorle_wyntish
+	name_list_wyntish_venetians = cn_b_caorle_wyntish
+}
+b_pordenone = {
+	name_list_wintcin = cn_b_pordenone_wyntish
+	name_list_wintissh = cn_b_pordenone_wyntish
+	name_list_wyntish = cn_b_pordenone_wyntish
+	name_list_wyntish_venetians = cn_b_pordenone_wyntish
+	name_list_venetian = cn_b_pordenone_venetian
+	name_list_venetic_venetian = cn_b_pordenone_venetian
+}
+b_portogruaro = {
+	name_list_wintcin = cn_b_portogruaro_wyntish
+	name_list_wintissh = cn_b_portogruaro_wyntish
+	name_list_wyntish = cn_b_portogruaro_wyntish
+	name_list_wyntish_venetians = cn_b_portogruaro_wyntish
 }
 d_verona = {
-	name_list_venetic = cn_d_verona_venetic
+	name_list_venetic_culture = cn_d_verona_venetic
+	name_list_wintcin = cn_d_verona_wyntish
+	name_list_wintissh = cn_d_verona_wyntish
+	name_list_wyntish = cn_d_verona_wyntish
+	name_list_wyntish_venetians = cn_d_verona_wyntish
 }
 c_verona = {
-	name_list_venetic = cn_c_verona_venetic
+	name_list_venetic_culture = cn_c_verona_venetic
+	name_list_wintcin = cn_c_verona_wyntish
+	name_list_wintissh = cn_c_verona_wyntish
+	name_list_wyntish = cn_c_verona_wyntish
+	name_list_wyntish_venetians = cn_c_verona_wyntish
 }
 b_verona = {
-	name_list_venetic = cn_b_verona_venetic
+	name_list_venetic_culture = cn_b_verona_venetic
+	name_list_wintcin = cn_b_verona_wyntish
+	name_list_wintissh = cn_b_verona_wyntish
+	name_list_wyntish = cn_b_verona_wyntish
+	name_list_wyntish_venetians = cn_b_verona_wyntish
+}
+c_treviso = {
+	name_list_venetic_culture = cn_c_treviso_venetic
+	name_list_wintcin = cn_c_treviso_wyntish
+	name_list_wintissh = cn_c_treviso_wyntish
+	name_list_wyntish = cn_c_treviso_wyntish
+	name_list_wyntish_venetians = cn_c_treviso_wyntish
+}
+b_treviso = {
+	name_list_venetic_culture = cn_b_treviso_venetic
+	name_list_wintcin = cn_b_treviso_wyntish
+	name_list_wintissh = cn_b_treviso_wyntish
+	name_list_wyntish = cn_b_treviso_wyntish
+	name_list_wyntish_venetians = cn_b_treviso_wyntish
+}
+b_ceneta = {
+	name_list_venetic_culture = cn_b_ceneta_venetic
+	name_list_wintcin = cn_b_ceneta_wyntish
+	name_list_wintissh = cn_b_ceneta_wyntish
+	name_list_wyntish = cn_b_ceneta_wyntish
+	name_list_wyntish_venetians = cn_b_ceneta_wyntish
+}
+b_vicenza = {
+	name_list_venetic_culture = cn_b_vicenza_venetic
+	name_list_wintcin = cn_b_vicenza_wyntish
+	name_list_wintissh = cn_b_vicenza_wyntish
+	name_list_wyntish = cn_b_vicenza_wyntish
+	name_list_wyntish_venetians = cn_b_vicenza_wyntish
 }
 c_padua = {
-	name_list_venetic = cn_c_padua_venetic
-}
-d_padua = {
-	name_list_venetic = cn_d_padua_venetic
+	name_list_venetic_culture = cn_c_padua_venetic
+	name_list_wintcin = cn_c_padua_wyntish
+	name_list_wintissh = cn_c_padua_wyntish
+	name_list_wyntish = cn_c_padua_wyntish
+	name_list_wyntish_venetians = cn_c_padua_wyntish
+	name_list_venetian = cn_c_padua_venetian
+	name_list_venetic_venetian = cn_c_padua_venetian
 }
 b_padua = {
-	name_list_venetic = cn_b_padua_venetic
+	name_list_venetic_culture = cn_b_padua_venetic
+	name_list_wintcin = cn_b_padua_wyntish
+	name_list_wintissh = cn_b_padua_wyntish
+	name_list_wyntish = cn_b_padua_wyntish
+	name_list_wyntish_venetians = cn_b_padua_wyntish
+	name_list_venetian = cn_b_padua_venetian
+	name_list_venetic_venetian = cn_b_padua_venetian
+}
+b_lonigo = {
+	name_list_wintcin = cn_b_lonigo_wyntish
+	name_list_wintissh = cn_b_lonigo_wyntish
+	name_list_wyntish = cn_b_lonigo_wyntish
+	name_list_wyntish_venetians = cn_b_lonigo_wyntish
+}
+b_montagnana = {
+	name_list_wintcin = cn_b_montagnana_wyntish
+	name_list_wintissh = cn_b_montagnana_wyntish
+	name_list_wyntish = cn_b_montagnana_wyntish
+	name_list_wyntish_venetians = cn_b_montagnana_wyntish
 }
 b_este = {
-	name_list_venetic = cn_b_este_venetic
+	name_list_venetic_culture = cn_b_este_venetic
+	name_list_wintcin = cn_b_este_wyntish
+	name_list_wintissh = cn_b_este_wyntish
+	name_list_wyntish = cn_b_este_wyntish
+	name_list_wyntish_venetians = cn_b_este_wyntish
+}
+c_polesine = {
+	name_list_wintcin = cn_c_polesine_wyntish
+	name_list_wintissh = cn_c_polesine_wyntish
+	name_list_wyntish = cn_c_polesine_wyntish
+	name_list_wyntish_venetians = cn_c_polesine_wyntish
+}
+b_rovigo = {
+	name_list_wintcin = cn_b_rovigo_wyntish
+	name_list_wintissh = cn_b_rovigo_wyntish
+	name_list_wyntish = cn_b_rovigo_wyntish
+	name_list_wyntish_venetians = cn_b_rovigo_wyntish
+}
+b_adria = {
+	name_list_wintcin = cn_b_adria_wyntish
+	name_list_wintissh = cn_b_adria_wyntish
+	name_list_wyntish = cn_b_adria_wyntish
+	name_list_wyntish_venetians = cn_b_adria_wyntish
 }
 d_istria = {
-	name_list_venetic = cn_d_istria_venetic
+	name_list_venetic_culture = cn_d_istria_venetic
 }
-c_istria = {
-	name_list_venetic = cn_c_istria_venetic
+c_pula = {
+	name_list_venetic_culture = cn_c_istria_venetic
+}
+b_pula = {
+	name_list_venetic_culture = cn_b_istria_venetic
+}
+k_venice = {
+	name_list_venetic_culture = cn_k_venice_venetic
+	name_list_wintcin = cn_k_venice_wintcin
+	name_list_wintissh = cn_k_venice_wintissh
+	name_list_wyntish = cn_k_venice_wyntish
+	name_list_wyntish_venetians = cn_k_venice_wyntish
+	name_list_venetian = cn_k_venice_venetian
+	name_list_venetic_venetian = cn_k_venice_venetian
+}
+d_venice = {
+	name_list_venetic_culture = cn_c_venezia_venetic
+	name_list_wintcin = cn_d_venice_wyntish
+	name_list_wintissh = cn_d_venice_wyntish
+	name_list_wyntish = cn_d_venice_wyntish
+	name_list_wyntish_venetians = cn_d_venice_wyntish
+	name_list_venetian = cn_d_venice_venetian
+	name_list_venetic_venetian = cn_d_venice_venetian
+}
+c_venezia = {
+	name_list_venetic_culture = cn_c_venice_venetic
+	name_list_wintcin = cn_c_venezia_wyntish
+	name_list_wintissh = cn_c_venezia_wyntish
+	name_list_wyntish = cn_c_venezia_wyntish
+	name_list_wyntish_venetians = cn_c_venezia_wyntish
+	name_list_venetian = cn_c_venezia_venetian
+	name_list_venetic_venetian = cn_c_venezia_venetian
+}
+b_venezia = {
+	name_list_venetic_culture = cn_c_venice_venetic
+	name_list_wintcin = cn_b_venezia_wyntish
+	name_list_wintissh = cn_b_venezia_wyntish
+	name_list_wyntish = cn_b_venezia_wyntish
+	name_list_wyntish_venetians = cn_b_venezia_wyntish
+	name_list_venetian = cn_b_venezia_venetian
+	name_list_venetic_venetian = cn_b_venezia_venetian
+}
+c_veneto = {
+	name_list_wintcin = cn_c_veneto_wyntish
+	name_list_wintissh = cn_c_veneto_wyntish
+	name_list_wyntish = cn_c_veneto_wyntish
+	name_list_wyntish_venetians = cn_c_veneto_wyntish
+	name_list_venetic_culture = cn_c_veneto_venetic
+}
+b_mestre = {
+	name_list_venetic_culture = cn_b_mestre_venetic
+	name_list_wintcin = cn_b_mestre_wyntish
+	name_list_wintissh = cn_b_mestre_wyntish
+	name_list_wyntish = cn_b_mestre_wyntish
+	name_list_wyntish_venetians = cn_b_mestre_wyntish
+}
+b_chioggia = {
+	name_list_wintcin = cn_b_chioggia_wyntish
+	name_list_wintissh = cn_b_chioggia_wyntish
+	name_list_wyntish = cn_b_chioggia_wyntish
+	name_list_wyntish_venetians = cn_b_chioggia_wyntish
+	name_list_venetian = cn_b_chioggia_venetian
+	name_list_venetic_venetian = cn_b_chioggia_venetian
+}
+b_malamacco = {
+	name_list_wintcin = cn_b_malamacco_wyntish
+	name_list_wintissh = cn_b_malamacco_wyntish
+	name_list_wyntish = cn_b_malamacco_wyntish
+	name_list_wyntish_venetians = cn_b_malamacco_wyntish
 }

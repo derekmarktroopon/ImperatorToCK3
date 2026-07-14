@@ -477,7 +477,7 @@ link = { ck3 = suebi @ir_irminonic_cultures } # fallback for Irminonic cultures
 link = { ck3 = norwegian ir = norwegian } # https://steamcommunity.com/sharedfiles/filedetails/?id=3098496649
 link = { ck3 = swedish ir = swedish } # https://steamcommunity.com/sharedfiles/filedetails/?id=3098496649
 link = { ck3 = danish ir = danish } # https://steamcommunity.com/sharedfiles/filedetails/?id=3098496649
-link = { ck3 = norse @ir_norse_cultures }
+link = { ck3 = proto_norse @ir_norse_cultures }
 
 # Saxon
 link = { ck3 = saxon ir = saxon }
@@ -505,6 +505,7 @@ link = { ck3 = syrian ir=macedonian ir=hellenistic ir=syracusan ir=thracian @ir_
 link = { ck3 = aegyptian ir=macedonian ir=hellenistic ir=syracusan ir=thracian @ir_greek_cultures @culture_splitting_region_O }
 link = { ck3 = syrian ir = syriote }
 # Vanilla CK3
+link = { ck3 = coptic_culture ir=macedonian ir=hellenistic ir=syracusan ir=thracian @ir_greek_cultures @culture_splitting_region_O }
 link = { ck3=cretan @ir_cretan_cultures }
 link = { ck3=italiote ir=syracusan ir=italiotian }
 link = { ck3=hellenic_greek @ir_greek_cultures } # Modified cultures so this now represents non-Romanized greeks

@@ -85,28 +85,6 @@ heritage_gaulish = {
 	audio_parameter = european
 }
 
-heritage_iberian_celtic = { # https://en.wikipedia.org/wiki/List_of_ancient_Celtic_peoples_and_tribes#Hispano-Celts_/_Celts_of_Hispania
-    REPLACED_BY = {
-		tfe = { heritage_celtiberian }
-		vanilla_ck3 = { heritage_iberian_celtic }
-	}
-	MOD_DEPENDENT = {
-		IF @[roa|wtwsms] = {
-			parameters = {
-				heritage_group_celtic = yes
-				heritage_family_european = yes
-			}
-		}
-	}
-	type = heritage
-	is_shown = {
-		heritage_is_shown_trigger = {
-			HERITAGE = heritage_iberian_celtic
-		}
-	}
-	audio_parameter = european
-}
-
 heritage_punic = {
     REPLACED_BY = {
 		tfe = { heritage_punic }

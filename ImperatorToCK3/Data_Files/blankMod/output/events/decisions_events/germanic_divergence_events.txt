@@ -1034,6 +1034,7 @@ proto_germanic_divergence_events.8 = {
 				}
 			}
 			set_name_list = name_list_indo_germanic
+			set_culture_pillar = language_indo_germanic
 		}
 		every_culture_global = {
 			limit = {
@@ -1048,6 +1049,7 @@ proto_germanic_divergence_events.8 = {
 				}
 			}
 			set_name_list = name_list_tamilo_germanic
+			set_culture_pillar = language_indo_germanic
 		}
 	}
 }
