@@ -19,3 +19,342 @@
 #     cultures = { culture_1 }
 #     localization = { ... }
 # }
+
+indo_germanic_buddhism = {
+	faith = indo_germanic_buddhism
+	color = { 105 51 55 }
+
+	tenets = {
+		tenet_ritual_celebrations
+		tenet_unrelenting_faith
+		tenet_unreformed_syncretism
+	}
+
+}
+
+indo_germanic_hinduism = {
+	faith = indo_germanic_hinduism
+	color = { 135 69 77 }
+
+	tenets = {
+		tenet_reincarnation
+		tenet_warmonger
+		tenet_unrelenting_faith
+	}
+
+}
+
+raetic_pagan = {
+	name = raetic_pagan
+	desc = raetic_pagan_desc
+	faith = raetic_pagan
+	icon = raetic
+
+	color = { 194 222 53 }
+
+	tenets = {
+		tenet_sanctity_of_nature
+		tenet_communal_identity
+		tenet_cthonic_redoubts
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+
+	cultures = { rhaetian }
+
+}
+
+venetic_paganism = {
+	name = venetic_paganism
+	desc = venetic_paganism_desc
+	faith = venetic_paganism
+	icon = venetic
+
+	color = { 92 240 242 }
+
+	tenets = {
+		tenet_sanctity_of_nature
+		tenet_ritual_writing
+		tenet_bhakti
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+
+	cultures = { venetic liburnian }
+
+}
+
+venetic_christianity = {
+	name = venetic_christianity
+	desc = venetic_christianity_desc
+	faith = venetic_paganism
+	icon = venetic_christianity
+
+	# create = no
+	convert = no
+
+	color = { 127 238 240 }
+
+	tenets = {
+		tenet_sanctity_of_nature
+		tenet_ritual_writing
+		tenet_christian_syncretism
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+
+	# set_parent_faith = { target = faith:catholic main = no }
+	# rite:venetic_christianity 
+	#	add_doctrine = special_doctrine_ecumenical_christian
+	#	add_doctrine = special_doctrine_has_clerical_electors
+	#	remove_tenet = tenet_christian_syncretism
+	#	add_tenet = tenet_communion
+	# }
+
+	localization = { # 
+
+		HighGodName = venetic_christianity_high_god_name
+		HighGodName2 = christianity_high_god_name_2
+		HighGodNamePossessive = venetic_christianity_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_HE
+		HighGodHerselfHimself = CHARACTER_HIMSELF
+		HighGodHerHis = CHARACTER_HERHIS_HIS
+		HighGodNameAlternate = venetic_christianity_high_god_name_alternate
+		HighGodNameAlternatePossessive = venetic_christianity_high_god_name_alternate_possessive
+
+		#FertilityGod
+		FertilityGodName = st_briganta_name
+		FertilityGodNamePossessive = st_briganta_name_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_SHE
+		FertilityGodHerHis = CHARACTER_HERHIS_HER
+		FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+		#WealthGod
+		WealthGodName = st_trumusiates_name
+		WealthGodNamePossessive = st_trumusiates_name_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#HouseholdGod
+		HouseholdGodName = st_boulenos_name
+		HouseholdGodNamePossessive = st_boulenos_name_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_HE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+		HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+		#KnowledgeGod
+		KnowledgeGodName = st_reitia_name
+		KnowledgeGodNamePossessive = st_reitia_name_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+		#WarGod
+		WarGodName = st_giorgios_name
+		WarGodNamePossessive = st_giorgios_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WaterGod
+		WaterGodName = st_nikolos_name
+		WaterGodNamePossessive = st_nikolos_name_possessive
+		WaterGodSheHe = CHARACTER_SHEHE_HE
+		WaterGodHerHis = CHARACTER_HERHIS_HIS
+		WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+		GoodGodNames = {
+			venetic_christianity_high_god_name
+			venetic_christianity_high_god_name_alternate
+			venetic_chistianity_good_god_jesus
+			venetic_chistianity_good_god_christ
+		}
+	}
+
+	cultures = { venetic liburnian }
+
+}
+
+cult_of_reitia_paganism = {
+	name = cult_of_reitia_paganism
+	desc = cult_of_reitia_paganism_desc
+	faith = venetic_paganism
+	icon = reitian
+	# reformed_icon = reitian_reformed
+
+	color = { 117 168 108 }
+
+	tenets = {
+		tenet_sanctity_of_nature
+		tenet_ritual_writing
+		tenet_alexandrian_catechism
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+		doctrine_gender_equal
+		doctrine_pilgrimage_encouraged
+		doctrine_funeral_cremation
+	}
+
+	localization = {
+		#High God Name
+		HighGodName = reitia
+    	HighGodNamePossessive = reitia_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_SHE
+		HighGodHerselfHimself = CHARACTER_HERSELF
+		HighGodHerHis = CHARACTER_HERHIS_HER
+		
+		#Creator
+		CreatorName = altino
+		CreatorNamePossessive = altino_possessive
+		CreatorSheHe = CHARACTER_SHEHE_HE
+		CreatorHerHis = CHARACTER_HERHIS_HIS
+		CreatorHerHim = CHARACTER_HERHIM_HIM
+		
+		#HealthGod
+		HealthGodName = bouleno
+		HealthGodNamePossessive = bouleno_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_HE
+		HealthGodHerHis = CHARACTER_HERHIS_HIS
+		HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WealthGod
+		WealthGodName = trumusiate
+		WealthGodNamePossessive = trumusiate_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+		
+		#HouseholdGod
+		HouseholdGodName = einaios
+		HouseholdGodNamePossessive = einaios_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_HE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+		HouseholdGodHerHim = CHARACTER_HERHIM_HIS
+
+		#KnowledgeGod
+		KnowledgeGodName = reitia
+		KnowledgeGodNamePossessive = reitia_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+		#WarGod
+		WarGodName = fladukia
+		WarGodNamePossessive = fladukia_possessive
+		WarGodSheHe = CHARACTER_SHEHE_SHE
+		WarGodHerHis = CHARACTER_HERHIS_HER
+		WarGodHerHim = CHARACTER_HERHIS_HER
+		
+		PantheonTerm = religion_the_gods
+		PantheonTermHasHave = pantheon_term_have
+		GoodGodNames = { reitia altino alkomno einaios fladukia trumusijates bouleno vetusa }
+		DevilName = retic_evil_god
+		DevilNamePossessive = retic_evil_god_possessive
+		DevilSheHe = CHARACTER_SHEHE_HE
+		DevilHerHis = CHARACTER_HERHIS_HIS
+		DevilHerselfHimself = CHARACTER_HIMSELF
+		EvilGodNames = { retic_evil_god }
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = venetic_nature
+		ReligiousText = reitian_bible
+		ReligiousHeadName = reitian_high_priest
+		ReligiousHeadTitleName = reitian_high_circle
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		DevoteeNeuter = paganism_devotee
+		DevoteeNeuterPlural = paganism_devoteeplural
+		PriestMale = reitian_priest
+		PriestMalePlural = reitian_priests
+		PriestFemale = reitian_priestess
+		PriestFemalePlural = reitian_priestesses
+		PriestNeuter = reitian_priest
+		PriestNeuterPlural = reitian_priests
+		AltPriestTermPlural = paganism_priest_alternate_plural
+		BishopMale = reitian_priest
+		BishopMalePlural = reitian_priests
+		BishopFemale = reitian_priestess
+		BishopFemalePlural = reitian_priestesses
+		BishopNeuter = reitian_priest
+		BishopNeuterPlural = reitian_priests
+		DivineRealm = paganism_afterlife
+		PositiveAfterLife = venetic_eternity
+		NegativeAfterLife = venetic_hell
+		DeathDeityName = vetusa
+		DeathDeityNamePossessive = vetusa_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_HE
+		DeathDeityHerHis = CHARACTER_HERHIS_HIS
+		
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	cultures = { venetic }
+
+}
+
+pie_pagan = {
+	faith = pie_pagan
+	color = { 1 33 66 }
+
+	tenets = {
+		tenet_human_sacrifice
+		tenet_warmonger
+		tenet_ancestor_worship
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}	
+}
+
+pie_christianity = {
+	name = pie_christianity
+	desc = pie_christianity_desc
+	faith = pie_pagan
+	icon = dyeus-phter_christian
+	color = { 58 96 135 }
+
+	# create = no
+
+	tenets = {
+		tenet_christian_syncretism
+		tenet_ancestor_worship
+		tenet_warmonger
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+
+	localization = {
+
+		HighGodName = pie_christianity_high_god_name
+		HighGodName2 = christianity_high_god_name_2
+		HighGodNamePossessive = pie_christianity_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_HE
+		HighGodHerselfHimself = CHARACTER_HIMSELF
+		HighGodHerHis = CHARACTER_HERHIS_HIS
+		HighGodNameAlternate = pie_christianity_high_god_name_alternate
+		HighGodNameAlternatePossessive = pie_christianity_high_god_name_alternate_possessive
+
+		GoodGodNames = {
+			pie_christianity_high_god_name
+			pie_christianity_high_god_name_alternate
+			pie_chistianity_good_god_jesus
+			pie_chistianity_good_god_christ
+		}
+	}
+
+}

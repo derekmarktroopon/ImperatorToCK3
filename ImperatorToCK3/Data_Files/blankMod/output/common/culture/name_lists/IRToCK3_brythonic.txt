@@ -1,53 +1,302 @@
-﻿name_list_brythonic = {
+﻿name_list_east_brythonic = {
 	cadet_dynasty_names = {
-		dynn_Correid dynn_Divicid dynn_Duratid dynn_Elitovid dynn_Galbid dynn_Iacian dynn_Marganian
-		dynn_Sinatian dynn_Vodenosian dynn_Caractian dynn_Venutian dynn_Bolgian dynn_Celatid
-		dynn_Accian dynn_Sinorian dynn_Crescian dynn_Inammicid dynn_Urcid dynn_Oconian dynn_Velbian
-		dynn_Orgetorid
+		dynn_Amwaithai dynn_Cadmayl dynn_CairglA_w dynn_Bichan dynn_GrifoyA_dh dynn_Loivilen dynn_Lid dynn_Rais dynn_TA_dir
+		dynn_Donad dynn_Tedor
 	}
 
 	dynasty_names = {
-		dynn_Correid dynn_Divicid dynn_Duratid dynn_Elitovid dynn_Galbid dynn_Iacian dynn_Marganian
-		dynn_Sinatian dynn_Vodenosian dynn_Caractian dynn_Venutian dynn_Bolgian dynn_Celatid
-		dynn_Accian dynn_Sinorian dynn_Crescian dynn_Inammicid dynn_Urcid dynn_Oconian dynn_Velbian
-		dynn_Orgetorid
+		dynn_Amwaithai dynn_Cadmayl dynn_CairglA_w dynn_Bichan dynn_GrifoyA_dh dynn_Loivilen dynn_Lid dynn_Rais dynn_TA_dir
+		dynn_Donad dynn_Tedor
 	}
 
 	male_names = {
-		Acco Addedomarus Adiatuanus Adminius Aiorix Ambicatos Andecombogius Aneroestes Ariovistus Arverus Arvirargus Atis Avitus
-		Bellicianus Bellovesus Boduognatus Boio Boiorix Bolgios Brennus Bricussa Britomaris Brucetius Buite Cailtram Caractacus
-		Carvilius Cassivellaunus Cattulanus Cartorites Catugnatus Cavarinus Cavarus Celatus Cingetorix Coilus Commios Comux Concolitanus Correus Cottius Crixus
-		Cunobelinus Diviciacus Divico Donnus Drappes Dubnovellaunus Dumnacus Ducarius Duratios Dumnocoveros Dumnorix Elitovius Etitovius Epatticus
-		Galan Galba Guiderius Iacus Iccius Immanuentius Inamarcus Inammicus Indutiomarus Kimarcus Lucterius Lugotorix Lutarius Mallaius Mandubracius Marganus Mascelio
-		Orgetorix Prasutagus Segovax Sinatus Sinorix Sisillius Talorc Tasciovanus Tasgetius Taximagulus Teutomalius Tincomarus Togodumnus Vertiscus
-		Venutius Viridorix Vosenius Vodenos
+
+		Arthmail Arthbodhw Blidhin BlidhyA_dh Brochmail Cadmail Cadwaladr Caradey Conain Contighern Conmarch Conbilin Conwal Dobhnarth Dobhnwal Worbodhw Win Worthighern GrifoyA_dh Lowmharch Loivilen Mail Mailgon March Mormharch Morcant Awighin Raiwal RA_n TA_dir Worthiyern Worthemhir
+		Anared ArthA_r Caghi CA_stintin Davidh Dawidh Deinyil DA_ned Idern Einyen Gerint Macsen Meirchyen Meiryen Meirai Padarn RA_ven Sevir Seisil Inir Corintin
+		A_dhilwin Adgar Alfred Anlaf Berchtwald Edwin A_dhilfraith A_dhilstan Godwin Herewald Ivar A_swald Dhedrai Adam Alisander Andres Asa Asaph A_gost Elias Ambros Filip Franseis German Gerald Gregori Wilam Hary Hi_w Yacob Yostin Yoan MicA_l Patrai eb_PA_l Petr Reinalt Richard Robert Samwil Sergi Gefrei Geor Steven Tedos Tedor Tomas
+
+
+		
+		# Arthfael Arthfoddw Bleddyn Bleiddud Brochfael Cadfael Cadwaladr Caradog Cynan Cyndeyrn Cynfarch Cynfelyn Cynwal Dyfnarth Dyfnwal Gwrfoddw Gwyn Gwrtheyrn Gruffydd Llywarch Llywelyn Mael Maelgwn March Morfarch Morgan Owain Rhiwal Rhun Twdwr Gwrtheyrn 
+		# Anarawd Arthwr Cai Custennin Dafydd Dewi Deiniol Dynod Edern Einion Geraint Macsen Meirchion Meirion Meurig Padern Rhufon Seferus Seisyll Ynyr Corentin Tydy
+		#Alwyn Adgar Alured Anlaff Berthwallt Edwyn Edylfred Elystan Godwyn Herewallt Ivor Oswallt Tewdrig Adda Alisander Andreas Asa Asaph Awst Elis Emrys Ffilip Ffransis Garmon Gerallt Grygor Gwilym Harri Huw Iago Iestyn Ieuan Ioan Sion Mihangel Padrig Pawl Pedr Rheinallt Rhicert Rhobert Sawyl Serigi Sieffre Sior Steffen Tewdos Tewdwr Tomos
+
 	}
 
 	female_names = {
-		Aife Airmed Ancasta Banna Billica Boudica Bricta Brenwen Cata Cartimandua Chiomara Damona Diseta Gwendolen Litavis Iamcilla Maeve Verica
-		Cingetessa Conna Catia Carssouna Cunovinna Illica Lovernisca Magunna Lucilia Oconea Ria Rosula Senica Sentica Sulicena
-		Vassura Vinoma Vorvena Urca Veloriga Velibia Totia Titocuna Velbutena Seniciana Senila Vrocata Exuperata Deiana Cunolava Cunsa Aucissa
-		Allauna Alatucca Aessicunia Bodicacia Britivenda Catissena Cantisena
-		Rhiannon Andraste Iouga Ricagambeda Satiada Senuna Sulis Verbeia Modron Arianrhod Goewin Ceridwen Donwen Awen Brigantia
-	}
 
-	patronym_prefix_male = "dynnpat_pre_map"
-	patronym_prefix_male_vowel = "dynnpat_pre_vow_mab"
-	patronym_prefix_female = "dynnpat_pre_vch"
+		Arghantrod Awil Branwen BA_dhai Iry Fion Steren Wen Winibhar
+		Alis Agnes Caterin Cecily Cristin Denis Eva Efras Elain Elena Alinor Flor Brigit Hawis Helewis Isabel Lucia Maria Mawd Margred Sara Sibil Yoned Yoan Susanna Tecla
+
+
+		# Arianrhod Awel Branwen Buddug Eira Ffion Seren Gwen Gwenhwyfar
+		# Alys Annes Annest Nest Nesta Catrin Cicely Cristin Denis Efa Effros Elaine Elen Ellyn Elinor Fflur Ffraid Hawys Hellawes Isabel Ysbail Lleuca Mair Mali Mallt Mawd Marared Margred Marchell Melisant Sara Sibyl Sioned Siwan Susanna Tegla
+	}
+	
+	dynasty_of_location_prefix = ""
+	
+	
+	patronym_prefix_male = "dynnpat_pre_ab"
+	patronym_prefix_female = "dynnpat_pre_mherch"	
 	always_use_patronym = yes
 
 	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 	pat_grf_name_chance = 80
 	mat_grf_name_chance = 0
 	father_name_chance = 0
-
+	
 	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 	pat_grm_name_chance = 10
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
+	
+	
 
 	mercenary_names = {
-		{ name = "mercenary_company_lawgochs_followers" }
-		{ name = "mercenary_company_band_of_horned_welshmen" }
-	}
+		{ name = mercenary_company_bodyguards_of_gwendolen }
+	}			
+
 }
+
+# Proto-Brythonic
+
+# Amweiθig Kadmaɣl kaɨrgluɨw bɨxan Grifujʉð Lluɣβelen lluɨd rīɣs Tʉdür 
+# arθomaɣl arθoboðw blėðɨnn blėðjʉð broxmaɣl Kadmaɣl kadwaladr Karadọg kunagn kunotɨɣern kunomarx kunbelin kunwal duβnarθ Duβnowal wurboðw wɨnn worθɨɣern grifujʉð llowβ̃arx lluɣβelen maɣl maɨlgun marx morβ̃arx morcant awɨɣėn rīɣwal rrʉn Tʉdür worθɨɣern
+# Anarọd Arθʉr Kaɣi Kʉstentin Daβið Dawið Deɨnjėl Dʉnọd Ėdern Eɨnjọn Gerėnt Maksen Meɨrxjọn Meɨrjọn Meɨrīg Padarn Rrʉβ̃ọn Seβɨr Seɨsɨl Önör Korentin
+
+
+# arɣantrrod awel branwenn bʉðig ėrɣ fion sterenn wɨnn wɨnnohuɨβar
+
+name_list_cumbrian = {
+
+	cadet_dynasty_names = {
+		dynn_Lannerch
+		{ "dynnp_vap" "dynn_Arthal" }
+		{ "dynnp_vap" "dynn_Ewen" }
+		{ "dynnp_vap" "dynn_Roun" }
+		{ "dynnp_vap" "dynn_Duwnwal" }
+		dynn_Blayncair
+		dynn_Aber_Cogur
+		dynn_Aber_Duwon
+		dynn_Aber_Aloun
+		dynn_Al_Clout
+		dynn_Arvderidh
+		dynn_Baedhgait 
+		dynn_Basselek
+		dynn_Blayntir
+		dynn_Cair_Anaw
+		dynn_Cair_Caledin
+		dynn_Cair_Duw
+		dynn_Cilgait
+		dynn_Dinbarr 
+		dynn_Dinbris
+		dynn_Din_Edin
+		dynn_Dolar
+		dynn_Dolgait
+		dynn_Egloosvreyth
+		dynn_Govann
+		dynn_Inis 
+		dynn_Liswidh
+		dynn_Mailvre
+		dynn_Pebil
+		dynn_Pennrit
+		dynn_Perth
+		dynn_Perthik
+		dynn_Rinnfrow
+		dynn_Troon
+		{ "dynnp_vap" "dynn_Ourven" }
+		{ "dynnp_vap" "dynn_Leenok" }
+		dynn_Bulch
+		dynn_Breden
+		{ "dynnp_vap" "dynn_Pabo" }
+		dynn_Godebok
+		dynn_Gwledik
+		dynn_Edin
+		{ "dynnp_vap" "dynn_Cludno" }
+		dynn_Toudglit
+		dynn_Hael
+	}
+
+	dynasty_names = {
+		dynn_Lannerch
+		{ "dynnp_vap" "dynn_Arthal" }
+		{ "dynnp_vap" "dynn_Ewen" }
+		{ "dynnp_vap" "dynn_Roun" }
+		{ "dynnp_vap" "dynn_Duwnwal" }
+		dynn_Blayncair
+		dynn_Aber_Cogur
+		dynn_Aber_Duwon
+		dynn_Aber_Aloun
+		dynn_Al_Clout
+		dynn_Arvderidh
+		dynn_Baedhgait 
+		dynn_Basselek
+		dynn_Blayntir
+		dynn_Cair_Anaw
+		dynn_Cair_Caledin
+		dynn_Cair_Duw
+		dynn_Cilgait
+		dynn_Dinbarr 
+		dynn_Dinbris
+		dynn_Din_Edin
+		dynn_Dolar
+		dynn_Dolgait
+		dynn_Egloosvreyth
+		dynn_Govann
+		dynn_Inis 
+		dynn_Liswidh
+		dynn_Mailvre
+		dynn_Pebil
+		dynn_Pennrit
+		dynn_Perth
+		dynn_Perthik
+		dynn_Rinnfrow
+		dynn_Troon
+		{ "dynnp_vap" "dynn_Ourven" }
+		{ "dynnp_vap" "dynn_Leenok" }
+		dynn_Bulch
+		dynn_Breden
+		{ "dynnp_vap" "dynn_Pabo" }
+		dynn_Godebok
+		dynn_Gwledik
+		dynn_Edin
+		{ "dynnp_vap" "dynn_Cludno" }
+		dynn_Toudglit
+		dynn_Hael
+	}
+
+	male_names = {
+		Bran Cardok Cerdik Cundiarn Cunon Cunoot Dinggat Duwnwal Ewen Gorust Gwallok Gwaskolomm Gwascubrit Gwasmunku Gwasoswalht Gwaspadrik Gwendholow Gwenngat Mayldret Morgant Nethon Noudh Ounust Ourvyen Redherch Riwallon Roun Toudwal
+		Centil Cloov Coustentin Dounot Elfin Garvonyon Merchyon Meryon Owst Owstin Padarn Pascent
+		Adhav Andruw Aron Cristofur Cubrit Denyool Dewidh Louk Mathow Michel Moarch Oswalht Padrik Pedir Powl Sawool Seliv Stefan Tomas Yagov Yossef Yowann
+		Alsandur Archil Aydhan Duvan Edwardh Gwilom Hary Ivar Jordh Retsarht Robarht Sharlas
+		Gwledik Gwidhno Neython Cludno Bely Elffin Toudir Arthal
+	}
+	female_names = {
+		Ankarat Ardhoun Duwe Ewrdhil Gwenndhidh Gwennvaden Gwoal Gwoar Lannwaret Modron Morvoudh Neven Rienvelht Tanuw
+		Elen
+		Anna Cadrin Elispet Ester Eva Mer Merrit Merrerit Rachool Rebecka Sara
+		Alse Anes Bethak Cristin Ispel Jon Jonet
+	}
+	
+	patronym_prefix_male = "dynnpat_pre_vap"
+	patronym_prefix_female = "dynnpat_pre_vch"	
+	always_use_patronym = yes	
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 80
+	mat_grf_name_chance = 0
+	father_name_chance = 0
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 0
+	
+	
+}
+
+name_list_late_brythonic = {
+
+	cadet_dynasty_names = {
+		dynn_Amueithig dynn_Cadmagl dynn_Cairgluiu dynn_Bichan dynn_Grifuiud dynn_Lugbelen dynn_Luid dynn_Rigs dynn_Tudur
+		{ "dynnp_map" "dynn_Caradog" }
+		{ "dynnp_map" "dynn_Brochmagl" }
+		{ "dynnp_map" "dynn_Dumnarth" }
+		{ "dynnp_map" "dynn_Uorthigern" }
+	}
+
+	dynasty_names = {
+		dynn_Amueithig dynn_Cadmagl dynn_Cairgluiu dynn_Bichan dynn_Grifuiud dynn_Lugbelen dynn_Luid dynn_Rigs dynn_Tudur
+		{ "dynnp_map" "dynn_Caradog" }
+		{ "dynnp_map" "dynn_Brochmagl" }
+		{ "dynnp_map" "dynn_Dumnarth" }
+		{ "dynnp_map" "dynn_Uorthigern" }
+	}
+
+	male_names = {
+		Arthomagl Arthobodu Bledinn Blediud Brochmagl Cadmagl Cadualadr Caradog Cunagn Cunotigern Cunomarch Cunbelin Cunual Dumnarth Dumnoual Uurbodu Uinn Uorthigern Grifuiud 
+		Uorthemir
+		Loumarch Lugbelen Magl Mailgun March Mormarch Morcant Auigen Rigwal Run Tudur 
+		Anarod Arthur Cagi Custentin David Dauid Deiniel Dunod Edern Einion Gerent Maxen Meirchion Meirion Meirig Padarn Rumon Sevir Seisil Onor Corentin
+	}
+	female_names = {
+		Argantrod Auel Branuen Budig Erg Fion Sterenn Uinn Uinnohuivar
+		Cristin Elaine Elen Isabel Sara Susanna Tegla
+	}
+
+	 
+	
+	patronym_prefix_male = "dynnpat_pre_map"
+	patronym_prefix_male_vowel = "dynnpat_pre_vow_mab"
+	patronym_prefix_female = "dynnpat_pre_vch"	
+	always_use_patronym = yes	
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 80
+	mat_grf_name_chance = 0
+	father_name_chance = 0
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 0
+	
+}
+
+name_list_old_brythonic = {
+
+	cadet_dynasty_names = {
+		dynn_Camulogenos dynn_Bellinos dynn_Belismicos dynn_Manduorix dynn_Mandutenos dynn_Senebellenos dynn_Tancorix dynn_Uallaunios dynn_Atrebatios dynn_Catuuellaunos dynn_Dobunnos dynn_Dubnonios dynn_Durotrigios dynn_Reginios dynn_Trinouantos dynn_Icenos dynn_Cornouios dynn_Brigantos dynn_Calidonos dynn_Uotadinios
+	}
+
+	dynasty_names = {
+		dynn_Camulogenos dynn_Bellinos dynn_Belismicos dynn_Manduorix dynn_Mandutenos dynn_Senebellenos dynn_Tancorix dynn_Uallaunios dynn_Atrebatios dynn_Catuuellaunos dynn_Dobunnos dynn_Dubnonios dynn_Durotrigios dynn_Reginios dynn_Trinouantos dynn_Icenos dynn_Cornouios dynn_Brigantos dynn_Calidonos dynn_Uotadinios	
+	}
+
+	male_names = {
+		Artomaglos Artoboduos Bledinios Bledioudos Broccomaglos Catumaglos Catuualatros Caratacos Cunagnos Cunotigernos Cunomarcos Cunoualos Dubnartos Dubnoualos Uiroboduos Uindos Uortigernos Griphuioudos Lugumarcos Lugubelinos Maglos Maglocunos Marcos Morimarcos Moricantos Rigoualos Roinos Toutorix
+		Adatuucos Addedomaros Aesibuas Ariouissus Andecaros Amminus Argentocoxos Atignomaros Bellicos Bellinos Bitucos Brigomaglos Camulorix Cartiuellaunos Commios Cunobelinos Dubnocoueros Dubnouellaunos Eisu Epaticcos Prastu Prastutagos Saenu Solidu Tasgouanos Tasciouanos Tigirsenos Uerica Uodenos Uolisios
+	}
+	female_names = {
+		Argantrota Auela Branouenda Boudicca Argia Sfiona Sterinia Uenda Uindoseibaris
+		Aessicunia Banna Bellicia Bellica Bodicacia Britiuenda Cantissena Carssouna Cartimandua Cata Catia Cingetissa Conna Corotica Cunouinna Cunsa Docillina Deiana Deieda Diseta Enica Gleua Iamcilla Illica Locinna Magunna Matugena Minura Paltucca Senecita Senica Senna Senouara Sentica Senuna Sulicena Titocuna Totia Uassura Uatta Ueldicca Uellibia Ueloriga Uelua Uinoma Urocata 
+	}
+
+	 
+	
+	patronym_prefix_male = "dynnpat_pre_mapos"
+	patronym_prefix_female = "dynnpat_pre_merca"	
+	always_use_patronym = yes	
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 80
+	mat_grf_name_chance = 0
+	father_name_chance = 0
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 0
+	
+	
+}
+
+
+# Sources: Wiktionary reconstructions of proto-brythonic & proto-celtic roots of Welsh + Cornish names, & https://www.asnc.cam.ac.uk/personalnames 
+
+# Artomaglos Artoboduos Bledinios Bledioudos Broccomaglos Catumaglos Catuualatros Caratacos Cunagnos Cunotigernos Cunomarcos Cunoualos Dubnartos Dubnoualos Uiroboduos Uindos Uortigernos Griphuioudos Lugumarcos Lugubelinos Maglos Maglocunos Marcos Morimarcos Moricantos Rigoualos Roinos Toutorix
+# Adatuucos Addedomaros Aesibuas Ariouissus Andecaros Amminus Argentocoxos Atignomaros Bellicos Bellinos Bitucos Brigomaglos Camulorix Cartiuellaunos Commios Cunobelinos Dubnocoueros Dubnouellaunos Eisu Epaticcos Prastu Prastutagos Saenu Solidu Tasgouanos Tasciouanos Tigirsenos Uerica Uodenos Uolisios
+
+# Argantrota Auela Branouenda Boudicca Argia Sfiona Sterinia Uenda Uindoseibaris
+# Aessicunia Banna Bellicia Bellica Bodicacia Britiuenda Cantissena Carssouna Cartimandua Cata Catia Cingetissa Conna Corotica Cunouinna Cunsa Docillina Deiana Deieda Diseta Enica Gleua Iamcilla Illica Locinna Magunna Matugena Minura Paltucca Senecita Senica Senna Senouara Sentica Senuna Sulicena Titocuna Totia Uassura Uatta Ueldicca Uellibia Ueloriga Uelua Uinoma Urocata
+
+# Camulogenos Bellinos Belismicos Manduorix Mandutenos Senebellenos Tancorix Uallaunios
+# Atrebatios Catuuellaunos Dobunnos Dubnonios Durotrigios Reginios Trinouantos Icenos Cornouios Brigantos Calidonos Uotadinios
+
+
+# Arthfael Arthfoddw Bleddyn Bleiddud Brochfael Cadfael Cadwaladr Caradog Cynan Cyndeyrn Cynfarch Cynfelyn Cynwal Dyfnarth Dyfnwal Gwrfoddw Gwyn Gwrtheyrn Gruffydd Llywarch Llywelyn Mael Maelgwn March Morfarch Morgan Owain Rhiwal Rhun Twdwr Gwrtheyrn 
+		# Anarawd Arthwr Cai Custennin Dafydd Dewi Deiniol Dynod Edern Einion Geraint Macsen Meirchion Meirion Meurig Padern Rhufon Seferus Seisyll Ynyr Corentin Tydy
+		#Alwyn Adgar Alured Anlaff Berthwallt Edwyn Edylfred Elystan Godwyn Herewallt Ivor Oswallt Tewdrig Adda Alisander Andreas Asa Asaph Awst Elis Emrys Ffilip Ffransis Garmon Gerallt Grygor Gwilym Harri Huw Iago Iestyn Ieuan Ioan Sion Mihangel Padrig Pawl Pedr Rheinallt Rhicert Rhobert Sawyl Serigi Sieffre Sior Steffen Tewdos Tewdwr Tomos
+# Arianrhod Awel Branwen Buddug Eira Ffion Seren Gwen Gwenhwyfar
+		# Alys Annes Annest Nest Nesta Catrin Cicely Cristin Denis Efa Effros Elaine Elen Ellyn Elinor Fflur Ffraid Hawys Hellawes Isabel Ysbail Lleuca Mair Mali Mallt Mawd Marared Margred Marchell Melisant Sara Sibyl Sioned Siwan Susanna Tegla

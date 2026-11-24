@@ -1,0 +1,605 @@
+﻿
+tenet_ritual_writing = {
+	icon = tenet_ritual_celebrations
+
+	piety_cost = faith_tenet_cost_mid
+
+	is_shown = {
+		OR = {
+			religion = religion:old_italic_religion
+			root = {
+				has_personal_tenet = tenet_ritual_writing
+			}
+		}
+	}
+
+	can_pick = {
+		always = yes
+	}
+
+	parameters = {
+		ritual_writing_active
+	}
+	character_modifier = {
+		learning_per_piety_level = 1
+		cultural_head_fascination_mult = 0.1		
+	}	
+	personal_tenet_parameters = {
+		tenet_ritual_celebrations_praise_the_gods
+	}	
+	traits = {
+		virtues = { 
+			lifestyle_mystic = { weight = 15 scale = 1 }
+		}
+		sins = { 
+			greedy = { weight = 15 scale = 1 }
+		}
+	}
+
+}
+
+#tenet_venetic_deities = {
+#	icon = core_tenet_bhakti
+#
+#	piety_cost = {
+#		value = faith_tenet_cost_mid
+#		# Multiplier for keeping same tenet
+#		if = {
+#			limit = { has_doctrine = tenet_venetic_deities }
+#			multiply = faith_unchanged_doctrine_cost_mult
+#		}
+#	}
+#
+#	is_shown = {
+#		religion_tag = old_italic_religion
+#	}
+#
+#	parameters = {
+#		select_personal_god_active = yes
+#	}
+#	character_modifier = {
+#		tolerance_advantage_mod = 1		
+#		prowess = 2
+#	}		
+#}
+
+tenet_bhakti = {
+	icon = tenet_bhakti
+
+	historical_glossary = {
+		first_valid = {
+			desc = tenet_bhakti_historical_glossary
+		}
+	}
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { rite_religion_tag = hinduism_religion }
+				desc = tenet_bhakti_name
+			}
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_venetic_deities_name
+			}
+			desc = tenet_bhakti_patron_god_name
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_venetic_deities_desc
+			}
+			desc = tenet_bhakti_desc
+		}
+	}
+
+	piety_cost = faith_tenet_cost_mid
+
+	can_pick = {
+		OR = {
+			religion = religion:hinduism_religion
+			# With FP1, Germanics also get personal deities.
+			trigger_if = {
+				limit = { has_fp1_dlc_trigger = yes }
+				religion = religion:germanic_religion
+			}
+			religion = religion:old_italic_religion
+		}
+		custom_tooltip = {
+			text = incompatible_doctrine_monotheist
+			NOT = { doctrine:doctrine_monotheist = { is_in_list = selected_doctrines } }
+		}
+	}
+
+	parameters = {
+		select_personal_god_active
+	}
+
+	can_pick_as_personal_tenet = {
+		trigger_if = {
+			limit = { has_particular_personal_deity_group = no }
+			rite = { rite_has_doctrine = doctrine_pluralism_pluralistic }
+			trigger_if = {
+				limit = { faith = { NOT = { has_doctrine = pagan_hostility_doctrine } } }
+				OR = {
+					has_personal_tenet = tenet_unreformed_syncretism
+					rite = { rite_has_parameter = unreformed_syncretic_actor }
+				}
+			}
+		}
+		NOT = { rite = { rite_has_doctrine = doctrine_monotheist } }
+	}
+
+	character_modifier = {
+		trade_category_jewelry_materials_xp_gain_mult = 0.1
+		trade_good_ivory_sell_price_mult = 0.015
+	}
+
+	county_modifier = {
+		trade_category_jewelry_materials_production_mult = 0.15
+	}
+
+	personal_tenet_modifier = {
+		piety_level_impact_mult = 0.2
+		trade_category_jewelry_materials_xp_gain_mult = 0.2
+		trade_good_ivory_sell_price_mult = 0.03
+	}
+
+	personal_tenet_parameters = {
+		select_personal_god_active_personal # reduce the cost
+	}
+
+	traits = {
+		# Devotional intensity (bhakti yoga) - loving devotion is the tenet's primary spiritual discipline.
+		virtues = {
+			zealous = { weight = 20 scale = 1 }
+		}
+		sins = {
+			cynical = { weight = 10 scale = 1 }
+		}
+	}
+}
+
+tenet_megaliths = {
+	icon = tenet_megaliths
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_camunic_arts_name
+			}
+			desc = tenet_megaliths_name
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_camunic_arts_desc
+			}
+			desc = tenet_megaliths_desc
+		}
+	}
+
+	piety_cost = {
+		if = {
+			limit = {
+				rite_has_tenet = tenet_natural_primitivism
+			}
+			value = faith_tenet_cost_low
+		}
+		else_if = {
+			limit = { #Reduction in cost for Celtic Christianity because of stone circle shenanigans
+				faith = faith:christian_faith
+			}
+			value = faith_tenet_cost_mid
+		}
+		else = {
+			value = faith_tenet_cost_high
+		}
+		
+		#We already practice megaliths
+		if = {
+			limit = { rite_has_tenet = tenet_megaliths }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+
+	can_pick = {
+		
+	}
+
+	parameters = {
+		can_build_megaliths
+		sanctify_artifacts_megalithic
+	}
+
+	character_modifier = {
+		hills_prosperity_growth_factor = 0.15
+		hills_tax_mult = 0.1
+		hills_levy_size = 0.3
+		hills_advantage = 5
+		trade_category_stone_xp_gain_mult = 0.1
+		trade_good_stone_sell_price_mult = 0.015
+	}
+
+	county_modifier = {
+		trade_good_stone_production_mult = 0.2
+	}
+
+	personal_tenet_modifier = {
+		hills_construction_gold_cost = -0.1
+		terraced_hills_construction_gold_cost = -0.1
+		mountains_construction_gold_cost = -0.1
+		desert_mountains_construction_gold_cost = -0.1
+		build_speed = -0.1
+		domicile_build_gold_cost = -0.1
+		trade_category_stone_xp_gain_mult = 0.25
+		trade_good_stone_sell_price_mult = 0.03
+	}
+
+	personal_tenet_parameters = {
+		tenet_megaliths_building_poi_double_rewards
+		tenet_megaliths_rough_terrain_construction_fulfillment
+	}
+
+	traits = {
+		# Megalithic builder cultures
+		virtues = {
+			architect = { weight = 15 scale = 1 }
+			diligent = { weight = 10 scale = 1 }
+		}
+		sins = {
+			lazy = { weight = 10 scale = 1 }
+		}
+	}
+}
+	
+	
+#tenet_religious_belligerence = {
+#	icon = core_tenet_warmonger
+#	piety_cost = {
+#		if = {
+#			limit = {
+#				OR = {
+#					religion_tag = buddhism_religion
+#					religion_tag = jainism_religion
+#					religion_tag = taoism_religion
+#				}
+#			}
+#			value = faith_tenet_cost_massive
+#		}
+#		else = {
+#			value = faith_tenet_cost_mid
+#		}
+#		# Multiplier for keeping same tenet
+#		if = {
+#			limit = { has_doctrine = tenet_religious_belligerence }
+#			multiply = faith_unchanged_doctrine_cost_mult
+#		}
+#	}
+#
+#	is_shown = {
+#		religion_tag = old_italic_religion
+#	}
+#
+#	can_pick = {
+#		custom_description = {
+#			text = incompatible_tenet_pacifism_trigger
+#			NOT = { doctrine:tenet_pacifism = { is_in_list = selected_doctrines } }
+#		}
+#		custom_description = {
+#			text = incompatible_tenet_dharmic_pacifism_trigger
+#			NOT = { doctrine:tenet_dharmic_pacifism = { is_in_list = selected_doctrines } }
+#		}
+#	}
+#
+#	parameters = {
+#		conquest_cb_enabled = yes
+#		invasion_cb_enabled = yes
+#		great_holy_wars_active_if_reformed = yes
+#		clergy_can_fight = yes
+#	}
+#		
+#	character_modifier = {
+#		ai_war_chance = 0.5
+#		ai_war_cooldown = -0.25
+#		prowess = 5
+#		tolerance_advantage_mod = 5
+#		no_prowess_loss_from_age = yes
+#	}
+#}
+
+tenet_warmonger = {
+	icon = tenet_warmonger
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_religious_belligerence_name
+			}
+			desc = tenet_warmonger_name
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_religious_belligerence_desc
+			}
+			desc = tenet_warmonger_desc
+		}
+	}
+
+	piety_cost = {
+		if = {
+			limit = {
+				OR = {
+					rite_religion_tag = buddhism_religion
+					rite_religion_tag = jainism_religion
+					rite_religion_tag = taoism_religion
+				}
+			}
+			value = faith_tenet_cost_massive
+		}
+		else = {
+			value = faith_tenet_cost_mid
+		}
+
+		# Multiplier for keeping same tenet
+		if = {
+			limit = { rite_has_tenet = tenet_warmonger }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+
+	can_pick = {
+		NOR = {
+			religion = religion:christianity_religion
+			religion = religion:islam_religion
+			religion = religion:judaism_religion
+			religion = religion:dualism_religion
+		}
+		custom_description = {
+			text = incompatible_tenet_pacifism_trigger
+			NOT = { tenet:tenet_pacifism = { is_in_list = selected_doctrines } }
+		}
+		custom_description = {
+			text = incompatible_tenet_dharmic_pacifism_trigger
+			NOT = { tenet:tenet_dharmic_pacifism = { is_in_list = selected_doctrines } }
+		}
+	}
+
+	parameters = {
+		warmonger
+		conquest_cb_enabled
+		invasion_cb_enabled
+		great_holy_wars_active_if_reformed
+		clergy_can_fight
+		sanctify_artifacts_weapons
+		tenet_warmonger_sacred_forge
+		faith_can_raid
+	}
+
+	special_parameters = {
+		warmonger = yes
+	}
+
+	character_modifier = {
+		ai_war_chance = 0.5
+		ai_war_cooldown = -0.25
+		accolade_glory_gain_mult = 0.1
+		trade_good_iron_sell_price_mult = 0.01
+	}
+
+	county_modifier = {
+		trade_category_base_metals_production_mult = 0.1
+	}
+
+	personal_tenet_parameters = {
+		clergy_can_fight_personal
+	}
+
+	personal_tenet_modifier = {
+		prowess_per_piety_level = 1
+		trade_category_base_metals_xp_gain_mult = 0.25
+		trade_good_iron_sell_price_mult = 0.02
+		maa_damage_mult = 0.05
+	}
+
+	traits = {
+		virtues = {
+			brave = { weight = 20 scale = 1 }
+			zealous = { weight = 10 scale = 1 }
+		}
+		sins = {
+			craven = { weight = 20 scale = 1 }
+		}
+	}
+}
+
+tenet_alexandrian_catechism = {
+	icon = tenet_alexandrian_catechism
+
+	piety_cost = {
+		value = faith_tenet_cost_mid
+
+		# Multiplier for keeping same tenet
+		if = {
+			limit = { rite_has_tenet = tenet_alexandrian_catechism }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_cult_of_reitia_name
+			}
+			triggered_desc = {
+				trigger = {
+					NOT = { faith = { religion = religion:christianity_religion } }
+				}
+				desc = tenet_islamic_rationalism_name
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_latin_as_liturgical_language_trigger = yes
+				}
+				desc = tenet_alexandrian_catechism_latin_name
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_greek_as_liturgical_language_trigger = yes
+				}
+				desc = tenet_alexandrian_catechism_greek_name
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_greek_as_liturgical_language_trigger = no
+					pam_latin_as_liturgical_language_trigger = no
+				}
+				desc = tenet_alexandrian_catechism_default_name
+			}
+			triggered_desc = {
+				trigger = {
+					rite_religion_tag = christianity_religion
+					has_pam_dlc_trigger = no
+				}
+				desc = tenet_alexandrian_catechism_name
+			}
+			desc = tenet_islamic_rationalism_name
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { religion = religion:old_italic_religion }
+				desc = tenet_cult_of_reitia_desc
+			}
+			triggered_desc = {
+				trigger = {
+					NOT = { faith = { religion = religion:christianity_religion } }
+				}
+				desc = tenet_islamic_rationalism_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_latin_as_liturgical_language_trigger = yes
+				}
+				desc = tenet_alexandrian_catechism_latin_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_greek_as_liturgical_language_trigger = yes
+				}
+				desc = tenet_alexandrian_catechism_greek_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_greek_as_liturgical_language_trigger = no
+					pam_latin_as_liturgical_language_trigger = no
+				}
+				desc = tenet_alexandrian_catechism_default_desc
+			}
+			triggered_desc = {
+				trigger = {
+					faith = { religion = religion:christianity_religion }
+					has_pam_dlc_trigger = no
+				}
+				desc = tenet_alexandrian_catechism_desc
+			}
+			desc = tenet_islamic_rationalism_desc
+		}
+	}
+
+	historical_glossary = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					rite_religion_tag = islam_religion
+				}
+				desc = tenet_islamic_rationalism_historical_glossary
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_latin_as_liturgical_language_trigger = yes
+				}
+				desc = tenet_alexandrian_catechism_latin_historical_glossary
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					pam_greek_as_liturgical_language_trigger = yes
+				}
+				desc = tenet_alexandrian_catechism_greek_historical_glossary
+			}
+			triggered_desc = {
+				trigger = {
+					has_pam_dlc_trigger = yes
+					religion = religion:christianity_religion
+					pam_greek_as_liturgical_language_trigger = no
+					pam_latin_as_liturgical_language_trigger = no
+				}
+				desc = tenet_alexandrian_catechism_default_historical_glossary
+			}
+		}
+	}
+
+	can_pick = {
+		OR = {
+			religion = religion:christianity_religion
+			religion = religion:islam_religion
+		}
+		custom_description = {
+			text = doctrine_pluralism_fundamentalist_trigger
+			NOT = { doctrine:doctrine_pluralism_fundamentalist = { is_in_list = selected_doctrines } }
+		}
+	}
+
+	divergence_multiplier = 1.5
+
+	character_modifier = {
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		learning_per_stress_level = 2
+	}
+	
+	parameters = {
+		scholasticism_is_holy
+	}
+
+	personal_tenet_modifier = {
+		trade_category_books_xp_gain_mult = 0.25
+		trade_good_books_paper_sell_price_mult = 0.02
+	}
+
+	personal_tenet_parameters = {
+		tenet_alexandrian_catechism_catechetical_school
+		tenet_alexandrian_catechism_catechesis_conversion
+	}
+
+	traits = {
+		virtues = {
+			eccentric = { weight = 15 scale = 1 }
+		}
+		sins = {
+			zealous = { weight = 15 scale = 1 }
+		}
+	}
+}

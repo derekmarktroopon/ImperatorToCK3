@@ -1,4 +1,5 @@
 ﻿name_list_roman = {
+
 	cadet_dynasty_names = {
 		"dynn_Julio_Claudian"
 		"dynn_Flavian"
@@ -20,7 +21,7 @@
 		"dynn_Angelid"
 		"dynn_Laskarid"
 		"dynn_Palaiologan"
-	agn_Aculeo agn_Agricola agn_Agrippa agn_Ahala agn_Ahenobarbus
+		agn_Aculeo agn_Agricola agn_Agrippa agn_Ahala agn_Ahenobarbus
 	agn_Albinus agn_Albus agn_Ambustus agn_Annalis agn_Aquila
 	agn_Aquilinus agn_Arvina agn_Asellio agn_Asina agn_Atellus
 	agn_Avitus agn_Balbus agn_Barba agn_Barbatus agn_Bassus agn_Bestia
@@ -62,12 +63,15 @@
 
 	male_names = {
 		100 = {
-			Gaius Lucius Marcus Publius Quintus Titus Tiberius Sextus
-			Aulus Decimus Gnaeus Spurius Manius Servius Appius Numerius
-			Vibius
-			Amulius Camillus Decius Drusus Faustus Flavius Gallus
-			Herius Hostus Opiter Octavius Postumus Primus Proculus
-			Secundus Tertius Ancus
+			Aemilian Aemilius Aetius Albinus Alexander Anastasius Anicius Annius Antoninus Antonius Arcadius Aurelian Aurelius
+			Avitus Belisarius Britannicus Caecilius Caesar Callistus Carinus Carus Cassius Claudius Clementius Constans Constantine
+			Constantius Cornelius Crassus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Fabricius Faustus Felix Flavianus Florian
+			Gaius Galerius Gallienus Gallus Germanus Gordian Gracchus Gratian Hadrian Herculius Honorius Joannes Jovian
+			Julian Julius Julius-Caesar Junius Justin Justinian Leo Leontius Liberius Licinius Lucius Magnus Marcellinus
+			Marcellus Marcian Marcus Marinus Marius Martinus Maximian Maximinus Maximus Nepotian Nerva Numerian Octavianus Octavius Otho
+			Paulinus Paulus Petronius Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus Romulus Rufinus Rutilius Sabinianus
+			Saturninus Sempronius Septimius Sergius Severinus Severus Sextus Symmachus Tacitus Theodosius Tiberius
+			Titius Titus Trajan Urbanus Valens Valentinian Valerian Valerius Venantius Vespasian Victor Victorinus Vigilius Vitalianus Volusianus
 		}
 		0 = { 
 			Adephonsus Adelgastrus Adelricus Hermenegildus Ermanaricus Alaricus Odoacer Alatheus Alvitus Amalricus Amalmundus Auricus Athaulphus Athanagildus Athanaricus Baduila Berengarius Egica Hermenegarius Ervigius Euricus Eutharicus Attila Favila Ferdinandus Fritigernus Fritharicus Froila Gadaricus Gausbertus Geila Gesaleicus Gundisalvus Gundemarus Gundulfus Ildebadus Chindasvintus Chintila Leovigildus Liuva Leoviricus Rudericus Rudolphus Rudesindus Reccaredus Ramirus Reccesuinthus Ricimerus Raginaris Rodericus Sabaricus Sisebutus Sisenandus Suinthila Suneharius Sunifredus Theodefredus Theodahatus Theodemirus Theodericus Theudigisclus Theudis Thorismundus Theia Tulga Varamundus Vilfredus Vimaris Vitiges Vittericus Ulfila
@@ -75,32 +79,32 @@
 	}
 	female_names = {
 		100 = {
-			Gaia Lucia Marca Publia Quinta Tita Tiberia Sexta Aula Decima
-			Gnaea Spuria Mania Servia Appia Numeria Vibia
-			Amulia Camilla Decia Drusa Fausta Flavia Galla Heria
-			Hosta Opitera Octavia Postuma Prima Procula Secunda Tertia Anca
+			Aelia Agrippina Antonia Antonina Aquilia Aurelia Caecilia Caesaris Candida Cassia Claudia Clementia Constantia
+			Constantina Cornelia Crispina Dominica Domitiana Domna Domnina Drusilla Fausta Faustina Flacilla Flavia Fortunata Frontina Gaia Galeria
+			Gordiana Hadriana Helvia Hilara Honoria Hortensia Julia Juliana Junia Justa Justina Justiniana Licinia Livia Livilla Lucilla
+			Magnia Magnilla Marcella Marcia Marciana Marina Martina Matrona Maxima Maximiana Messalina Minervina Minucia Modia Mustela
+			Octavia Palatina Paula Paulina Petronella Petronia Placidia Plautia Plautilla Pompeia Poppaea Praeiecta Publia Pulcheria
+			Rusticiana Sabina Sallustia Salonina Salvianella Scantilla Serena Sergia Severa Severina Silvia Spadusa Sulpicia Tarsilla Titiana Ulpia Valeria
+			Verina Victoria Vigilantia Viviana
 		}
 		0 = { 
 			Adelgundis Audusinda Audofleda Amalfrida Ereleuva Ariberga Ava_goth Baddo Brunechildis Adelphonsa Adeluara Alvira Erchesuinda Hermengarda Hermenberga Hermenierdis Amalsuinda Froiluba Fronilda Gado_goth Guntruda Ingundis Leodegundia Matasuinda Ralindis Riciberga Ricilo Sesenanda Vinidilda
 		}
 	}
-
-	dynasty_of_location_prefix = "dynnp_a"
-	patronym_prefix_male = "dynnp__"
+	dynasty_of_location_prefix = "dynnp_of"
+	patronym_prefix_male = "dynnpat_pre_filius"
 
 	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
 	pat_grf_name_chance = 50
 	mat_grf_name_chance = 0
 	father_name_chance = 50
-
+	
 	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 	pat_grm_name_chance = 50
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
 
-	mercenary_names = {
-		{ name = "mercenary_company_numeri" coat_of_arms = "e_roman_empire" }
-	}
+	
 }
 
 name_list_gotho_roman = {
@@ -117,12 +121,15 @@ name_list_gotho_roman = {
 
 	male_names = {
 		20 = {
-			Gaius Lucius Marcus Publius Quintus Titus Tiberius Sextus
-			Aulus Decimus Gnaeus Spurius Manius Servius Appius Numerius
-			Vibius
-			Amulius Camillus Decius Drusus Faustus Flavius Gallus
-			Herius Hostus Opiter Octavius Postumus Primus Proculus
-			Secundus Tertius Ancus
+			Aemilian Aemilius Aetius Albinus Alexander Anastasius Anicius Annius Antoninus Antonius Arcadius Aurelian Aurelius
+			Avitus Belisarius Britannicus Caecilius Caesar Callistus Carinus Carus Cassius Claudius Clementius Constans Constantine
+			Constantius Cornelius Crassus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Fabricius Faustus Felix Flavianus Florian
+			Gaius Galerius Gallienus Gallus Germanus Gordian Gracchus Gratian Hadrian Herculius Honorius Joannes Jovian
+			Julian Julius Julius-Caesar Junius Justin Justinian Leo Leontius Liberius Licinius Lucius Magnus Marcellinus
+			Marcellus Marcian Marcus Marinus Marius Martinus Maximian Maximinus Maximus Nepotian Nerva Numerian Octavianus Octavius Otho
+			Paulinus Paulus Petronius Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus Romulus Rufinus Rutilius Sabinianus
+			Saturninus Sempronius Septimius Sergius Severinus Severus Sextus Symmachus Tacitus Theodosius Tiberius
+			Titius Titus Trajan Urbanus Valens Valentinian Valerian Valerius Venantius Vespasian Victor Victorinus Vigilius Vitalianus Volusianus
 		}
 		80 = { 
 			Adephonsus Adelgastrus Adelricus Hermenegildus Ermanaricus Alaricus Odoacer Alatheus Alvitus Amalricus Amalmundus Auricus Athaulphus Athanagildus Athanaricus Baduila Berengarius Egica Hermenegarius Ervigius Euricus Eutharicus Attila Favila Ferdinandus Fritigernus Fritharicus Froila Gadaricus Gausbertus Geila Gesaleicus Gundisalvus Gundemarus Gundulfus Ildebadus Chindasvintus Chintila Leovigildus Liuva Leoviricus Rudericus Rudolphus Rudesindus Reccaredus Ramirus Reccesuinthus Ricimerus Raginaris Rodericus Sabaricus Sisebutus Sisenandus Suinthila Suneharius Sunifredus Theodefredus Theodahatus Theodemirus Theodericus Theudigisclus Theudis Thorismundus Theia Tulga Varamundus Vilfredus Vimaris Vitiges Vittericus Ulfila
@@ -130,10 +137,13 @@ name_list_gotho_roman = {
 	}
 	female_names = {
 		50 = {
-			Gaia Lucia Marca Publia Quinta Tita Tiberia Sexta Aula Decima
-			Gnaea Spuria Mania Servia Appia Numeria Vibia
-			Amulia Camilla Decia Drusa Fausta Flavia Galla Heria
-			Hosta Opitera Octavia Postuma Prima Procula Secunda Tertia Anca
+			Aelia Agrippina Antonia Antonina Aquilia Aurelia Caecilia Caesaris Candida Cassia Claudia Clementia Constantia
+			Constantina Cornelia Crispina Dominica Domitiana Domna Domnina Drusilla Fausta Faustina Flacilla Flavia Fortunata Frontina Gaia Galeria
+			Gordiana Hadriana Helvia Hilara Honoria Hortensia Julia Juliana Junia Justa Justina Justiniana Licinia Livia Livilla Lucilla
+			Magnia Magnilla Marcella Marcia Marciana Marina Martina Matrona Maxima Maximiana Messalina Minervina Minucia Modia Mustela
+			Octavia Palatina Paula Paulina Petronella Petronia Placidia Plautia Plautilla Pompeia Poppaea Praeiecta Publia Pulcheria
+			Rusticiana Sabina Sallustia Salonina Salvianella Scantilla Serena Sergia Severa Severina Silvia Spadusa Sulpicia Tarsilla Titiana Ulpia Valeria
+			Verina Victoria Vigilantia Viviana
 		}
 		50 = { 
 			Adelgundis Audusinda Audofleda Amalfrida Ereleuva Ariberga Ava_goth Baddo Brunechildis Adelphonsa Adeluara Alvira Erchesuinda Hermengarda Hermenberga Hermenierdis Amalsuinda Froiluba Fronilda Gado_goth Guntruda Ingundis Leodegundia Matasuinda Ralindis Riciberga Ricilo Sesenanda Vinidilda
@@ -153,6 +163,95 @@ name_list_gotho_roman = {
 	mother_name_chance = 0
 
 	
+}
+
+name_list_venetian = {
+	cadet_dynasty_names = {
+	    "dynn_Barbarigo" "dynn_Morosini" "dynn_Papaziza" "dynn_Dente" "dynn_Adoaldo" "dynn_Agadi" "dynn_Albizo" "dynn_Amizo" { "dynnp_di" "dynn_Antenori" }
+		"dynn_Arimondo" "dynn_Aventurado" "dynn_Badoer" "dynn_Baffo" "dynn_Balbi" "dynn_Barsiano" "dynn_Barozzi" "dynn_Bastio" "dynn_Bembo"
+		"dynn_Benedetto" { "dynnp_de" "dynn_De_Bernardo" } "dynn_Bobizo" { "dynnp_dalle" "dynn_Dalle_Boccole" } "dynn_Boldu" "dynn_Bollani" "dynn_Bon" "dynn_Bondulmier" 
+		"dynn_Boninsegna" "dynn_Bragadin" "dynn_Brizzi" "dynn_Cabalio" "dynn_Calbo" { "dynnp_da" "dynn_Da_Canal" } "dynn_Candian" "dynn_Caotorta" "dynn_Capello" "dynn_Caucho" "dynn_Centranigo" "dynn_Celsi"
+		"dynn_Condulmer" "dynn_Contarini" "dynn_Coppo" "dynn_Corner" "dynn_Correr" "dynn_Dandolo" "dynn_Darpin" "dynn_Diedo" "dynn_Dolfin" 
+		"dynn_Donado" "dynn_Duodo" "dynn_Emo" "dynn_Falier" "dynn_Fiabenigo" { "dynnp_della" "dynn_Della_Fontana" } "dynn_Foschari" "dynn_Foscarini" "dynn_Gabriel" { "dynnp_di" "dynn_Di_Garzoni" } "dynn_Gaulo" "dynn_Ghezzo" 
+	    "dynn_Ghisi" "dynn_Girardi" "dynn_Giustinian" "dynn_Gomberto" "dynn_Gradenigo" "dynn_Grimani" "dynn_Grioni" "dynn_Gritti"
+		"dynn_Guoro" "dynn_Ipato" "dynn_Lando" { "dynnp_da" "dynn_Da_Lezze" } "dynn_Lombardo" "dynn_Longo" "dynn_Loredan" { "dynnp_de" "dynn_De_Lorenzo" } "dynn_Magno" 
+		"dynn_Malipiero" "dynn_Marcelo" "dynn_Marin" "dynn_Marmora" "dynn_MaistroPiero" "dynn_Mazzaman" "dynn_Memo" { "dynnp_de" "dynn_De_Mezzo" } "dynn_Michiel" "dynn_Minio" "dynn_Mocenigo" "dynn_Monegario"
+		{ "dynnp_da" "dynn_Da_Molin" } "dynn_Moro" "dynn_Morosini" "dynn_Morosini" { "dynnp_da" "dynn_Da_Mosto" } { "dynnp_da" "dynn_Da_Mula" } "dynn_Nadal" "dynn_Nani" "dynn_Navager" "dynn_Nicola"
+		"dynn_Onoradi" "dynn_Orio" "dynn_Orsuolo" "dynn_Paradiso" "dynn_Pasqualigo" "dynn_Pesaro" "dynn_Pizaman" "dynn_Polani" { "dynnp_da" "dynn_Da_Ponte" } { "dynnp_da" "dynn_Da_Pozzo" }
+		"dynn_Premarin" "dynn_Priuli" "dynn_Querini" "dynn_Quintavalle" { "dynnp_de" "dynn_De_Riva" } "dynn_Sagredo" "dynn_Salamon" "dynn_Sanudo" "dynn_Selvo" "dynn_Signolo"
+		"dynn_Soranza" "dynn_Spirito" "dynn_Steno" "dynn_Storlado" "dynn_Stornado" "dynn_Tagliapietra" "dynn_Tanolico" "dynn_Tiepolo" "dynn_Tradomenego" "dynn_Tribun"
+		"dynn_Trivisan" "dynn_Tron" "dynn_Valaresso" "dynn_Vendramin" "dynn_Venier" "dynn_Viaro" "dynn_Vielmo" "dynn_Zanchani" "dynn_Zantani" "dynn_Zen" 
+		"dynn_Ziani"
+		"dynn_Zorzi" "dynn_Zusto" "dynn_Participazo" "dynn_Polo" "dynn_Zobenigo" "dynn_Memmo"  #"Polo_was not in the source that I found, but come on."
+		# Magister Militum dyn names of early venice
+		"dynn_Fabricio" "dynn_Tegalin"
+	}
+
+	dynasty_names = {
+	    "dynn_Barbarigo" "dynn_Morosini" "dynn_Papaziza" "dynn_Dente" "dynn_Adoaldo" "dynn_Agadi" "dynn_Albizo" "dynn_Amizo" { "dynnp_di" "dynn_Antenori" }
+		"dynn_Arimondo" "dynn_Aventurado" "dynn_Badoer" "dynn_Baffo" "dynn_Balbi" "dynn_Barsiano" "dynn_Barozzi" "dynn_Bastio" "dynn_Bembo"
+		"dynn_Benedetto" { "dynnp_de" "dynn_De_Bernardo" } "dynn_Bobizo" { "dynnp_dalle" "dynn_Dalle_Boccole" } "dynn_Boldu" "dynn_Bollani" "dynn_Bon" "dynn_Bondulmier" 
+		"dynn_Boninsegna" "dynn_Bragadin" "dynn_Brizzi" "dynn_Cabalio" "dynn_Calbo" { "dynnp_da" "dynn_Da_Canal" } "dynn_Candian" "dynn_Caotorta" "dynn_Capello" "dynn_Caucho" "dynn_Centranigo" "dynn_Celsi"
+		"dynn_Condulmer" "dynn_Contarini" "dynn_Coppo" "dynn_Corner" "dynn_Correr" "dynn_Dandolo" "dynn_Darpin" "dynn_Diedo" "dynn_Dolfin" 
+		"dynn_Donado" "dynn_Duodo" "dynn_Emo" "dynn_Falier" "dynn_Fiabenigo" { "dynnp_della" "dynn_Della_Fontana" } "dynn_Foschari" "dynn_Foscarini" "dynn_Gabriel" { "dynnp_di" "dynn_Di_Garzoni" } "dynn_Gaulo" "dynn_Ghezzo" 
+	    "dynn_Ghisi" "dynn_Girardi" "dynn_Giustinian" "dynn_Gomberto" "dynn_Gradenigo" "dynn_Grimani" "dynn_Grioni" "dynn_Gritti"
+		"dynn_Guoro" "dynn_Ipato" "dynn_Lando" { "dynnp_da" "dynn_Da_Lezze" } "dynn_Lombardo" "dynn_Longo" "dynn_Loredan" { "dynnp_de" "dynn_De_Lorenzo" } "dynn_Magno" 
+		"dynn_Malipiero" "dynn_Marcelo" "dynn_Marin" "dynn_Marmora" "dynn_MaistroPiero" "dynn_Mazzaman" "dynn_Memo" { "dynnp_de" "dynn_De_Mezzo" } "dynn_Michiel" "dynn_Minio" "dynn_Mocenigo" "dynn_Monegario"
+		{ "dynnp_da" "dynn_Da_Molin" } "dynn_Moro" "dynn_Morosini" "dynn_Morosini" { "dynnp_da" "dynn_Da_Mosto" } { "dynnp_da" "dynn_Da_Mula" } "dynn_Nadal" "dynn_Nani" "dynn_Navager" "dynn_Nicola"
+		"dynn_Onoradi" "dynn_Orio" "dynn_Orsuolo" "dynn_Paradiso" "dynn_Pasqualigo" "dynn_Pesaro" "dynn_Pizaman" "dynn_Polani" { "dynnp_da" "dynn_Da_Ponte" } { "dynnp_da" "dynn_Da_Pozzo" }
+		"dynn_Premarin" "dynn_Priuli" "dynn_Querini" "dynn_Quintavalle" { "dynnp_de" "dynn_De_Riva" } "dynn_Sagredo" "dynn_Salamon" "dynn_Sanudo" "dynn_Selvo" "dynn_Signolo"
+		"dynn_Soranza" "dynn_Spirito" "dynn_Steno" "dynn_Storlado" "dynn_Stornado" "dynn_Tagliapietra" "dynn_Tanolico" "dynn_Tiepolo" "dynn_Tradomenego" "dynn_Tribun"
+		"dynn_Trivisan" "dynn_Tron" "dynn_Valaresso" "dynn_Vendramin" "dynn_Venier" "dynn_Viaro" "dynn_Vielmo" "dynn_Zanchani" "dynn_Zantani" "dynn_Zen" 
+		"dynn_Ziani"
+		"dynn_Zorzi" "dynn_Zusto" "dynn_Participazo" "dynn_Polo" "dynn_Zobenigo" "dynn_Memmo"  #"Polo_was not in the source that I found, but come on."
+		# Magister Militum dyn names of early venice
+		"dynn_Fabricio" "dynn_Tegalin"
+	}
+
+	male_names = {
+		9 = {
+			Piero
+		}
+		9 = {
+			Domenego Zuane
+		}
+		3 = {
+			Andrea
+		}
+		4 = {
+			Francescho Vidal
+		}
+		10 = {
+			Antonio Lorenzo Marco Marin Nicolo Orsso
+		}
+		5 = {
+			Agustin Anzolo Jacomo Iacomo Michiel
+		}
+		61 = {
+			Alexander Aloysius Alvise Ambrogio Ambrosius Ambroso Angelo Annibale Aurelio Auro Austin Bado Baldissere Bartholomio Bastian Bastiano Batista Battista Benedetto Benetto Bernardin Bernardo Biasio Bortholo Bortolamio Bortolo Camillus Carlo Claudio Cristofalo Cristofolo Diodato Dionisio Enrigo Fazzin Filippo Gabriele Galeazzo Galla Gasparo Giacomo Giambattista Gieronimo Giovanbattista Giovanni Giovanni_Battista Girolamo Giulio Guglielmo Hieronimo Ippolito Iulio Iustinian Lazaro Lunardo Leonardo Lodovico Luca Lunardo Magno Marcantonio Marcello Marco_Antonio Martin Mercurio Miro Moricio Obelnigerio Ordelafo Otto Paolo Pasqual Pasqualin Paulo Petro PierAntonio Raffaele Renier Rocco Rugir Salvador Salvator Sebastian Stefano Teodor Tobias Tomado Tomaso Tommaso Tranquilo Tribun Valentin Valerio Ventura Venturo Vincenzo Vittorio Vivian Zacharia Zago Zanetto Zordan Zorzi Zuan Zuan_Antonio Zuandomenego ZuanGiacomo Zuann Zuanne Zuano
+		}   
+		1 = { #Italianized forms attested
+			Fantin Bon Simon Abondio Abondansio Boldo_ven Leon
+		}
+	}
+
+	female_names = {
+		3 = {
+			Cornelia Marcella
+		}
+		97 = {
+	    	Agnese Agnesina Alba Alessandra Anastasia Andriana Angela Angelica Anna Antonia Anzola Barbara Bella Benetta Benvegnuda Betta Bettina Bianca Borthola Camilla Cassandra Catarina Caterina Cattarina Catterina Cecilia Chiara Chiaretta Christina Clara Claudia Contarina Corona Cristina Daniela Diana Dianora Dionora Elena Elisabetta Emilia Eugenia Faustina Felicita_ven Fiametta Filomena Fiordelise Fiorenza Franceschina Gabriella Gaspara Giulia Giustina Gratiosa Helena Helia Hortensa Iacoma Isabella Isabetta Iseppa Jacomina Julia Justina Laura Lavinia Leandra Leonarda Libera Livia Lodovica Lucia Lucieta Lucrezia Lugretia Madalena Maddalena Margarita Margherita Maria Marieta Marina Marita Matthia Menega Meneghina Moderata Nicolosa Olivia Orelia Orsa Orseta Orsolina Osana Paola Paolina Pasqueta Paula Paulissena Pelegrina Perina Philippa Pollonia Polonia Portia Prudentia Pulisena Pulissena Regina Rosa Sabina Samaritana Santina Simona Simonetta Stella Susanna Thomasina Tomasina Valentina Valeria Vendramina Venedranda Veniera Veronica Viena Vienna Vincenza Violante Virginia Vittoria Zaneta Zanetta Zuanna
+		}
+		1 = { #Italianized forms attested
+			Rizarda
+		}	
+	}
+	
+	dynasty_of_location_prefix = "dynnp_de"		
+
+	patronym_prefix_male = "dynnpat_pre_de"
+	patronym_prefix_female = "dynnpat_pre_de"		
+
 }
 
 name_list_breathanach = {

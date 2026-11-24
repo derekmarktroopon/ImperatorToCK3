@@ -1,5 +1,4 @@
-﻿# Created by derekmark.
-
+﻿
 name_list_oscan = {
 	cadet_dynasty_names = {
 	    #Central Italic & Samnite
@@ -32,3 +31,5 @@ name_list_oscan = {
 
 	always_use_patronym = yes
 }
+
+

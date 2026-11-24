@@ -5,7 +5,7 @@ abahu_male = {
 }
 abraham_male = {
 	Abraham Abraam Avraaham Brahim Ebrahim Ibrahim YaravAm # vanilla
-	Abraha Abram Ebrahim_Abraham # converter
+	Abraha Abram Ebrahim_Abraham jp2_Aburahan # converter
 }
 asher_male = {
 	Asher Ashur # vanilla
@@ -13,7 +13,7 @@ asher_male = {
 }
 darius_male = {
 	Darius Dariush DaryU_S_ # vanilla
-	Dareios # converter
+	Dareios Darayavaush Darayaush Daray Darayahwahush # converter
 }
 farhad_male = {
 	Farhad Ferhad # vanilla
@@ -28,13 +28,13 @@ hyacinth_male = {
 	Giacinto Hyakinthos # converter
 }
 joakim_male = {
-	Joakim Jochim # vanilla
-	Alcimus Joachim Joacim # converter
+	Giuacchinu Joakim Jochim # vanilla
+	Alcimus Joachim Joacim jp2_Zioakin # converter
 }
 marcus_male = {
-	Marcus MA_rk Marcas March Marchell Marco Marek Margh Margos Mark Marko Markos Markose Marku Markus Morcar Marchet # vanilla
+	Marcas March Marchell Marco Marcu Marcus Marek Margh Margos Mark MA_rk Marko Markos Markos_regnal Markose Marku Markus Morcar Marchet Marcus_regnal Marc # vanilla
 	Marce Marc Marcu gls_Mac # converter
-	cpt_Markos
+	cpt_Markos jp_Maruku jp2_Marucu Moarch
 }
 ptolemy_male = {
 	Ptolemy Ptolemee PtolE_mE_e # vanilla
@@ -43,7 +43,7 @@ ptolemy_male = {
 }
 sigmund_male = {
 	Sigmund Siegmund Sigismond Sigismund Zikmund Zsigmond Zygmunt # vanilla
-	Segimund Sigimund Sigimunduz Sigimundu Sigimundu Sigimuntu Cikimuntu Sikimuntu # converter
+	Segimund Sigimund Sigimunduz Sigimundu Sigimund Sigimuntu Cikimuntu Sikimuntu # converter
 }
 tiberius_male = {
 	Tiberius Tiberios # vanilla
@@ -52,13 +52,15 @@ tiberius_male = {
 }
 vishtasb_male = {
 	Vishtasb VI_S_tap # vanilla
-	Hystaspes Vishtasb_Vishtasb # converter
+	Goshtasb GoS_tasp Vishtaspah Hystaspes Vishtasb_Vishtasb # converter
 }
+goshtasb_male = {  } # Keep empty
 berthold_male = {
 	# vanilla
 	Berthgualt Berthwallt Berthoald  Berthold Bertold Bertoldo
 	# converter
-	Pertolt
+	Pertolt Berchtwald Berctwald Berhtwald Berhtawald
+
 }
 hector_male = {
 	# vanilla
@@ -68,10 +70,10 @@ hector_male = {
 }
 hyeronimus_male = {
 	# vanilla
-	Gerolamo Geronimo Girolamo ZirO_nimu
+	Gerolamo Geronimo Girolamo Jeronim ZirO_nimu Geronas
 	# converter
-	Hieronymus Hieronymos JE_rO_me
-	Gieronimo Hieronimo Jeronim
+	Hieronymus Hieronymos  JE_rO_me
+	Gieronimo Hieronimo jp_Hyeronimu jp2_Jeronimu
 }
 theodat_male = {
 	# vanilla
@@ -84,21 +86,21 @@ gundemar_male = {
 	Gundemar Gundemaro Gundemaru
 	# converter
 	Gundmar
-	Gunthimers Gundemarus Goundemaros Gundmer Gunthimer
+	Gunthimers Gundemarus Goundemaros Gundmer Gunthimer Guntimero
 }
 theobald_male = {
 	# vanilla
 	Teobald Teobaldo Teobaldu Tetbald Theobald ThiE_baut Thiadbold Thibault Tibaldo Tibalt Tibaud Tibault Tybalt Tybaut
 	# converter
 	Theobold Theodobald
-	Theudubalth Theudebald Theutbald Thiotbald Theudobalthaz Thedubalitha Thedubalidha Tedubalita Tautopalita
+	Theudubalth Theudebald Theutbald Thiotbald Theudobalthaz Thedubalitha Thedubalidha Tedubalita Tautopalita Theobod Tidebud
 }
 jacob_male = {
 	# vanilla
-	Chaacko Chaime Giacomo Giacopo Hamish Iacob Iacobus Iacopo Iago Iakobos Iakov Jaakoppi Jacco Jacme Jacob Jacopo Jacopu Jacques Jagu Jaime JA_kob Jakob Jaksa Jakub Jakue Jakusz James JA_picu Jaques Jaume KO_pke Lapo Puccio SE_amas Yaakov Ya_qob Ya_qub Yaqub
+	Chaacko Chaime Giacomo Giacopo Hamish Iacob Iacobus Iacopo Iago Iakobos Iakov Jaakoppi Jacco Jacme Jacob Jacopo Jacopu Jachum Jakov Jacques Jagu Jaime JA_kob Jakob Jaksa Jakub Jakue Jakusz James JA_picu Jaques Jaume KO_pke Lapo Puccio SE_amas Yaakov Ya_qob Ya_qub Yaqub Jacopone
 	
 	# converter
-    Jacop Kepke Jacomo gls_Gjeimz gls_Gjacumow
+    Jacop Kepke Jacomo Yacob jp_Yakobu jp2_Jacobu Yagov
 }
 
 
@@ -108,15 +110,15 @@ alexandra_female = {
 	Alessandra Kassandra # converter
 }
 anna_female = {
-	Anna Ana Annamma Anne Annes Anah # vanilla
-	Hannah Hanna gls_An gls_Ana # converter
+	Ana Anah Anna Annah Annamma Anne Annes # vanilla
+	Hannah Hanna jp_Ana jp2_Ana # converter
 }
 brigid_female = {
 	# vanilla
-	Berchet Birgitta Breaca Breage Bregida Bride Bridei Brigid Brigida BrI_gida BrigI_D_a Brigide Brigit Brude Bruide Ffraid 
+	Berchet Birgitta Breaca Breage Bregida Bride Bridei Brigid Brigida BrI_gida BrigI_D_a Brigide Brigit Brude Bruide Ffraid Brida 
 	# converter
 	Bricita Brigantia Prikita
-	Brida Bhrghentih Bhrghntyeh
+	Bhrghentih Bhrghntyeh
 }
 ingeborg_female = {
 	Ingeborg IngebjO_rg IngibjO_rg # vanilla
@@ -133,4 +135,10 @@ hildegarde_female = {
 	Hiltekart
 	Hildigardu Hildigarda
 }
-elisabeth_female = { Isabetta Aaleyaamma AlZ_bEE_ta Beileag Bet EisabE_u Elesbed ElisabE_ta Elisabet ElI_sabet Elisabeta Elisabeth Elisabetta Elisaued Elisaveta Elizabeta Elizabeth E_lizabeth Elspeth ElZ_bieta ErzsE_bet Ilizabith Isabeau Isabel Isabela IsabE_la Isabella Isabelle IsabE_u Isobel Lillias Lise Lisebet Lys Sabela Uusbail Yelizaveta Ysabel Ysbail Zabel gls_Ilizabath Elisapeth cpt_Ilisabek }
+elisabeth_female = {
+ Aaleyaamma AlZ_bEE_ta Beileag Bet EisabE_u Elesbed ElisabE_ta Elisabet ElI_sabet Elisabeta Elisabeth Elisabetta Elisaued Elisaveta Elizabeta Elizabeth E_lizabeth Elspeth ElZ_bieta ErzsE_bet Ilizabith Isabeau Isabel Isabela IsabE_la Isabella Isabelle IsabE_u Isobel Lillias Lise Lisebet Lys Sabela Uusbail Yelizaveta Ysabel Ysbail Zabel Lisabetta
+ # Vanilla
+ Elisapeth
+ cpt_Ilisabek jp_Erizabetsu jp2_Erisabetu Elispet Ispel
+ # IRToCK3 
+ }
