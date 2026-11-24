@@ -104,11 +104,6 @@ link = {
     ck3Culture = rhaetian
     ir = italic_pantheon
 }
-link = {
-    ck3 = camunic_pagan
-    ck3Culture = camunic
-    ir = italic_pantheon
-}
 
 # Hellenic - TFE
 link = { ck3 = roman_pagan ir = italic_pantheon }
