@@ -780,6 +780,9 @@ phrygian = {
 	}
 
 	color = rgb { 246 223 15 }
+	parents = { greco_phrygian }
+	created = 3.1.1
+	history_loc_override = phrygian_heritage_loc
 
 	heritage = heritage_anatolian
 	language = language_phrygian
@@ -792,6 +795,7 @@ phrygian = {
 	traditions = {
 		tradition_sorcerous_metallurgy # Legendary King Midas
 		tradition_astute_diplomats # Recorded to be allied with various powers
+		tradition_hill_dwellers
 	}
 
 	name_list = name_list_phrygian
@@ -922,41 +926,39 @@ qahtanite = { # https://en.wikipedia.org/wiki/Qahtanite
 	unit_gfx = { mena_unit_gfx }
 }
 
-egyptian = {  # override of vanilla culture
-    INVALIDATED_BY = {
+egyptian = {
+
+	INVALIDATED_BY = {
 		tfe = { egyptian } # TFE already makes this culture a hybrid of bedouin and kemetic, so we don't need to override it.
 	}
 
 	color = { 0.1 0.6 0.1 }
-
-	# ImperatorToCK3: Make Arabic Egyptian a hybrid of Bedouin and Old Egyptian
-	created = 640.1.1
-	parents = { bedouin ancient_egyptian }
-
+	created = 700.1.1
+	parents = { bedouin remenkimi }
 	ethos = ethos_spiritual
 	heritage = heritage_arabic
 	language = language_arabic
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
-	house_coa_frame = house_frame_10
-	house_coa_mask_offset = { 0.0 -0.06 }
-	house_coa_mask_scale = { 0.9 0.9 }
 	traditions = {
 		tradition_philosopher_culture
 		tradition_agrarian
 		tradition_zealous_people
 		tradition_mubarizuns
 	}
-
+	
 	name_list = name_list_egyptian
 
-	coa_gfx = { arabic_group_coa_gfx }
-	building_gfx = { arabic_group_building_gfx mena_building_gfx }
-	clothing_gfx = { dde_abbasid_clothing_gfx mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	coa_gfx = { arabic_group_coa_gfx } 
+	building_gfx = { arabic_group_building_gfx mena_building_gfx } 
+	clothing_gfx = { dde_abbasid_clothing_gfx mena_clothing_gfx } 
+	unit_gfx = { mena_unit_gfx } 	
+	house_coa_frame = house_frame_10
+	house_coa_mask_offset = { 0.0 -0.06 }
+	house_coa_mask_scale = { 0.9 0.9 }
 
 	ethnicities = {
-		10 = arab
+		100 = arab
 	}
 }
 
@@ -1029,41 +1031,258 @@ messapic = {
 	}
 }
 
-ancient_egyptian = {  # fallback in case some mod removes vanilla ancient_egyptian
-    INVALIDATED_BY = {
+predynastic_egyptian = {
+	color = rgb { 222 220 89 }
+	
+	name_list = name_list_predynastic_egyptian
+	heritage = heritage_egyptian
+	language = language_egyptian
+	martial_custom = martial_custom_equal # Questionable, women in Egyptian court had equal status to men, but they were granted that status *by* men
+	head_determination = head_determination_domain
+
+	ethos = ethos_bureaucratic
+	
+	traditions = {
+		tradition_hard_working 
+		tradition_zealous_people
+		tradition_land_of_the_bow
+	}
+
+	ethnicities = {
+		10 = arab
+		1 = east_african
+	}
+
+	coa_gfx = { berber_group_coa_gfx  }
+	building_gfx = { berber_group_building_gfx mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	clothing_gfx = { papuan_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx }
+}
+
+middle_egyptian = {
+	parents = { predynastic_egyptian }
+	created = 2.1.1 
+	color = rgb { 252 186 3 }
+	history_loc_override = middle_egyptian_heritage_loc
+	
+	name_list = name_list_kemetic
+	heritage = heritage_egyptian
+	language = language_egyptian
+	martial_custom = martial_custom_equal # Questionable, women in Egyptian court had equal status to men, but they were granted that status *by* men
+	head_determination = head_determination_domain
+
+	ethos = ethos_bureaucratic
+	
+	traditions = {
+		tradition_pyramid_builders
+		tradition_hard_working 
+        tradition_agrarian
+		tradition_zealous_people
+		tradition_land_of_the_bow
+	}
+
+	ethnicities = {
+		10 = arab
+		1 = east_african
+	}
+
+	coa_gfx = { berber_group_coa_gfx  }
+	building_gfx = { berber_group_building_gfx mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	clothing_gfx = { papuan_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx }
+}
+
+ancient_egyptian = {
+	parents = { middle_egyptian }
+	created = 2.6.1 
+	color = ancient_egyptian
+	history_loc_override = ancient_egyptian_heritage_loc
+
+	INVALIDATED_BY = {
 		tfe = { ancient_egyptian }
 		wtwsms = { ancient_egyptian }
 		roa = { ancient_egyptian }
 		vanilla_ck3 = { ancient_egyptian kemetic }
 	}
-
-	color = hsv { 0.15  1  0.7 }
-
-	name_list = name_list_ancient_egyptian
+	
+	name_list = name_list_demotic
 	heritage = heritage_egyptian
-	language = language_kemetic
-	martial_custom = martial_custom_male_only
-
-	ethos = ethos_spiritual
+	language = language_egyptian
+	martial_custom = martial_custom_equal # Questionable, women in Egyptian court had equal status to men, but they were granted that status *by* men
 	head_determination = head_determination_domain
-	house_coa_frame = house_frame_10
-	house_coa_mask_offset = { 0.0 -0.06 }
-	house_coa_mask_scale = { 0.9 0.9 }
 
+	ethos = ethos_bureaucratic
+	
 	traditions = {
-		tradition_warriors_of_the_dry
-		tradition_artisans # Pyramids
+		tradition_pyramid_builders
+		tradition_hard_working 
+        tradition_agrarian
+		tradition_zealous_people
+		tradition_land_of_the_bow
 	}
 
 	ethnicities = {
 		10 = arab
-		4 = african
+		1 = east_african
 	}
 
-	coa_gfx = { berber_group_coa_gfx }
+	coa_gfx = { berber_group_coa_gfx  }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { dde_abbasid_clothing_gfx mena_clothing_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	clothing_gfx = { papuan_clothing_gfx }
 	unit_gfx = { sub_sahran_unit_gfx }
+}
+
+remenkimi = {
+	parents = { ancient_egyptian greek }
+	color = { 0.2 0.55 0.55 }
+	created = 300.1.1
+	history_loc_override = coptic_culture_heritage_loc
+	heritage = heritage_egyptian
+	language = language_coptic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { remenkimi }
+	}
+
+	ethos = ethos_spiritual
+
+	traditions = {
+		tradition_monastic_communities
+		tradition_philosopher_culture
+		tradition_faith_bound
+		tradition_agrarian
+	}
+
+	dlc_tradition = {
+		trait = tradition_binding_oaths
+		requires_dlc_flag = silk_and_silver
+	}
+
+	name_list = name_list_remenkimi
+
+	coa_gfx = { byzantine_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	house_coa_frame = house_frame_16
+
+	ethnicities = {
+		50 = mediterranean
+		50 = arab
+	}
+}
+
+neo_kemetic = {
+	parents = { middle_egyptian egyptian }
+	created =  800.1.1 
+	color = rgb { 245 197 66 }
+	
+	name_list = name_list_kemetic
+	heritage = heritage_egyptian
+	language = language_egyptian
+	martial_custom = martial_custom_equal # Questionable, women in Egyptian court had equal status to men, but they were granted that status *by* men
+	head_determination = head_determination_domain
+
+	ethos = ethos_bureaucratic
+	
+	traditions = {
+		tradition_pyramid_builders
+		tradition_hard_working 
+        tradition_agrarian
+		tradition_mubarizuns
+		tradition_land_of_the_bow
+	}
+
+	ethnicities = {
+		10 = arab
+		1 = east_african
+	}
+
+	coa_gfx = { berber_group_coa_gfx  }
+	building_gfx = { berber_group_building_gfx mena_building_gfx }
+	clothing_gfx = { dde_abbasid_clothing_gfx mena_clothing_gfx } 
+	clothing_gfx = { african_clothing_gfx }
+	clothing_gfx = { papuan_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx }
+}
+
+kushite = {
+		
+	color = rgb { 201 143 42 }
+	heritage = heritage_east_african
+	language = language_merotic
+	martial_custom = martial_custom_equal # Questionable, women in Egyptian court had equal status to men, but they were granted that status *by* men
+	head_determination = head_determination_domain
+
+	ethos = ethos_stoic
+
+	name_list = name_list_kushite
+	
+	traditions = {
+		tradition_pyramid_builders
+		tradition_agrarian
+		tradition_xenophilic
+		tradition_land_of_the_bow
+		tradition_nubian_warrior_queens
+	}
+
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx } 
+	clothing_gfx = { african_clothing_gfx }
+	clothing_gfx = { papuan_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx }
+	house_coa_frame = house_frame_19
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		80 = east_african
+		20 = african
+	}
+}
+
+nubian = {
+	color = rgb { 245 197 66 }
+	created =  350.1.1 
+	history_loc_override = kushite_heritage_loc
+	parents = { kushite }
+	
+	INVALIDATED_BY = { 
+		vanilla_ck3 = { nubian }
+	}
+	
+	ethos = ethos_spiritual
+	heritage = heritage_east_african
+	language = language_sudanic
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_astute_diplomats
+		tradition_xenophilic
+		tradition_land_of_the_bow
+		tradition_agrarian
+		tradition_nubian_warrior_queens
+	}
+	
+	name_list = name_list_nubian
+
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	house_coa_frame = house_frame_19
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		77 = east_african
+		23 = arab
+	}
 }
 
 per_sheklesh = {  # Egyptian Italy from BA to I:R
@@ -1199,6 +1418,9 @@ brythonic = {
 	}
 
 	color = hsv { 0.57 0.7 0.4 }
+	created = 3.1.1
+	parents = { proto_celtic }
+	history_loc_override = proto_celtic_brythonic_heritage_loc
 
 	heritage=heritage_brythonic
 	ethos=ethos_stoic #https://penelope.uchicago.edu/~grout/encyclopaedia_romana/britannia/miscellanea/geography.html
@@ -1208,9 +1430,9 @@ brythonic = {
 	house_coa_mask_offset = { 0.0 0.055 }
 	house_coa_mask_scale = { 0.9 0.9 }
 	traditions = {
+		tradition_storytellers
 		tradition_concubines
-		tradition_hill_dwellers
-		tradition_horse_breeder
+		tradition_hit_and_run
 	}
 	martial_custom = martial_custom_equal
 
@@ -1219,8 +1441,283 @@ brythonic = {
 	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { western_unit_gfx }
 
-	name_list = name_list_brythonic
+	name_list = name_list_old_brythonic
 
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+common_brythonic = {
+	color = rgb{ 84 127 196 }
+
+	parents = { old_brythonic }
+	created = 150.1.1
+	
+	ethos = ethos_communal
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_storytellers
+		tradition_concubines
+		tradition_fishermen
+	}
+	
+	name_list = name_list_late_brythonic
+	
+	coa_gfx = { welsh_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { welsh_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+east_brythonic = {
+	color = rgb{ 100 72 212 }
+
+	parents = { common_brythonic }
+	created = 580.1.1
+    history_loc_override = east_brythonic_heritage_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_hit_and_run
+		tradition_wetlanders
+		tradition_hird
+	}
+	
+	name_list = name_list_east_brythonic
+	
+	coa_gfx = { welsh_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { welsh_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+welsh = {
+	color = welsh
+
+	parents = { common_brythonic }
+	created = 580.1.1
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { welsh }
+	}
+	
+	ethos = ethos_stoic
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_poetry
+		tradition_concubines
+		tradition_highland_warriors
+		tradition_longbow_competitions
+	}
+	
+	name_list = name_list_welsh
+	
+	coa_gfx = { welsh_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { welsh_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+
+pictish = {
+	color = hsv { 0.58 1.00 0.72 }
+
+	parents = { old_brythonic }
+	created = 50.1.1
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { pictish }
+	}
+	
+	ethos = ethos_bellicose
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_concubines
+		tradition_poetry
+		tradition_highland_warriors
+		tradition_hill_dwellers
+	}
+	
+	name_list = name_list_pictish
+
+	coa_gfx = { scottish_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+
+breton = {
+	color = hsv { 0.72 0.6 0.76 }
+
+	parents = { common_brythonic }
+	created = 580.1.1
+	history_loc_override = breton_heritage_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { breton }
+	}
+	
+	ethos = ethos_communal
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_fishermen
+		tradition_storytellers
+		tradition_swords_for_hire
+		tradition_chanson_de_geste
+	}
+	
+	name_list = name_list_breton
+	
+	coa_gfx = { breton_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { breton_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+cornish = {
+	color = hsv { 0.72 0.6 0.72 }
+
+	parents = { common_brythonic }
+	created = 580.1.1
+	history_loc_override = cornish_heritage_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { cornish }
+	}
+	
+	ethos = ethos_communal
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_fishermen
+		tradition_storytellers
+		tradition_ancient_miners
+	}
+	
+	name_list = name_list_cornish
+	
+	coa_gfx = { welsh_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { cornish_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+cumbrian = {
+	color = hsv { 0.64 0.6 0.72 }
+
+	parents = { common_brythonic }
+	created = 580.1.1
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { cumbrian }
+	}
+	
+	ethos = ethos_stoic
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_poetry
+		tradition_concubines
+		tradition_highland_warriors
+		tradition_stalwart_defenders
+	}
+	
+	name_list = name_list_cumbrian
+	
+	coa_gfx = { scottish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
 	ethnicities = {
 		5 = caucasian_blond
 		30 = caucasian_ginger
@@ -1275,6 +1772,9 @@ hellenic_greek = { # Now used to represent non-Romanized Greeks
 	}
 
 	color = { 0.58 0.74 0.95 }
+	parents = { mycenaean }
+	created = 4.1.1
+	history_loc_override = ancient_greek_heritage_loc
 
 	ethos = ethos_egalitarian # Polis civilization: citizen assemblies, sortition, elected magistracies and (most famously in Athens) democracy made civic equality the defining value of the pre-Roman Greeks, in contrast to the bureaucratic imperial model of their eastern neighbours
 	head_determination = head_determination_domain
@@ -1292,21 +1792,70 @@ hellenic_greek = { # Now used to represent non-Romanized Greeks
 	house_coa_mask_offset = { 0.0 0.055 }
 	house_coa_mask_scale = { 0.9 0.9 }
 	traditions = { # From ChatGPT and my own research, non-Romanized Greeks fit better under a diplomatic/warfare-focused culture, instead of a political/intrigue-based one like base game Greek -tanner918
-		tradition_warrior_culture
-		tradition_legalistic
-		tradition_astute_diplomats
+		tradition_hellenic_hoplites 
+		tradition_legalistic 
+		tradition_astute_diplomats 
+		tradition_parochialism
 	}
 
 	name_list = name_list_ancient_greek
-	name_list = name_list_trojan # seems wrong but is localized as "Ancient Greek"
 
 	coa_gfx = { byzantine_group_coa_gfx }
-	building_gfx = { mediterranean_building_gfx }
+	building_gfx = { byzantine_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
 
 	ethnicities = {
-		10 = mediterranean_byzantine
+		100 = mediterranean_byzantine
+	}
+}
+
+enetoian = {
+	color = { 217 72 209 }
+
+	parents = { hellenic_greek venetic }
+	created = 100.1.1
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_byzantine
+	language = language_greek
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_ekvopetobos
+		tradition_horse_breeder
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_palace_politics
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_formation_fighting
+	}
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_religious_patronage
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_religious_patronage
+	}
+	
+	name_list = name_list_uenetoi
+	
+	coa_gfx = { byzantine_group_coa_gfx }
+	building_gfx = { byzantine_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		100 = mediterranean_byzantine
 	}
 }
 
@@ -1317,7 +1866,8 @@ greek = { # Overwriting the vanilla greek definition to make it better represent
 	}
 
 	parents = { hellenic_greek roman }
-	created = 2.1.1
+	created = 100.1.1
+	history_loc_override = recent_greek_heritage_loc
 
 	color = greek
 
@@ -1375,6 +1925,37 @@ greek = { # Overwriting the vanilla greek definition to make it better represent
 	}
 }
 
+mycenaean = {
+	color = rgb { 77 109 161 }
+	parents = { greco_phrygian }
+	created = 3.1.1
+	history_loc_override = mycenaean_heritage_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_ancient_greek
+	language = language_ancient_greek
+	traditions = { 
+		tradition_quarrelsome 
+		tradition_practiced_pirates 
+		tradition_hereditary_hierarchy 
+	}
+	name_list = name_list_mycenaean
+	head_determination = head_determination_domain
+	martial_custom = martial_custom_male_only
+
+	coa_gfx = { byzantine_group_coa_gfx }
+	building_gfx = { byzantine_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		100 = mediterranean_byzantine
+	}
+}
+
 # Move vanilla CK3 macedonian culture from heritage_ancient_greek to heritage_byzantine
 macedonian = {
     INVALIDATED_BY = {
@@ -1382,6 +1963,9 @@ macedonian = {
 	}
 
 	color = { 0.7 0.6 0.95 }
+	parents = { mycenaean }
+	created = 4.1.1
+	history_loc_override = mycenaean_heritage_loc
 
 	ethos = ethos_bellicose
 	head_determination = head_determination_domain
@@ -1618,6 +2202,38 @@ syro_hellenic = {
 		tradition_philosopher_culture
 	}
 	ethos = ethos_bureaucratic
+}
+
+greco_phrygian = {
+	color = rgb { 214 214 94 }
+	parents = { pie_culture }
+	created = 2.1.1
+	history_loc_override = greco_phrygian_heritage_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_pie
+	language = language_greco_phrygian
+	traditions = { 
+		tradition_quarrelsome 
+		tradition_koryos 
+		tradition_storytellers 
+	}
+	name_list = name_list_greco_phrygian
+	head_determination = head_determination_domain
+	martial_custom = martial_custom_male_only
+
+	coa_gfx = { byzantine_group_coa_gfx }
+	building_gfx = { byzantine_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		100 = mediterranean_byzantine
+	}
 }
 
 pemis = {
@@ -1896,12 +2512,12 @@ vandilian = { # https://en.wikipedia.org/wiki/East_Germanic_peoples
 
 	color = rgb { 215 246 166 }
 	heritage = heritage_east_germanic
-	language = language_gothic
+	language = language_vandalic
 	head_determination = head_determination_domain
 	house_coa_frame = house_frame_25
 	house_coa_mask_offset = { 0.0 0.025 }
 	house_coa_mask_scale = { 0.95 0.95 }
-	name_list = name_list_gothic
+	name_list = name_list_vandalic
 	ethnicities = {
 		25 = caucasian_blond
 		15 = caucasian_ginger
@@ -1957,6 +2573,44 @@ gothic = { # https://en.wikipedia.org/wiki/Goths
 	ethos = ethos_bellicose
 }
 
+crimean_gothic = {
+	color = { 85 73 99 }
+
+	parents = { gothic }
+	created = 900.1.1
+	
+	ethos = ethos_stoic
+	heritage = heritage_east_germanic
+	language = language_gothic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_swords_for_hire
+		tradition_martial_admiration
+		tradition_stand_and_fight
+	}
+	
+	dlc_tradition = {
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_late_gothic
+	
+	coa_gfx = { byzantine_group_coa_gfx }
+	building_gfx = { byzantine_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_16
+	
+	ethnicities = { # Copied from Norse
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
+
 visigothic = { # override of vanilla culture
 	INVALIDATED_BY = {
 		tfe = { visigothic } # TFE already moves this culture to an East Germanic heritage, so we don't need to override it.
@@ -2004,7 +2658,7 @@ ostrogothic = { # https://en.wikipedia.org/wiki/Ostrogoths
 
 	heritage = heritage_east_germanic
 	language = language_gothic
-	name_list = name_list_gothic
+	name_list = name_list_ostrogothic
 	head_determination = head_determination_domain
 	house_coa_frame = house_frame_25
 	house_coa_mask_offset = { 0.0 0.025 }
@@ -2025,6 +2679,40 @@ ostrogothic = { # https://en.wikipedia.org/wiki/Ostrogoths
 		tradition_battlefield_looters
 	}
 	ethos = ethos_bellicose
+}
+
+italo_ostrogoths = { 
+	color = { 214 201 144 }
+
+	created = 650.1.1
+
+	parents = { ostrogothic italian }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_xenophilic
+		tradition_martial_admiration
+		tradition_stand_and_fight
+		tradition_republican_legacy
+	}
+	
+	name_list = name_list_italo_goths
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		100 = mediterranean
+	}
 }
 
 gepid = { # https://en.wikipedia.org/wiki/Gepids
@@ -2067,14 +2755,14 @@ vandal = { # https://en.wikipedia.org/wiki/Vandals
 	}
 
 	heritage = heritage_east_germanic
-	language = language_gothic
+	language = language_vandalic
 	head_determination = head_determination_domain
 	house_coa_frame = house_frame_25
 	house_coa_mask_offset = { 0.0 0.025 }
 	house_coa_mask_scale = { 0.95 0.95 }
 	color = hsv { 0.05 0.7 0.3 }
 
-	name_list = name_list_gothic
+	name_list = name_list_vandalic
 
 	ethnicities = {
 		25 = caucasian_blond
@@ -2174,22 +2862,27 @@ celtiberian = {
 	}
 
 	color = hsv { 0.2 0.8 0.6 }
+	created = 3.1.1
+	parents = { proto_celtic }
+	history_loc_override = proto_celtic_heritage_loc
 
 	heritage = heritage_iberian_celtic
-	language = language_gaulish
+	language = language_celtiberian
 	martial_custom = martial_custom_equal
 	head_determination = head_determination_domain
 	house_coa_frame = house_frame_24
 	house_coa_mask_offset = { 0.0 0.055 }
 	house_coa_mask_scale = { 0.9 0.9 }
-	traditions = {
-		tradition_hit_and_run
-		tradition_adaptive_skirmishing
+	traditions = { 
+		tradition_hit_and_run 
+		tradition_mountaineers
+		tradition_wedding_ceremonies
+		tradition_stalwart_defenders
 	}
 
 	ethos = ethos_bellicose # Celebrated as the finest mercenaries of the western Mediterranean, hired by Carthage and Rome alike, and hardened by centuries of guerrilla warfare against both
 
-	name_list = name_list_gaulish
+	name_list = name_list_celtiberian
 
 	ethnicities = {
 		5 = caucasian_blond
@@ -2250,6 +2943,9 @@ gallic = {
 	}
 
 	color = hsv { 0.3 0.7 0.4 }
+	created = 3.1.1
+	parents = { proto_celtic }
+	history_loc_override = proto_celtic_heritage_loc
 
 	heritage = heritage_gaulish
 	language = language_gaulish
@@ -2258,9 +2954,11 @@ gallic = {
 	house_coa_frame = house_frame_24
 	house_coa_mask_offset = { 0.0 0.055 }
 	house_coa_mask_scale = { 0.9 0.9 }
-	traditions = {
-		tradition_hit_and_run
-		tradition_adaptive_skirmishing
+	traditions = { 
+		tradition_hit_and_run 
+		tradition_warrior_culture
+		tradition_stalwart_defenders
+		tradition_parochialism
 	}
 
 	ethos = ethos_bellicose # Warrior society famed for single combat, headhunting and mercenary service abroad - Gallic bands sacked Rome in 390 BC and raided Delphi in 279 BC
@@ -2287,11 +2985,12 @@ lusoiberian = { # https://en.wikipedia.org/wiki/Lusitanians
 	}
 
 	color = hsv { 0.6 0.8 0.2 }
-	parents = { celtiberian non_indo_european_iberian }
-	created = 2.1.1
+	created = 4.1.1
+	parents = { proto_celtic proto_italic }
+	history_loc_override = lusitanian_heritage_loc
 
 	heritage = heritage_iberian_celtic
-	language = language_gaulish
+	language = language_lusitanian
 	martial_custom = martial_custom_equal
 	head_determination = head_determination_domain
 	house_coa_frame = house_frame_24
@@ -2299,12 +2998,14 @@ lusoiberian = { # https://en.wikipedia.org/wiki/Lusitanians
 	house_coa_mask_scale = { 0.9 0.9 }
 
 	ethos = ethos_bellicose # Remembered above all for Viriathus' years-long guerrilla war against Rome and the relentless raiding of Hispania
-	traditions = {
-		tradition_hit_and_run
-		tradition_adaptive_skirmishing
+	traditions = { 
+		tradition_highland_warriors 
+		tradition_adaptive_skirmishing 
+		tradition_martial_admiration
+		tradition_swords_for_hire
 	}
 
-	name_list = name_list_gaulish
+	name_list = name_list_lusitanian
 
 	ethnicities = {
 		5 = caucasian_blond
@@ -2361,6 +3062,67 @@ galatian = {
 	unit_gfx = { eastern_unit_gfx }
 }
 
+lepontic = {
+	color = rgb { 85 212 161 }
+	created = 3.1.1
+	parents = { proto_celtic }
+	history_loc_override = proto_celtic_heritage_loc
+
+	
+	heritage = heritage_gaulish
+	language = language_lepontic
+	traditions = { 
+		tradition_parochialism 
+		tradition_poetry
+		tradition_mountain_homes
+		tradition_stalwart_defenders
+	}
+	name_list = name_list_lepontic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	ethos = ethos_communal
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+	coa_gfx = { breton_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+}
+
+proto_celtic = {
+	color = rgb { 15 166 55 }
+	created = 2.1.1
+	parents = { pie_culture }
+	history_loc_override = proto_celtic_development_loc
+	
+	heritage = heritage_gaulish
+	language = language_gaulish
+	traditions = { 
+		tradition_hit_and_run 
+		tradition_warrior_culture
+		tradition_stalwart_defenders
+		tradition_parochialism
+	}
+	name_list = name_list_proto_celtic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	ethos = ethos_stoic
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+	coa_gfx = { breton_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+}
+
 neo_mitanni = { # IRToCK3: a culture for Invictus revival meme Neo-Mitanni culture
     INVALIDATED_BY = {
 		tfe = { neo_mitanni }
@@ -2402,12 +3164,16 @@ bactrian = {
 	}
 
 	color = hsv { 0.03 0.7 0.7 }
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = bactrian_emergence_loc
 
 	name_list = name_list_bactrian
 
 	ethnicities = {
-		7 = arab
-		5 = mediterranean
+		35 = arab
+		43 = turkic_west
+		22 = turkic
 	}
 
 	ethos = ethos_stoic
@@ -2465,6 +3231,9 @@ scythian = {
 	}
 
 	color = hsv { 0.2 0.5 0.8 }
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = scythian_emergence_loc
 
 	name_list = name_list_scythian
 
@@ -2504,8 +3273,11 @@ sarmatian = {
 	}
 
 	color = rgb { 222 124 28 }
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = scythian_emergence_loc
 
-	name_list = name_list_sarmatian
+	name_list = name_list_scythian
 
 	ethnicities = {
 		7 = arab
@@ -2537,6 +3309,7 @@ sarmatian = {
 	}
 }
 
+
 parthian = {
     INVALIDATED_BY = {
 		tfe = { parthian }
@@ -2544,6 +3317,9 @@ parthian = {
 	}
 
 	color = hsv { 0.52 0.77 0.72 }
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = parthian_heritage_loc
 
 	name_list = name_list_parthian
 
@@ -2562,9 +3338,9 @@ parthian = {
 	language = language_iranian
 
 	coa_gfx = { iranian_group_coa_gfx }
-	building_gfx = { mena_building_gfx }
-	clothing_gfx = { mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
 
 	# It is assumed that royal Parthian women could own and manage their own property, land and manufactures, as could their predecessors in the Achaemenid and Seleucid Empire and their successors in the Sasanian Empire. It is fully attested that royal women, as well as noblewomen, accompanied their husbands in battle with their own entourage. (Parthian Empire Wikipedia)
 	martial_custom = martial_custom_equal
@@ -2629,9 +3405,8 @@ alan = { # override of vanilla culture
 		tfe = { alan } # TFE already removes the creation date from the culture, so no need to override it.
 	}
 	color = { 0.1 0.3 0.7 }
-	# created = 100.1.1 # IRToCK3: disabled the creation date
-
-	# history_loc_override = scythian_heritage_loc # IRToCK3: disabled the creation date
+	created = 100.1.1 # Alan still derives from sarmatian
+	parents = { sarmatian }
 
 	ethos = ethos_communal
 	heritage = heritage_iranian
@@ -2659,6 +3434,483 @@ alan = { # override of vanilla culture
 		4 = mediterranean_byzantine
 		7 = mediterranean
 		4 = arab
+	}
+}
+
+old_median = {
+	color = { 153 137 217 }
+
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = old_median_heritage_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_swords_for_hire
+		tradition_mountain_homes
+		tradition_mountaineers
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp3_fierce_independence
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_futuwaa
+	 }
+
+	 
+	name_list = name_list_old_median
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		33 = arab
+		67 = turkic_west
+	}
+}
+
+kurdish = {
+	color = { 0 0.9 0.7 }
+
+	created = 400.1.1
+	parents = { old_median }
+	history_loc_override = kurdish_heritage_loc
+	
+	ethos = ethos_communal
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_swords_for_hire
+		tradition_mountain_homes
+		tradition_eye_for_an_eye
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp3_fierce_independence
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_futuwaa
+	 }
+
+	 
+	name_list = name_list_kurdish
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		33 = arab
+		67 = turkic_west
+	}
+}
+
+daylamite = {
+	color = { 0 0.35 0.6 }
+
+	created = 500.1.1
+	parents = { old_median parthian }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_swords_for_hire
+		tradition_stalwart_defenders
+		tradition_mountaineers
+		tradition_isolationist 
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_pragmatic_creed
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_futuwaa
+	}
+	
+	name_list = name_list_daylamite
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		41 = arab
+		59 = turkic_west
+	}
+}
+
+tajik = {
+	color = { 0.7 0.6 1 }
+	created = 700.1.1
+	parents = { middle_persian khwarezmian } 
+	
+	ethos = ethos_spiritual
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_futuwaa
+		tradition_city_keepers #FP3 addition
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_irrigation_experts
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_dryland_dwellers
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_philosopher_culture
+	}
+
+	dlc_tradition = {
+		trait = tradition_silk_road_traders
+		requires_dlc_flag = silk_and_silver
+		fallback = tradition_caravaneers
+	}
+	
+	name_list = name_list_tajik
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		40 = arab
+		30 = mediterranean
+		30 = turkic_west
+	}
+}
+
+parsi = {
+	color = { 0.9 0.6 0.1 }
+	created = 785.1.1
+	parents = { middle_persian }
+
+	history_loc_override = parsi_history_loc
+
+	ethos = ethos_spiritual
+	heritage = heritage_iranian
+	language = language_rajasthani
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_diasporic
+		tradition_ce1_ritual_washing
+		tradition_faith_bound
+		tradition_maritime_mercantilism
+		tradition_philosopher_culture
+	}
+
+	name_list = name_list_parsi
+
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		65 = arab
+		35 = indian
+	}
+}
+
+saka = {
+	color = { 0.5 0.3 1 }
+	created = 100.1.1
+	parents = { scythian }
+	history_loc_override = saka_heritage_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		#tradition_horse_lords
+		tradition_dryland_dwellers
+		tradition_artisans
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+
+	dlc_tradition = {
+		trait = tradition_silk_road_traders
+		requires_dlc_flag = silk_and_silver
+		fallback = tradition_caravaneers
+	}
+	
+	name_list = name_list_saka
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		32 = arab
+		45 = turkic
+		23 = turkic_west
+	}
+}
+
+afghan = { # a.k.a. Pashtun
+	color = { 0.4 0.3 1 }
+
+	created = 800.1.1
+	parents = { bactrian }
+	
+	ethos = ethos_communal
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_eye_for_an_eye #FP3 change from Loyal Subjects 
+		tradition_esteemed_hospitality
+		tradition_mountain_homes
+		tradition_futuwaa
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_jirga
+		requires_dlc_flag = legacy_of_persia
+	}
+
+	name_list = name_list_afghan
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		35 = arab
+		43 = turkic_west
+		22 = turkic
+	}
+}
+
+proto_iranian = {
+	color = { 175 234 237 }
+
+	created = 3.1.1
+	parents = { pie_culture }
+	history_loc_override = proto_iranian_heritage_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_proto_iranian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_horse_breeder
+		tradition_stand_and_fight
+		tradition_only_the_strong
+		tradition_malleable_invaders
+	}
+
+	 
+	name_list = name_list_proto_iranian
+	
+	coa_gfx = { turkic_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { turkic_clothing_gfx mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	house_coa_frame = house_frame_14
+
+	ethnicities = {
+		50 = arab
+		50 = turkic_west
+	}
+}
+
+sogdian = {
+	color = { 0.1 0.3 0.9 }
+
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = sogdo_kwaresmian_heritage_loc
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_religion_blending
+		tradition_parochialism
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_futuwaa
+	}
+	dlc_tradition = {
+		trait = tradition_horse_breeder #FP3 addition
+		requires_dlc_flag = legacy_of_persia
+	}
+
+	dlc_tradition = {
+		trait = tradition_silk_road_traders
+		requires_dlc_flag = silk_and_silver
+		fallback = tradition_caravaneers
+	}
+
+	dlc_tradition = {
+		trait = tradition_fortune_seekers
+		requires_dlc_flag = silk_and_silver
+	}
+	
+	name_list = name_list_sogdian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		32 = arab
+		45 = turkic
+		23 = turkic_west
+	}
+}
+
+khwarezmian = {
+	color = { 0.4 0.6 0.9 }
+
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = sogdo_kwaresmian_heritage_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_dryland_dwellers
+		tradition_city_keepers #FP3 - swapped from Isolationism
+		tradition_stalwart_defenders # Added in FP3
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_futuwaa
+	}
+
+	dlc_tradition = {
+		trait = tradition_silk_road_traders
+		requires_dlc_flag = silk_and_silver
+		fallback = tradition_caravaneers
+	}
+	
+	name_list = name_list_khwarezmian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		58 = arab
+		42 = turkic_west
+	}
+}
+
+baloch = {
+	color = { 0.1 0.15 0.5 }
+	created = 4.1.1
+	parents = { proto_iranian }
+	history_loc_override = baloch_emergence_loc
+	
+	ethos = ethos_stoic #FP3 change based on research
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_futuwaa
+		tradition_desert_nomads
+		tradition_esteemed_hospitality
+		tradition_isolationist
+	}
+	
+	# FP3 	traditions
+	dlc_tradition = {
+		trait = tradition_fp3_jirga
+		requires_dlc_flag = legacy_of_persia
+	}
+
+	dlc_tradition = {
+		trait = tradition_binding_oaths
+		requires_dlc_flag = silk_and_silver
+	}
+
+	name_list = name_list_baloch
+
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	house_coa_frame = house_frame_12
+	house_coa_mask_offset = { 0.0 -0.04 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		100 = arab
 	}
 }
 
@@ -2772,6 +4024,44 @@ zarphatic = { # https://en.wikipedia.org/wiki/Zarphatic_language
 }
 
 # Old Italian
+
+proto_italic = {
+	color = { 161 111 80 }	
+	parents = { pie_culture }
+	created = 2.1.2
+	history_loc_override = pre_proto_italic_heritage_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_pie
+	language = language_pie
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_koryos
+		tradition_pastoralists
+		tradition_noble_adoption
+        tradition_sacred_groves
+	}
+	
+	name_list = name_list_proto_italic
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { northern_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		35 = mediterranean
+		10 = caucasian_blond
+		10 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
 oscan = { # This culture is now meant to represent the ancient Umbrii peoples, but keeping the oscan ID for compatibility with CK3-EU4 converter
     INVALIDATED_BY = {
 		tfe = { oscan }
@@ -2779,6 +4069,9 @@ oscan = { # This culture is now meant to represent the ancient Umbrii peoples, b
 	}
 
 	color = { 117 131 50 }
+	parents = { proto_italic }
+	created = 2.1.3
+	history_loc_override = oscan_culture_emergence_loc
 	MOD_DEPENDENT = { # WtWSMS has its own heritage_italian, but for the other mods that use CCU, give this culture its own heritage
 		IF @[tfe|roa] = {
 			heritage = heritage_italic
@@ -2855,6 +4148,9 @@ samnite = {
 	unit_gfx = { western_unit_gfx }
 
 	color = { 117 131 150 }
+	parents = { proto_italic }
+	created = 2.1.3
+	history_loc_override = oscan_culture_emergence_loc
 
 	ethnicities = {
 		10 = mediterranean
@@ -2864,55 +4160,80 @@ samnite = {
 	}
 }
 
-venetic = { # https://en.wikipedia.org/wiki/Adriatic_Veneti
-    INVALIDATED_BY = {
-		tfe = { venetic }
-		vanilla_ck3 = { venetic }
-	}
+venetic = {
+	color = { 122 222 189 }	
+	parents = { proto_italic }
+	created = 2.1.3
+	history_loc_override = venetic_culture_emergence_loc
 
-	MOD_DEPENDENT = { # WtWSMS has its own heritage_italian, but for the other mods that use CCU, give this culture its own heritage
-		IF @[tfe|roa|wtwsms] = {
-			heritage = heritage_venetic
-		} ELSE = { # Otherwise, give it heritage_latin so its actually related to Roman
-			heritage = heritage_latin
-		}
-	}
-	language = language_venetic
-    martial_custom = martial_custom_male_only
-	house_coa_frame = house_frame_22
-	house_coa_mask_offset = { 0.0 0.11 }
-	house_coa_mask_scale = { 0.85 0.85 }
-
-	name_list = name_list_venetic
 
 	ethos = ethos_stoic
+	heritage = heritage_venetic
+	language = language_venetic_culture
+	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
-
-	MOD_DEPENDENT = {
-		IF tfe = {
-			# Solves the error.log containing a line about not matching sequence in noric.
-			coa_gfx = { latin_group_coa_gfx breton_coa_gfx }
-		} ELSE = {
-			coa_gfx = { latin_group_coa_gfx western_coa_gfx }
-		}
-	}
-    building_gfx = { mediterranean_building_gfx }
-    clothing_gfx = { western_clothing_gfx }
-    unit_gfx = { western_unit_gfx }
-
-	color = { 193 117 241 }
-
-	ethnicities = {
-		10 = mediterranean
-	}
-
-    traditions = {
-        tradition_ekvopetobos
-        tradition_horse_breeder
-        tradition_maritime_mercantilism
-        tradition_stalwart_defenders
+	traditions = {
+		tradition_ekvopetobos
+		tradition_horse_breeder
+		tradition_maritime_mercantilism
+		tradition_stalwart_defenders
         tradition_sacred_groves
-    }
+	}
+	
+	name_list = name_list_venetic_culture
+	
+	coa_gfx = { venetic_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		35 = mediterranean
+		10 = caucasian_blond
+		10 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+liburnian = {
+	color = { 193 117 241 }	
+	parents = { proto_italic }
+	created = 2.1.3
+	history_loc_override = liburnian_culture_emergence_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_venetic
+	language = language_venetic_culture
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_practiced_pirates
+		tradition_maritime_mercantilism
+        tradition_sacred_groves
+        tradition_battlefield_looters	
+	}
+	
+	name_list = name_list_liburnian
+	
+	coa_gfx = { venetic_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_02
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		35 = mediterranean
+		10 = caucasian_blond
+		10 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
 }
 
 ligustic = {
@@ -2921,20 +4242,14 @@ ligustic = {
 		vanilla_ck3 = { ligustic }
 	}
 
-	MOD_DEPENDENT = { # WtWSMS has its own heritage_italian, but for the other mods that use CCU, give this culture its own heritage
-		IF @[tfe|roa] = {
-			heritage = heritage_italic
-		} ELSE = { # Otherwise, give it heritage_latin so its actually related to Roman
-			heritage = heritage_latin
-		}
-	}
-	language = language_ligustic
+	heritage = heritage_old_ligurian
+	language = language_old_ligurian
 	martial_custom = martial_custom_male_only
 	house_coa_frame = house_frame_22
 	house_coa_mask_offset = { 0.0 0.11 }
 	house_coa_mask_scale = { 0.85 0.85 }
 
-	name_list = name_list_roman
+	name_list = name_list_old_ligurian
 
 	ethos = ethos_stoic
 	head_determination = head_determination_domain
@@ -2947,17 +4262,28 @@ ligustic = {
 			coa_gfx = { latin_group_coa_gfx western_coa_gfx }
 		}
 	}
-	building_gfx = { mediterranean_building_gfx }
-	clothing_gfx = { western_clothing_gfx }
-	unit_gfx = { western_unit_gfx }
 
 	color = { 211 208 124 }
 
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+	
 	ethnicities = {
-		10 = mediterranean
+		35 = mediterranean
+		10 = caucasian_blond
+		10 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
 	}
 	traditions = {
-		tradition_only_the_strong
+		tradition_stand_and_fight	
+		tradition_maritime_mercantilism
+		tradition_stalwart_defenders
+		tradition_astute_diplomats		
 	}
 }
 
@@ -3044,6 +4370,9 @@ siculian = {
 	unit_gfx = { western_unit_gfx }
 
 	color = { 226 216 174 }
+	parents = { proto_italic }
+	created = 2.1.3
+	history_loc_override = oscan_culture_emergence_loc
 
 	ethnicities = {
 		10 = mediterranean
@@ -3061,6 +4390,9 @@ roman = {
 	}
 
 	color = { 0.8 0.1 0.1 }
+	parents = { proto_italic }
+	created = 2.1.3
+	history_loc_override = roman_culture_emergence_loc
 
 	ethos = ethos_bellicose
 	heritage = heritage_latin
@@ -3111,6 +4443,44 @@ roman = {
 
 	ethnicities = {
 		10 = mediterranean
+	}
+}
+
+romanoveneti = {
+	parents = { venetic roman }
+	created = 4.1.4
+	history_loc_override = romanoveneti_culture_emergence_loc
+
+	color = { 143 33 66 }	
+	ethos = ethos_egalitarian
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_republican_legacy
+		tradition_horse_breeder		
+		tradition_maritime_mercantilism
+		tradition_roman_legacy		
+	}
+	
+	name_list = name_list_romanoveneti
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	building_gfx = { mediterranean_building_gfx } 
+	clothing_gfx = { byzantine_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+	
+	ethnicities = {
+		35 = mediterranean
+		10 = caucasian_blond
+		10 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
 	}
 }
 
@@ -3226,6 +4596,142 @@ mikligardrish = {
 		10 = caucasian_northern_brown_hair
 		10 = caucasian_northern_dark_hair
 		40 = mediterranean_byzantine
+	}
+}
+
+proto_norse = {
+
+	color = { 13 84 155 }
+	parents = { proto_germanic }
+	created = 200.1.1
+
+	name_list = name_list_proto_norse
+	heritage = heritage_north_germanic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	ethos = ethos_stoic
+
+	traditions = {
+		tradition_metal_craftsmanship
+		tradition_sorcerous_metallurgy
+		tradition_quarrelsome	
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp1_coastal_warriors
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_seafaring
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp1_northern_stories
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_storytellers
+	}
+	
+	
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	house_coa_frame = house_frame_05
+	
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
+
+proto_germanic = {
+
+	color = { 23 64 82 }
+	parents = { pie_culture }
+	created = 2.1.1
+	history_loc_override = pre_proto_germanic_heritage_loc
+	
+	name_list = name_list_proto_germanic
+	heritage = heritage_central_germanic
+	language = language_proto_germanic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	ethos = ethos_stoic
+
+	traditions = {
+		tradition_metal_craftsmanship
+		tradition_storytellers
+		tradition_quarrelsome	
+	}
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	house_coa_frame = house_frame_05
+	
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
+
+norse = {
+	color = norse
+	# T_ 222 þ 254 Ð 208 T_ 240 E_
+	parents = { proto_norse }
+	created = 750.1.1
+	
+	ethos = ethos_bellicose
+	heritage = heritage_north_germanic
+	language = language_norse
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_things
+	}
+	
+	dlc_tradition = {
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	# FP1 Traditions
+	dlc_tradition = {
+		trait = tradition_fp1_coastal_warriors
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_hird
+	}
+	dlc_tradition = {
+		trait = tradition_fp1_performative_honour
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_poetry
+	}
+	dlc_tradition = {
+		trait = tradition_fp1_northern_stories
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_runestones
+	}
+	
+	name_list = name_list_norse
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	house_coa_frame = house_frame_05
+	
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
 	}
 }
 
@@ -3828,15 +5334,17 @@ rhaetian = {
 	# Hybrid with Latin: Rhaeto-Romansch
 
 	heritage = heritage_tyrrhenian
-	language = language_etruscan
+	language = language_raetic
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	house_coa_frame = house_frame_22
 	house_coa_mask_offset = { 0.0 0.11 }
 	house_coa_mask_scale = { 0.85 0.85 }
 	traditions = {
-		tradition_warriors_by_merit
+		tradition_stalwart_defenders
 		tradition_mountain_homes
+		tradition_mountaineers
+        tradition_isolationist
 	}
 
 	name_list = name_list_raetic
@@ -3903,6 +5411,418 @@ lemnian = {
 	ethos = ethos_stoic
 }
 
+west_saxon = {
+	color = { 219 124 121 }
+	created = 510.1.1 
+	parents = { ingaevonic }
+	history_loc_override = saxon_ingaevonic_heritage_loc
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_hird
+		tradition_stalwart_defenders
+	}
+	
+	name_list = name_list_west_saxon
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }  
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+mercian = {
+	color = { 240 150 64 }
+	created = 550.1.1 
+	parents = { ingaevonic }
+	history_loc_override = anglian_ingaevonic_heritage_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_hird
+		tradition_quarrelsome
+	}
+	
+	name_list = name_list_mercian
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }     
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+northumbrian = {
+	color = { 227 67 37 }
+	created = 550.1.1
+	parents = { ingaevonic }
+	history_loc_override = anglian_ingaevonic_heritage_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_hird
+		tradition_monastic_communities
+	}
+	
+	name_list = name_list_northumbrian
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }  
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+kentish = {
+	color = { 212 135 54 }
+	parents = { ingaevonic } 
+	history_loc_override = jutish_ingaevonic_heritage_loc
+
+	created = 510.1.1 
+	
+	ethos = ethos_spiritual
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_hird
+		tradition_collective_lands
+	}
+	
+	name_list = name_list_jutish
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }  
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+east_anglian = {
+	color = { 222 127 76 }
+	created = 550.1.1 
+	parents = { ingaevonic }
+	history_loc_override = anglian_ingaevonic_heritage_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_hird
+		tradition_wetlanders
+	}
+	
+	name_list = name_list_east_anglian
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }  
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+east_saxon = {
+	color = { 0.729 0.221 0.229 }
+	created = 510.1.1
+	parents = { ingaevonic }
+	history_loc_override = saxon_ingaevonic_heritage_loc
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_hird
+		tradition_loyal_soldiers
+	}
+	
+	name_list = name_list_east_saxon
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }  
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+ingaevonic = {
+	color = { 181 128 56 }
+	parents = { proto_germanic }
+	created = 200.1.1
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_seafaring		
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp1_performative_honour
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_poetry
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp1_northern_stories
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_runestones
+	}
+	
+	dlc_tradition = {
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_late_ingaevonic
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }  
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+anglo_saxon = {
+	color = { 0.8 0.3 0.3 }
+	created = 927.1.1
+	parents = { west_saxon mercian }
+	history_loc_override = anglo_saxon_heritage_loc
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_the_witenagemot
+		tradition_city_keepers
+		tradition_hird
+	}
+	
+	name_list = name_list_anglo_saxon
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+old_saxon = {
+	color = { 0.5 0.1 0.1 }
+
+	created = 550.1.1
+	parents = { ingaevonic }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_saxon
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_things
+		tradition_seafaring
+		tradition_hird
+	}
+	
+	dlc_tradition = {
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_old_saxon
+
+	coa_gfx = { western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		25 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		35 = caucasian_northern_brown_hair
+		25 = caucasian_northern_dark_hair
+	}
+}
+
+scottish = {
+	color = hsv{ 0.035 0.8 0.8 }
+	created = 1050.1.1
+	parents = { northumbrian cumbrian }
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_hereditary_hierarchy
+		tradition_city_keepers
+		tradition_xenophilic
+		tradition_strong_kinship
+	}
+	
+	name_list = name_list_scottish
+	
+	coa_gfx = { scottish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { english_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+frisian = {	
+	color = { 0.7 0.3 0.0 }
+	created = 550.1.1
+	parents = { ingaevonic }
+	
+	ethos = ethos_stoic
+	heritage = heritage_central_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_fishermen
+		tradition_zealous_people
+		tradition_battlefield_looters
+	}
+	
+	name_list = name_list_frisian
+
+	coa_gfx = { frisian_coa_gfx german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+	house_coa_frame = house_frame_25
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
 angle = { # https://en.wikipedia.org/wiki/Angles
     INVALIDATED_BY = {
 		tfe = { angle }
@@ -3929,7 +5849,7 @@ angle = { # https://en.wikipedia.org/wiki/Angles
 		requires_dlc_flag = hybridize_culture
 	}
 
-	name_list = name_list_old_saxon
+	name_list = name_list_late_ingaevonic
 
 	coa_gfx = { western_coa_gfx }
 	building_gfx = { western_building_gfx }
@@ -3985,14 +5905,14 @@ iweric = {
 	ethos = ethos_stoic
 }
 
-suebi = { # override of vanilla culture
+irminonic = { # replacing the old germanic Suebi
 	INVALIDATED_BY = {
 		tfe = { old_suebi } # In TFE, the pre-Iberian Suebi are represented by the old_suebi culture.
 	}
 	color = { 0.8 0.7 0.4 }
 
 	ethos = ethos_bellicose
-	heritage = heritage_west_germanic # IRToCK3: moved from vanilla heritage_iberian
+	heritage = heritage_central_germanic 
 	language = language_central_germanic
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
@@ -4000,19 +5920,220 @@ suebi = { # override of vanilla culture
 	house_coa_mask_offset = { 0.0 0.055 }
 	house_coa_mask_scale = { 0.9 0.9 }
 	traditions = {
+		tradition_warrior_culture
+		tradition_mountain_homes
+		tradition_stand_and_fight
+	}
+	
+	name_list = name_list_late_irminonic
+
+	coa_gfx = { german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+	house_coa_frame = house_frame_25
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+suebi = { # representing latinised suebi - as how the vanilla name list suggests
+	color = { 0.8 0.7 0.4 }
+	parents = { irminonic }
+	created = 580.1.1
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iberian
+	language = language_central_germanic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
 		tradition_stand_and_fight
 		tradition_agrarian
 	}
-
+	
 	name_list = name_list_suebi
-
+	
 	coa_gfx = { iberian_group_coa_gfx western_coa_gfx }
 	building_gfx = { iberian_building_gfx }
 	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
 	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		100 = mediterranean
+	}
+}
+
+swabian = {
+	color = swabian
+	parents = { irminonic }
+	created = 580.1.1
+	
+	ethos = ethos_communal
+	heritage = heritage_central_germanic
+	language = language_high_german
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_mountain_homes
+		tradition_parochialism
+		tradition_hard_working
+	}
+	
+	name_list = name_list_swabian
+
+	coa_gfx = { german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { swabian_clothing_gfx dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_25
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
 
 	ethnicities = {
-		10 = mediterranean
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+bavarian = {
+	color = { 0.3 0.30 0.35 }
+	parents = { irminonic }
+	created = 580.1.1
+	
+	ethos = ethos_spiritual
+	heritage = heritage_central_germanic
+	language = language_high_german
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_zealous_people
+		tradition_stand_and_fight
+		tradition_hereditary_hierarchy
+	}
+	
+	name_list = name_list_bavarian
+
+	coa_gfx = { german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+	house_coa_frame = house_frame_25
+	house_coa_mask_offset = { 0.0 0.025 }
+	house_coa_mask_scale = { 0.95 0.95 }
+
+	ethnicities = {
+		25 = caucasian_blond
+		15 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+frankish = {
+	color = frankish
+	parents = { proto_germanic }
+	created = 200.1.1
+	
+	ethos = ethos_bellicose
+	heritage = heritage_frankish
+	language = language_frankish
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_warrior_culture
+		tradition_hereditary_hierarchy
+		tradition_stand_and_fight
+	}
+	
+	name_list = name_list_frankish
+	
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_03
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+indo_germanic = {
+	color = { 105 51 55 }
+	parents = { proto_germanic }
+	created = 100.1.1
+	
+	ethos = ethos_spiritual
+	heritage = heritage_indo_germanic
+	language = language_indo_germanic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_ruling_caste	
+		tradition_martial_admiration
+		tradition_culture_blending
+		tradition_khadga_puja	
+	}
+
+	name_list = name_list_late_indo_germanic
+
+	coa_gfx = { indo_aryan_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	house_coa_frame = house_frame_17
+
+	ethnicities = {
+		32 = arab
+		67 = indian
+	}
+}
+
+deccano_germanic = {
+	color = { 138 126 85 }
+	parents = { proto_germanic }
+	created = 100.1.1
+	
+	ethos = ethos_stoic
+	heritage = heritage_indo_germanic
+	language = language_indo_germanic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_ruling_caste	
+		tradition_martial_admiration
+		tradition_culture_blending
+		tradition_garuda_warriors	
+	}
+
+	name_list = name_list_late_tamilo_germanic
+
+	coa_gfx = { dravidian_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	house_coa_frame = house_frame_08
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		10 = arab
+		15 = indian
+		75 = south_indian
 	}
 }
 
@@ -4599,5 +6720,583 @@ yi = {
 
 	ethnicities = {
 		10 = asian_han_chinese
+	}
+}
+
+hlai = { # also known as Li
+	color = { 0.5 0.5 0.5 }
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { hlai }
+	}
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_egalitarian
+	heritage = heritage_tai
+	language = language_tai
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+
+	traditions = {
+		tradition_jungle_dwellers
+		tradition_equal_inheritance
+		tradition_charitable
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_malleable_subjects
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_xenophilic
+	}
+
+	name_list = name_list_zhuang
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		100 = asian_han_chinese
+	}
+}
+
+hmong = {
+	color = { 40 140 100 }
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { hmong }
+	}
+
+	ethos = ethos_stoic
+	heritage = heritage_hmongic
+	language = language_hmongic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_order_convention = dynasty_always_first
+
+	traditions = {
+		tradition_hill_dwellers
+		tradition_hunters
+		tradition_mystical_ancestors
+	}
+	dlc_tradition = {
+		trait = tradition_fp2_malleable_subjects
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_xenophilic
+	}
+
+	name_list = name_list_hmong
+
+	coa_gfx = { burman_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_frame_26
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		100 = asian_malay
+	}
+}
+
+yao = {
+	color = { 100 140 120 }
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { yao }
+	}
+
+	ethos = ethos_egalitarian
+	heritage = heritage_hmongic
+	language = language_hmongic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_order_convention = dynasty_always_first
+
+	traditions = {
+		tradition_agrarian
+		tradition_medicinal_plants
+	}
+	dlc_tradition = {
+		trait = tradition_artisans
+		requires_dlc_flag = royal_court
+	}
+	dlc_tradition = {
+		trait = tradition_fp2_malleable_subjects
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_xenophilic
+	}
+
+	name_list = name_list_mien
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_frame_26
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		100 = asian_malay
+	}
+}
+
+bouxcuengh = { # also known as Zhuang
+	color = { 0.5 0.45 0.2 }
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { bouxcuengh }
+	}
+
+	ethos = ethos_communal
+	heritage = heritage_tai
+	language = language_tai
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	name_order_convention = dynasty_always_first
+
+	traditions = {
+		tradition_hill_dwellers
+		tradition_culinary_art
+		tradition_storytellers
+		tradition_mystical_ancestors
+	}
+
+	name_list = name_list_zhuang
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { viet_clothing_gfx chinese_clothing_gfx }
+	unit_gfx = { southeast_asian_unit_gfx indian_unit_gfx }
+	house_coa_frame = house_frame_26
+	house_coa_mask_offset = { 0.0 0.0 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		100 = asian_malay
+	}
+}
+
+irish = {
+	color = hsv { 0.43 0.86 0.61 }
+	created = 3.1.1
+	parents = { proto_celtic }
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { irish }
+	}
+
+	history_loc_override = proto_celtic_irish_heritage_loc
+	
+	ethos = ethos_courtly
+	heritage = heritage_goidelic
+	language = language_goidelic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_pastoralists
+		tradition_poetry
+		tradition_polygamous
+		tradition_maritime_mercantilism
+		tradition_monastic_communities
+	}
+	
+	name_list = name_list_irish
+	
+	coa_gfx = { irish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+gaelic = {
+	color = gaelic
+	created = 800.1.1
+	parents = { irish pictish }
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { gaelic }
+	}
+	
+	ethos = ethos_bellicose
+	heritage = heritage_goidelic
+	language = language_goidelic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_fishermen
+		tradition_hill_dwellers
+		tradition_highland_warriors
+		tradition_strong_kinship
+		tradition_concubines
+	}
+
+	name_list = name_list_gaelic
+	
+	coa_gfx = { scottish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_24
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+castilian = {
+	color = castilian
+	created = 800.1.1
+	parents = { roman }
+	history_loc_override = iberian_culture_emergence_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { castilian }
+	}
+
+	ethos = ethos_bellicose
+	heritage = heritage_iberian
+	language = language_iberian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_martial_admiration
+		tradition_castle_keepers
+		tradition_chivalry
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_strategy_gamers
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_hit_and_run
+	}
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	name_list = name_list_castilian
+	
+	coa_gfx = { castilian_coa_gfx iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		100 = mediterranean
+	}
+}
+
+galician = {
+	color = { 0.92 0.93 0.63 }
+	created = 800.1.1
+	parents = { roman }
+	history_loc_override = galician_culture_emergence_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { galician }
+	}
+
+	ethos = ethos_spiritual
+	heritage = heritage_iberian
+	language = language_iberian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_monastic_communities
+		tradition_highland_warriors
+		tradition_fishermen
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	name_list = name_list_galician
+	
+	coa_gfx = { iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		100 = mediterranean
+	}
+}
+
+cisalpine = {
+	color = { 0.95 0.95 0.55 }
+
+	created = 800.1.1
+	parents = { roman lombard }
+	history_loc_override = cisalpine_culture_emergence_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { cisalpine }
+	}
+	
+	ethos = ethos_communal
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_republican_legacy
+		tradition_maritime_mercantilism
+	}
+
+	dlc_tradition = {
+		trait = tradition_roman_law
+		requires_dlc_flag = silk_and_silver
+	}
+
+	dlc_tradition = {
+		trait = tradition_civic_religion
+		requires_dlc_flag = silk_and_silver
+	}
+
+	dlc_tradition = {
+		trait = tradition_fortune_seekers
+		requires_dlc_flag = silk_and_silver
+	}
+	
+	name_list = name_list_cisalpine
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+
+	ethnicities = {
+		100 = mediterranean
+	}
+}
+
+asturleonese = {
+	color = { 0.98 0.85 0.36  }
+	created = 800.1.1
+	parents = { roman }
+	history_loc_override = iberian_culture_emergence_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { asturleonese }
+	}
+
+	ethos = ethos_egalitarian
+	heritage = heritage_iberian
+	language = language_iberian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_hit_and_run
+		tradition_mountaineers
+		tradition_fervent_temple_builders
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	name_list = name_list_asturleonese
+	
+	coa_gfx = { leonese_coa_gfx iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		100 = mediterranean
+	}
+}
+
+french = {
+	color = french
+	created = 862.1.1
+	parents = { roman }
+	history_loc_override = french_culture_emergence_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { french }
+	}
+	
+	ethos = ethos_courtly
+	heritage = heritage_frankish
+	language = language_french
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_chanson_de_geste
+		tradition_hereditary_hierarchy
+		tradition_chivalry
+	}
+	
+	name_list = name_list_french
+	
+	coa_gfx = { french_coa_gfx frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_03
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+	
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}	
+}
+
+occitan = {
+	color = occitan
+	created = 600.1.1
+	parents = { roman }
+	history_loc_override = occitan_culture_emergence_loc
+
+	INVALIDATED_BY = {
+		vanilla_ck3 = { occitan }
+	}
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_frankish
+	language = language_occitano_romance
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_equal_inheritance
+		tradition_chivalry
+		tradition_chanson_de_geste
+		tradition_parochialism
+	}
+	
+	name_list = name_list_occitan
+
+	coa_gfx = { occitan_coa_gfx frankish_group_coa_gfx western_coa_gfx } 
+	building_gfx = { mediterranean_building_gfx } 
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 	
+	house_coa_frame = house_frame_03
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}	
+}
+
+venetian = {
+	created = 720.1.1
+	parents = { romanoveneti lombard }
+	history_loc_override = venetian_culture_emergence_loc
+
+	color = { 146 216 250 }	
+	ethos = ethos_communal
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	
+	traditions = {
+		tradition_republican_legacy
+		tradition_maritime_mercantilism
+	}
+
+	dlc_tradition = {
+		trait = tradition_roman_law
+		requires_dlc_flag = silk_and_silver
+	}
+
+	dlc_tradition = {
+		trait = tradition_civic_religion
+		requires_dlc_flag = silk_and_silver
+	}
+
+	dlc_tradition = {
+		trait = tradition_fortune_seekers
+		requires_dlc_flag = silk_and_silver
+	}
+	
+	name_list = name_list_venetian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_22
+	house_coa_mask_offset = { 0.0 0.11 }
+	house_coa_mask_scale = { 0.85 0.85 }
+	
+	ethnicities = {
+		35 = mediterranean
+		10 = caucasian_blond
+		10 = caucasian_ginger
+		35 = caucasian_brown_hair
+		25 = caucasian_dark_hair
+	}
+}
+
+pie_culture = {
+
+	color = { 1 33 66 }	
+	
+	name_list = name_list_pie
+	heritage = heritage_pie
+	language = language_pie
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	ethos = ethos_bellicose
+
+	traditions = {
+		tradition_koryos
+		tradition_pastoralists
+		tradition_hit_and_run
+		tradition_storytellers
+		tradition_poetry	
+	}
+
+	
+	
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { northern_unit_gfx }
+	house_coa_frame = house_frame_05
+	
+	ethnicities = {
+		10 = mediterranean
+		30 = caucasian_northern_blond
+		5 = caucasian_northern_ginger
+		30 = caucasian_northern_brown_hair
+		35 = caucasian_northern_dark_hair
 	}
 }
