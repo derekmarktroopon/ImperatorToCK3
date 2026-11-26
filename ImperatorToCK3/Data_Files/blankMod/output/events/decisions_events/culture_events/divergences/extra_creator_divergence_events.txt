@@ -1,0 +1,168 @@
+﻿namespace = galsignan_culture_events
+
+##################################################
+# Galsignan culture Diverges
+##################################################
+
+galsignan_culture_events.1 = {
+	type = character_event
+	title = galsignan_culture_events.1.t # 
+	desc = galsignan_culture_events.1.desc # 
+	theme = cultural_festival
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}    
+
+	immediate = {
+		hidden_effect = {
+			IF = {
+				limit = {
+					root.culture = {
+						has_cultural_pillar = heritage_north_germanic
+					}
+				}
+				create_hybrid_culture = culture:scottish
+			}
+			ELSE_IF = {
+				limit = {
+					root.culture = {
+						has_cultural_pillar = heritage_west_germanic
+					}
+				}
+				create_hybrid_culture = culture:swedish
+			}
+			if = {
+				limit = {
+					is_landed = no
+				}
+				domicile.domicile_location.county.culture = {
+					save_scope_as = venetian_county_that_becomes_galsianer_original_culture
+				}
+			}
+		}
+		create_hybrid_culture = culture:venetian
+		hidden_effect = {
+			root.culture = {
+				set_culture_name = {
+					noun = galsianer_culture_name
+					collective_noun = galsianer_culture_prefix
+					prefix = galsianer_culture_collective_noun
+				}
+				set_ethos_from = culture:norse
+				join_era = culture_era_early_medieval
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_hereditary_hierarchy
+					}
+					remove_culture_tradition = tradition_hereditary_hierarchy
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_city_keepers
+					}
+					remove_culture_tradition = tradition_city_keepers
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_xenophilic
+					}
+					remove_culture_tradition = tradition_xenophilic
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_runestones
+					}
+					remove_culture_tradition = tradition_runestones
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_zealous_people
+					}
+					remove_culture_tradition = tradition_zealous_people
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_things
+					}
+					remove_culture_tradition = tradition_things
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_maritime_mercantilism
+					}
+					remove_culture_tradition = tradition_maritime_mercantilism
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_astute_diplomats
+					}
+					remove_culture_tradition = tradition_astute_diplomats
+				}
+				if = {
+					limit = {
+						has_cultural_tradition = tradition_music_theory
+					}
+					remove_culture_tradition = tradition_music_theory
+				}
+				add_culture_tradition = tradition_ekvopetobos
+				if = {
+					limit = {
+						has_dlc_feature = the_northern_lords
+					}
+					add_culture_tradition = tradition_fp1_coastal_warriors
+				}
+				add_culture_tradition = tradition_strong_kinship
+				if = {
+					limit = {
+						has_dlc_feature = the_northern_lords
+					}
+					add_culture_tradition = tradition_fp1_performative_honour
+				}
+				if = {
+					limit = {
+						has_dlc_feature = the_northern_lords
+					}
+					add_culture_tradition = tradition_fp1_northern_stories
+				}
+				set_culture_pillar = heritage_north_germanic
+				set_culture_pillar = language_anglic
+			}
+		}
+	}
+
+	option = { # Our varies spellings are a mark of history!
+		name = galsignan_culture_events.option_a
+		root.culture = {
+			set_name_list = name_list_galsignish
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_landed = no
+				}
+				domicile.domicile_location.county = {
+					set_county_culture = scope:venetian_county_that_becomes_galsianer_original_culture
+				}	
+			}
+		}
+	}
+
+	option = { # We ought to devise a new orthography to unite this culture.
+		name = galsignan_culture_events.option_b
+		root.culture = {
+			set_name_list = name_list_galsignish_special
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_landed = no
+				}
+				domicile.domicile_location.county = {
+					set_county_culture = scope:venetian_county_that_becomes_galsianer_original_culture
+				}	
+			}
+		}
+	}
+		
+}

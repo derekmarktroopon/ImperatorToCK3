@@ -88,22 +88,13 @@ link = { ck3 = arabic_pagan ir = arabian_pantheon }
 
 #Italic Faiths
 
-link = {
-    ck3 = cult_of_reitia_paganism
-    irProvince = 3595
-    ck3Culture = venetic
-    ir = italic_pantheon
-}
-link = {
-    ck3 = venetic_paganism
-    ck3Culture = venetic
-    ir = italic_pantheon
-}
-link = {
-    ck3 = raetic_pagan
-    ck3Culture = rhaetian
-    ir = italic_pantheon
-}
+link = { ck3 = cult_of_reitia_paganism irProvince = 3595 ck3Culture = venetic ir = italic_pantheon }
+link = { ck3 = venetic_paganism ck3Culture = venetic ck3Culture = liburnian ir = italic_pantheon }
+link = { ck3 = raetic_pagan ck3Culture = rhaetian ir = italic_pantheon }
+link = { ck3 = ligurian_pagan ck3Culture = ligustic ir = italic_pantheon }
+link = { ck3 = old_latin_pagan ck3Culture = roman ir = italic_pantheon }
+link = { ck3 = etruscan_pagan ck3Culture = etruscan ir = italic_pantheon }
+link = { ck3 = oscan_pagan ck3Culture = oscan ck3Culture = samnite ck3Culture = siculian ir = italic_pantheon }
 
 # Hellenic - TFE
 link = { ck3 = roman_pagan ir = italic_pantheon }

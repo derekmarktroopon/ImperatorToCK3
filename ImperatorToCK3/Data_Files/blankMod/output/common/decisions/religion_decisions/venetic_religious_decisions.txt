@@ -1,0 +1,149 @@
+﻿
+select_personal_deity_venetic_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+
+	desc = select_personal_deity_venetic_decision_desc
+	selection_tooltip = select_personal_deity_venetic_decision_tooltip
+
+	is_shown = {
+		religion = religion:old_italic_religion
+		#culture = { 
+		#    OR = {
+        #        has_cultural_pillar = heritage_venetic
+        #        has_cultural_pillar = language_venetic_culture
+        #        has_name_list = name_list_venetic_culture
+		#    }
+		#}
+		OR = {
+			faith = { has_doctrine_parameter = select_personal_god_active }
+			has_personal_tenet_flag = select_personal_god_active_personal
+		}
+	}
+
+	is_valid = {
+	}
+
+	is_valid_showing_failures_only = {
+		# Have to at _least_ not be in piety debt.
+		piety >= 0
+	}
+
+	cooldown = { years = 5 }
+    
+	effect = {
+		# Show the possible options.
+		show_as_tooltip = {
+			random_list = {
+				desc = select_personal_deity_venetic_decision_tt
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_venetic_decision.select_reitia
+					root = {
+						add_character_modifier = bhakti_venetic_reitia
+					}
+					
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_venetic_decision.select_tumusiates
+					root = {
+						add_character_modifier = bhakti_venetic_tumusiates
+					}
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_venetic_decision.select_altino
+					root = {
+						add_character_modifier = bhakti_venetic_altino
+					}
+				}
+				100 = {
+					show_chance = no
+					desc = select_personal_deity_venetic_decision.select_alkomno
+					root = {
+						add_character_modifier = bhakti_venetic_alkomno
+					}
+				}
+			}
+		}	
+	trigger_event = { id = venetic_religious_decision.1 }
+    }
+	ai_check_interval = 96
+	
+	ai_potential = {
+		piety >= minor_piety_value
+		religion = religion:old_italic_religion
+		NOR = {
+			has_character_modifier = bhakti_venetic_reitia
+			has_character_modifier = bhakti_venetic_tumusiates
+			has_character_modifier = bhakti_venetic_altino
+			has_character_modifier = bhakti_venetic_alkomno
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+written_offering_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	desc = written_offering_decision_desc
+	selection_tooltip = written_offering_decision_tooltip
+
+	is_shown = {  
+		rite = { rite_has_parameter = ritual_writing_active }
+		#AND = {
+		#   	faith = { has_doctrine = tenet_ritual_celebrations	}
+		#   	religion = religion:old_italic_religion			
+		#}
+	}
+    cost = {
+	        gold = minor_gold_value
+	        prestige = minor_prestige_value
+    }
+	cooldown = { years = 4 }
+	effect = {
+		trigger_event = { id = venetic_religious_decision.2 }
+		capital_province = {
+			county = {
+				add_county_modifier = {
+					modifier = gave_written_offering_modifier
+                    years = 1 
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				#OR = {
+		            rite = { rite_has_parameter = ritual_writing_active }
+		            #AND = {
+		            #    rite = { has_doctrine = tenet_ritual_celebrations	}
+		            #    religion = religion:old_italic_religion			
+		            #}
+		        #}
+			}
+			add_opinion = {
+				modifier = pleased_opinion
+				target = root
+				opinion = 10
+			}
+		}
+	}
+
+	ai_check_interval = 36
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

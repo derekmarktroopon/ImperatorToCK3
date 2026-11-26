@@ -1,0 +1,20 @@
+﻿l_english:
+
+ bhakti_venetic_reitia:0 "Devotee of Reitia"
+ bhakti_venetic_reitia_desc:0 "This character's favored god is Reitia, goddess of writing, education and the all-Mother."
+ bhakti_venetic_tumusiates:0 "Devotee of Tumusiates"
+ bhakti_venetic_tumusiates_desc:0 "This character's favored god is Tumusiates, a god of protection, wealth and merchants."
+ bhakti_venetic_altino:0 "Devotee of Altino"
+ bhakti_venetic_altino_desc:0 "This character's favored god is altino, a god of honor, wisdom and statesmanship"
+ bhakti_venetic_alkomno:0 "Devotee of Alkomno"
+ bhakti_venetic_alkomno_desc:0 "This character's favored god is Alkomno, a god of nature, love and fertility."
+ 
+ gave_written_offering_modifier:0 "Inscribed Gratitude to the Divine"
+
+doctrine_parameter_ritual_writing_active:0 "Allows #ERitual Inscriptions as gifts in exchange for piety"
+doctrine_parameter_select_personal_god_active_retic:0 "#E $retic_religion_adj$#! faithful with this tenet may select a personal #E deity#!."
+
+gave_written_offering:0 "Inscribed Gratitude to the Divine"
+
+ritual_writing_vassals:0 "Pleased Faithful"
+

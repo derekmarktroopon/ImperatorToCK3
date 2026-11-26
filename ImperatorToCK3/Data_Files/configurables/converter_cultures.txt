@@ -4130,7 +4130,7 @@ samnite = {
 	house_coa_mask_offset = { 0.0 0.11 }
 	house_coa_mask_scale = { 0.85 0.85 }
 
-	name_list = name_list_roman
+	name_list = name_list_oscan
 
 	ethos = ethos_stoic
 	head_determination = head_determination_domain
@@ -4352,7 +4352,7 @@ siculian = {
 	house_coa_mask_offset = { 0.0 0.11 }
 	house_coa_mask_scale = { 0.85 0.85 }
 
-	name_list = name_list_sicilian
+	name_list = name_list_oscan
 
 	ethos = ethos_stoic
 	head_determination = head_determination_domain
