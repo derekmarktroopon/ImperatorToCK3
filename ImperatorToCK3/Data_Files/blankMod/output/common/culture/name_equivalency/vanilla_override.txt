@@ -138,7 +138,172 @@ hildegarde_female = {
 elisabeth_female = {
  Aaleyaamma AlZ_bEE_ta Beileag Bet EisabE_u Elesbed ElisabE_ta Elisabet ElI_sabet Elisabeta Elisabeth Elisabetta Elisaued Elisaveta Elizabeta Elizabeth E_lizabeth Elspeth ElZ_bieta ErzsE_bet Ilizabith Isabeau Isabel Isabela IsabE_la Isabella Isabelle IsabE_u Isobel Lillias Lise Lisebet Lys Sabela Uusbail Yelizaveta Ysabel Ysbail Zabel Lisabetta
  # Vanilla
- Elisapeth
- cpt_Ilisabek jp_Erizabetsu jp2_Erisabetu Elispet Ispel
- # IRToCK3 
+ Elisapeth Elispet Ispel # IRToCK3 
+ cpt_Ilisabek jp_Erizabetsu jp2_Erisabetu 
  }
+baldwin_male = { Baldewin Baldoen Baldovino Balduin Baldwin BaudoI_n Baudouin Boudewijn Paltuin # Vanilla
+Baldwini Balthawiniz Balthawinir Balthawini Baldawin Balithavini Balidhavini Balitavini Palitawini Palitavini jp_Ba_doinyu jp2_Baruduinu }
+benedict_male = { BBenedek Benedetto Benedict Benedict_regnal Benedictus Benedictus_regnal Beneitu Benedikt Beneke BeneS_ Beneset Benet Bengt Benito Benoiet BenoI_t Binidittu Budoc Budic Budog Banadetg Benedykt # Vanilla
+PE_nE_kE_ jp2_Benedzitu }
+bernard_male = { Benno BE_rard Berardo Bernaldu Bernard Barnaerd BernA_t Bernardin Bernardino Bernardo Bernardu Bernart Bernat Bernd Bernead Bernhard Birnardu # Vanilla
+Beranhart Beornheard }
+nicholas_male = { Cailean Calum Claes Claus Colin ColmA_n Columb MikoL_aj MikolA_S_ MikulA_S_ Niccolino NiccolO_ Nicholas Nicholas_regnal Nicholaus Niclaes Nicolas Nicolau Niels Nigola Niklas Nikola Nikolaos Nikolaus Nikolitza NikollE_ Nikoloz Nils NicolA_ MiklO_s Nicolaus Nicolaus_regnal # Vanilla
+dmt_Nikolaos cpt_Nikolaos jp_Nikorau jp2_Nicorau }
+dietmar_male = { Dietmar Detmar Thietmar Tymmeke # Vanilla
+ Tetmar Theudomeraz Theudumar TheudumE_r Theodemiro Thiudamers Theodemirus Theodemiros Thydmer Tzydmer Theudemeres Thiotmar Theodomer Thiudamer Thedumira Tedumira Tautomera Teodemiro }
+theodoric_male = {
+Theoderic Theoderich # Vanilla
+Theoteric # IRToCK3
+DE_tR_ich Diederick Diederik Dietrich Dirk Dytryk Teudaric Teuderic Teudric Tewdrig Theodoric ThE_odoric Theodorich Theodoricho Thierry TiE_rri Tiuduricu  # Vanilla
+Tewteh-hregs Theudoriks Theodric Thiudareiks Theodericus Theoderic Theoderich Theoderikos Thydric Tzydrich Theuduric Theuderic Thiotric Theudorix Thiudareic Thedurika Theduriga Tedurika Tautoritca Dhedrai jp_Teoderiku jp2_Teodericu Tjudrik Teodorico 
+}
+theoderic_male = {  } # keep empty
+ekkehard_male = { Ekkehard Eggerd # Vanilla 
+Ekkert # IRToCK3
+Eggahard E_ggjuhardu Aggjuhardu }
+frederick_male = { BedR_ich Fadrique Federico Federigo Fidiricu FrE_dE_ric Frederick Frederico Frederik Fredrik Friedrich FriT_rI_kr Rieti Fadri Frideric # Vanilla
+Freterik Frithuriks Frithareiks Fritharicus Phritharikos Fridric Fridrich Frithuric Frithareic Prithurika Pidhuriga Piriturika Pirituritca jp_Furederiku jp2_Furedericu Fritarico }
+gerald_male = { 
+Garalt Garibald Garibaldo Garipald Gehrke Gerald Geraldo Gerallt Geralt Gerard GE_rard Gerardo Geraud GE_raud Gerbald Gerhard Gerold Gherardo Ghert Gierolt Girard Girardu Girart Guerau Guiral Guiraud Guitart Xerardo Xerardu # Vanilla
+KE_rke Kerolt Chert Gaizawalda Gejavalla Gecavalla Kaicawalita Kaicavalita }
+gunther_male = { GU_nther Gunzelin # Vanilla
+Kunzelin Kynther  # IRToCK3
+GonA_riu Gunnar Gunnare Gunnarr Gunthiharjaz Gunthiharjar Guntha Gunthiharya Gundihariya Guntihariya Kuntikariya }
+godfrey_male = { Gausfred Geoffrey Geoffroy Geofroi Godafres Godfrey GO_dke Godefroi Godefroy Godfried Goffredo Goffredu Gofraid Gotfred Gottfried Gottifredo Gottofredo Guffredu GuT_friT_ GuT_frI_T_r Guthfrith JaufrE_ Jaufret JofrE_ SE_afra Sieffre SiothrU_n # Vanilla 
+Ketke Gefrei }
+laurence_male = { Lars LaurE_nC_ Laurence Laurentios Laurentiu Laurentu Laurentz Lauri LloriA_n Lorens Lorenz Lorenzo LourenC_o Lourenzo Lurenzu Wawrzyniec Lurainz # Vanilla
+LO_rentz jp2_Raurenciu
+}
+lambert_male = { Lambert Lamberto Lambertu Lembert Lantpert # Vanilla 
+Lempert Londberct Landaberht }
+john_male = { Chuan Gian Giano Giovanni Giuanne Giuvanni Gjon HanuS_ Hovhannes Iain Iehan Ieuan Ioan Ioane Ioann Ioannes Ioannes_regnal IO_annE_s Iuan Ivan IvaniS_ JA_nos Jan JanisL_aw Janis Janko Janos Janusz Jean Jehan JoA_o Joan Joanes Joannes Johan Johann Johannes John Jon Jovan Juan Juanne Juvven SeA_n SeoA_n Vanni Yahya Yohannaan Yohannan Youkhanna Yuhanna Yunanis XoA_n Xuan Gion Giovan # Vanilla
+JO_ann Zuane Zuan Zuann Zuanne Zuano cpt_Ioannes cpt_Iohannes Yoan jp_Yohane jp2_Johane Yowann }
+isidoros_male = { Isidoros Isidor Isidoro Isidoro_regnal # Vanilla 
+cpt_Isidoros }
+ludolf_male = { Ludolf Liudolf Liudulf Lutolf # Vanilla 
+Liudiwulf }
+lothair_male = { 
+Hlothere Liuterio Lot Lotario Lothair Lothaire Lothar Luder # Vanilla
+Chlothar Clotaire # Vanilla
+Hludhari Hludhar Hlothhere
+}
+clotaire_male = {  } # Moved 
+louis_male = { Alois Alvise Clydog Lajos Lluis LluI_s Lodewijk Lodovico LoI_s Loui Louis LouI_s Loys Ludovico Luduvicu Ludvig LudvI_k Ludwig Luiggi Luigi Luis Duitg Ludivic # Vanilla
+Lutwik Kluto-wig Hludawig Clovis jp_Kurodobiku jp2_Curodowicu }
+magnus_male = { 
+Magnus Megistos Magne MagnU_s Magnasch # Vanilla
+Magno Maknus jp2_Magunu }
+ralph_male = { 
+Radke Radolf Radulf Radulfo Ralf Ralph RE_dwulf Randolf Randolph Raolf Raoul Rodolf Rodolfo Rodolfino Rodulfu Rudolf Rudolfu Raduolf # Vanilla
+Pandulf Ratke Rutolf Raduolf Redawulfaz Redavulva Redavulla Redavuluva Eretawulpa Eretavulpa }
+reinbern_male = { Reinbern Reginbern # Vanilla 
+Rekinpern Rojnpern }
+renard_male = { Reineke Reinhard Renard Renhard # Vanilla 
+Raginaharduz Raginariths Raginaris Raginares Raginrith Raginritz Raginari Raginarith Raginahardu Raginahaddu Raginahartu Irakinakartu Raginarito }
+roger_male = { Rodegar Roger Rogier Rudigar Ruggero Ruggeru Ruggiero Rutger # Vanilla 
+Hrothigaizaz Hrothigair Hrothigairar Hrodigair Rugir Rothigeja Rodhigeja Rotigeca Kirotikaica }
+richard_male = { Reccared Rekkaredo Rhicert Ricard Ricardo Ricart Riccardo Riccardu Richard Richart Riku Ryszard # Vanilla 
+Rikaharduz Reikireths Reccaredus Rekaredos Rikreth Rikretz Reichireth Rikahardu Rigahaddu Rikahartu Irikakartu Retsarht Riciredo }
+siegfried_male = { Siegfried Sigfrid Sigifredo # Vanilla 
+Sigifrithuz Sigifrithu Sigifrid Sigiprithu Sigippidhu Sigipiritu Cikipiritu Sikipiritu }
+walter_male = { Balterio BhA_tair Gauthier Gautier Gualter Gualtiero Guterre Gutierre Guttier Ualtar Valteri Walter Walthari Walther Wolter Wautier # Vanilla 
+Waldaharjaz Waldaharjar Valdar Waldahari Waldhere Waldahar Vallaharya Vallahariya Walitakariya Valitakariya }
+sigisbert_male = { Sigisbert Sigbert # Vanilla 
+Sigberct Sigeberht Sigebryht Sigiberht Sigiberhtaz Sigiberta Sigibetta Cikiperta Sikiperta }
+sigurd_male = { Sigurd SigurT_r Sigward Sikard Siward Siweard Sjoerd # Vanilla 
+Sigeweard Sigiwarduz Sigiwardur Sigivardu Sigivaddu Sigivartu Cikiwartu Sikivartu }
+victor_male = { Biktor Uther Uthyr Victor Victor_regnal Viktor Vittore Vittorio Vittoriu Wecta # Vanilla
+Fecta jp_Bikutoryu jp2_Bitorju }
+ulf_male = { Guelfo Guelph Ulf Ulfo Ulfr Ulv Wulf Wulff Welf U_lfr # Vanilla 
+Fulff Wulfer Wlkwos Wulfila Ulphilas Wolfila Ulfila }
+adela_female = { Adela AdE_la AdE_le Addila Adelah Adele Adelia Alena Adala # Vanilla
+Attila Atalia
+}
+adelaide_female = { AdalaI_da AdalaI_de Adelaida AdelaI_da Adelheid Adelaide Aleydis Elke Adeleida # Vanilla
+Athalahaithi Adalahaid Atalaida
+Atelhojt }
+agnes_female = { Agne Agnes A_gnes AgnE_s Agnese Agnieszka A_ine Aines AinE_s Annest Auni InEEs InE_s Nest Nesta Uunis # vanilla
+Aknes jp_Agune jp2_Agune Anes }
+beatrice_female = { Beatrice BE_atrice Beathoc Beatrijs Beatritz Beatriu Beatrix BE_atrix Beatriz Beitris Bia Brethoc Brites # Vanilla 
+Peatrix Pia jp2_Beaturisu }
+margaret_female = { MA_irgred Maisie Marared Margalida Margaret Margareta MargarE_ta Margarete Margarid Margarida Margarita Margherita Margred Margrete Margrethe Margrud Marguarite Marguerite Peigi Magreta Margery # Vanilla
+jp_Ma_gareta jp2_Marugareta Merrit Merrerit }
+ulfhild_female = { Ulfhild Wulfhild Wulfhilde U_lfhildr # Vanilla
+Fulfhilt # IRToCK3
+Wulfahildiz Vulvahilli Vullahilli Vuluvahilli Wulpakiliti Vulpakiliti }
+catherine_female = { 
+CaitilI_n Caitrion Catalina Catarina Cateline Caterina Catherine Catherine_regnal CathE_rine Catrin Catriona CatrI_ona Ecatarina Ekaterina Kaarina Karin Katalin Katalina Katarina Katarzyna KateR_ina Katharina Kathrijne Katranide Katrien Katrine Ketevan Nienke Yekaterina Catrina # Vanilla
+Katherine cpt_Kattrin Caterin jp_Katarina jp2_Cotarina Cadrin }
+thomasa_female = { 
+Thomasa Tam Tamasin Tami Tammy Tamsin Tamsyn Tamzin Tomasina # Vanilla
+Thomasina }
+joan_female = { 
+Chuana Eonnecte Gionina Giovanna Giuanna Iannia Ioanna Iouenna Janed Jean Jeanne Jehanne Joan Joana Joanna Johanna Juana Seonaid Sheena Shona SiA_n SiobA_n Sioned Siunod Xoana Xuana # Vanilla
+Zuanna Jon Yoned Yoan jp_Yohana jp2_Johana Jon Jonet }
+andrea_female = { Andrea Andrijana # Vanilla
+Andriana }
+francesca_female = { Franceschina Francesca Francesa }
+gwen_female = { Gwen Gwenn Uen Wenn Wenna # Vanilla 
+Wen Uenda }
+maria_female = { 
+Maike Mair MA_ire Mairi Mara Mareike Mari Maria MA_ria MarI_a Mariam Mariami Merjeme Marie Marija Mariyam Mary Mary_regnal Miryem MO_r Morag Mariamu # Vanilla
+Marya jp2_Maria Mer }
+alice_female = { 
+AliC_ AlaI_s Alausia Alice Alicia Alijse Alis Alisce Alisia Alitz Alix Allust Alys Anleta # Vanilla
+Alse }
+eugene_male = { 
+E_ogan EO_ganA_n EO_gan Egenio Eguen Eugene EugE_ne Eugenio Eugenius Eugenius_regnal Euggeniu Eugjeni Even Ewan Owain Owen Uuen Yawan # Vanilla
+Ewen Auigen }
+francis_male = { 
+Cecchino Cecco Ferenc Ffransis FrancE_s Francesc Francesco FranC_esku Francis Franciscu FranC_ois Frang Franjo Franku Frans Fransaz Fransis FrantiS_ek Frantziscu Franz Fresco Proinsias Francestg # Vanilla
+Francescho Franseis jp_Furanshisu jp2_Furanscisu }
+vitalis_male = { Guitol Gwydol Vitale Vitalis # Vanilla
+Vidal }
+george_male = { 
+Djordje Georg George George_regnal GeO_rgios Georgios Georgy Gevorg Gheorghe Giorgi Giorgio Giwargis Gjergj Gurg GyO_rgy Jerzy JiR_I_ Jord Jorge Juraj JU_rgen Sior Varughese YrjO_ Yuriy Gieri Georges # Vanilla
+Zorzi Geor jp_Jorujiu jp2_Zjeoruziu Jordh }
+gabriel_male = { 
+Cabbrieli Crabiele Gabriel GA_briel Gabri_el Gabriele Gabrieli Gavriil Gavril Gavrilo Grabielle Gabriello Kapriel Kauro Jiburili # Vanilla
+Gabbriele cpt_Gabriel jp_Gabure_u jp2_Gaburieu }
+aurelius_male = { 
+Aurelio Aureliu Aurelius Aureo_l Aureolo Aureolus Auriol Oreliu # Vanilla 
+Auro Orio cpt_Aurelios }
+andrew_male = { 
+Anders AndrA_s AndrE_ AndrE_s Andrea Andreas Andrei Andrew Andrew_regnal Andria Andrija Androus Andrzej Annirea JE_drzej OndR_ej Andri Andreia # Vanilla
+cpt_Andreas Andres jp_Anzurea jp2_Andurea Andruw }
+david_male = { 
+DabI_d Dabuut Daevit Dafydd Da_oud Daoud Daouda Da_ud Dauid DA_vi Davi David Davide Davit Davud Davyd Dawit Dawud Deui Dewi Tuokko # Vanilla
+Davidh jp2_Dabidu Dewidh Dawid }
+thomas_male = { Tam Tam_as TamA_s Ta_mhas Th_amhais Thoma Thomas Thomas_regnal Tohmas Tomas TomA_s TomajE_ Tomasz Tommaso Tommasu Tomo Tomos Touma Toumas Tovmas Tumasi Tumasch # Vanilla 
+jp_Toma jp2_Toma }
+valentin_male = { Ualan Valenti Valentin Valentino Valintinu Walan Walenty Valantin # Vanilla 
+jp_Barenchinu jp2_Barencinu }
+vincent_male = { C_enE_k Pizente VicenC_ Vicente Vincenne Vincent Vincenzo Vissente Wincenty Vincenz # Vanilla 
+jp_Binsenchiyu jp2_Bisencinu }
+alstan_male = { Alstan E_lfstan E_thelstan Elystan # Vanilla
+Alstan Alston Athelstan Athelston Attelstane Ethelston A_dhilstan }
+bernard_male = { Benno BE_rard Berardo Bernaldu Bernard Barnaerd BernA_t Bernardin Bernardino Bernardo Bernardu Bernart Bernat Bernd Bernead Bernhard Birnardu # Vanilla 
+Pernhart Beranhart # IRToCK3
+Beornheard Bernuharduz Bernuhardu Bennuhaddu Berunuhartu Perunukartu }
+theodore_male = { Theodore Theodore_regnal Feodor Tadros Tedore Teodor Teodoro Teudar Teudur Tewdwr TheodO_ros Theodoros Thoros ThE_tore Tiudoru Tudor Theodorus Theodorus_regnal # Vanilla 
+Tedor }
+theodosius_male = { Tedisio Teodizio Teodosiu Tewdos Theodosios Theodosius Teodosi Feodosiy # Vanilla 
+Tedos }
+stephen_male = { Eappen Estienne E_tienne Estiennot Esteban EstE_banu EstE_vA_o EstE_ve Estevo Isteban IstE_vene IstvA_n Stefan Stefano StE_fanu Stefanus Stefen Steffen Stepan Stepanos Stepanoz Stephan Stephanus Stephanus_regnal Stephanos Stephen Steven Stjepan Szczepan Steafan # Vanilla
+dmt_Stephanos jp_Sutehanu jp2_Sutehanu }
+samuel_male = { Samuel SA_muel Samueli SamuE_li Samoeli Sawyl # Vanilla
+Samwil jp2_Samueru Sawool }
+michael_male = { Michael MichaE_l Michel Michele Micheli Migali Mighele MihA_ly Mihail Mihailo Mihajlo Mihangel Mikail Mikayel Mikel Mikelli Mikhael Mikhail Mikheil Mikkel Mikko Miquel Mikha_il Michiel Mitgel # Vanilla
+cpt_Mikhael MicA_l jp_Mikaeru jp2_Mikeu }
+marcus_male = { Marcas March Marchell Marco Marcu Marcus Marek Margh Margos Mark MA_rk Marko Markos Markos_regnal Markose Marku Markus Morcar Marchet Marcus_regnal Marc # Vanilla
+cpt_Markos jp_Maruku jp2_Marucu Moarch }
+august_male = { August Augusto Augustu Austu Auust Awgustin Awst # Vanilla 
+Owst A_gost  } 
+aaron_male = { Aaron AarO_n Haroun Harun # vanilla
+Aron }
+augustine_male = { Agostino Agustin AugustI_n Augustin Augustine Augustine_regnal Austinu # Vanilla 
+jp_O_guchinu Awgustin jp2_Augosucinu }
+adam_male = { Aatso Adam Adamu AdA_mu Adimun # Vanilla 
+Adhav }
+demetrius_male = { Demetre Demetrio Demetrios Demetrius DhimitE_r Dmitriy # Vanilla
+jp2_Demeturiu }

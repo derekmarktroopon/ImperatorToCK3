@@ -95,6 +95,8 @@ link = { ck3 = ligurian_pagan ck3Culture = ligustic ir = italic_pantheon }
 link = { ck3 = old_latin_pagan ck3Culture = roman ir = italic_pantheon }
 link = { ck3 = etruscan_pagan ck3Culture = etruscan ir = italic_pantheon }
 link = { ck3 = oscan_pagan ck3Culture = oscan ck3Culture = samnite ck3Culture = siculian ir = italic_pantheon }
+# Fallback
+link = { ck3 = old_latin_pagan ir = italic_pantheon }
 
 # Hellenic - TFE
 link = { ck3 = roman_pagan ir = italic_pantheon }
@@ -111,7 +113,6 @@ link = {
     ck3 = hellenic_pagan
     ir = roman_pantheon
     ir = greek_pantheon # I:R Antiquitas mod
-    ir = italic_pantheon # Invictus, TODO: create a separate CK3 faith
 }
 
 # Balto-Slavic
